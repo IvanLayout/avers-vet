@@ -2454,6 +2454,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	font-weight: 600;
 	text-transform: uppercase;
 	border-bottom: 1px solid currentColor;
+	text-decoration: none;
 
 	transition: color .2s linear;
 }
@@ -2752,6 +2753,88 @@ input[type=checkbox]:checked + .checkbox__text::after
 	}
 }
 
+/*------------
+    surgery-serv
+------------*/
+
+.surgery-serv__grid
+{
+	margin: 10px 0 0 -20px;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.surgery-serv__item
+{
+	text-decoration: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	width: calc(100%/3 - 20px);
+	margin: 20px 0 0 20px;
+
+	background: linear-gradient(180deg, #f5f9ff 0%, #f0f7ff 100%);
+	border-radius: 40px;
+	padding: 30px;
+}
+
+.surgery-serv__icon
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 25px;
+	background: #fff;
+	padding: 20px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	margin-right: 20px;
+}
+
+.surgery-serv__icon img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.surgery-serv__info
+{
+	width: calc(100% - 120px);
+	display: block;
+}
+
+.surgery-serv__name
+{
+	color: #191A29;
+	display: block;
+	font-size: 24px;
+	font-weight: 500;
+
+	transition: .2s linear;
+}
+
+.surgery-serv__desc
+{
+	margin-top: 10px;
+	color: #737373;
+	display: block;
+}
+
+@media (any-hover: hover)
+{
+	.surgery-serv__item:hover .surgery-serv__name
+	{
+		color: #E94E1B;
+	}
+}
 
 /*------------*/
 
