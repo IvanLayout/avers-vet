@@ -162,16 +162,20 @@ $(() => {
 
 
 $(window).on('load', () => {
-	if( $('.products__grid').length ){
-		$('.products__grid').each(function() {
-			productsHeight($(this), parseInt($(this).css('--products_count')))
-		})
-
-		$('.products__grid').find('.product').removeClass('_loaded')
-		setTimeout(() => {
-			$('.products__grid').find('.product').addClass('_loaded')
-		}, 100)
+	if ($('.stocks__wrap').length){
+		stocksSlider()
 	}
+
+	// if( $('.products__grid').length ){
+	// 	$('.products__grid').each(function() {
+	// 		productsHeight($(this), parseInt($(this).css('--products_count')))
+	// 	})
+
+	// 	$('.products__grid').find('.product').removeClass('_loaded')
+	// 	setTimeout(() => {
+	// 		$('.products__grid').find('.product').addClass('_loaded')
+	// 	}, 100)
+	// }
 });
 
 
@@ -200,40 +204,100 @@ $(window).on('resize', () => {
 		}
 	}
 
-	if( $('.products__grid').length ){
-		$('.products__grid').each(function() {
-			productsHeight($(this), parseInt($(this).css('--products_count')))
-		})
-
-		$('.products__grid').find('.product').removeClass('_loaded')
-		setTimeout(() => {
-			$('.products__grid').find('.product').addClass('_loaded')
-		}, 100)
+	if ($('.stocks__wrap').length){
+		stocksSlider()
 	}
+
+	// if( $('.products__grid').length ){
+	// 	$('.products__grid').each(function() {
+	// 		productsHeight($(this), parseInt($(this).css('--products_count')))
+	// 	})
+
+	// 	$('.products__grid').find('.product').removeClass('_loaded')
+	// 	setTimeout(() => {
+	// 		$('.products__grid').find('.product').addClass('_loaded')
+	// 	}, 100)
+	// }
 });
 
 
-function productsHeight(context, step) {
-	let start    = 0
-	let finish   = step
-	let products = context.find('.product')
+function stocksSlider(){
+	if ( $(window).width() < 1024 && !$('.stocks__wrap').hasClass('swiper-initialized') ) {
+		$('.stocks__wrap').addClass('swiper')
+		$('.stocks__grid').addClass('swiper-wrapper').removeClass('_flex')
+		$('.stocks__item').addClass('swiper-slide')
 
-	products.height('auto')
-	products.find('.product__name').height('auto')
-	products.find('.product__box').height('auto')
-	products.find('.product__block').height('auto')
-	products.find('.product__desc-items').height('auto')
-	products.find('.product__prices').height('auto')
+		advantagesSwiperSlider = new Swiper('.stocks__wrap', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 10,
+			slidesPerView: 1,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 10,
+				},
+				'480': {
+					spaceBetween: 10,
+				},
+				'768': {
+					spaceBetween: 20,
+				}
+			},
+		})
+	} else if ($(window).width() > 1023 && $('.stocks__wrap').hasClass('swiper-initialized')) {
+		if ($('.stocks__wrap').length === 1 && $('.stocks__wrap').hasClass('swiper-initialized')) {
+			advantagesSwiperSlider.destroy(true, true)
+		} else if ($('.stocks__wrap').length >= 2 && $('.stocks__wrap').hasClass('swiper-initialized')) {
+			advantagesSwiperSlider.forEach(function (element) {
+				element.destroy(true, true)
+			})
+		}
 
-	for (let i = 0; i < products.length; i++) {
-		setHeight(products.slice(start, finish))
-		setHeight(products.slice(start, finish).find('.product__name'))
-		setHeight(products.slice(start, finish).find('.product__box'))
-		setHeight(products.slice(start, finish).find('.product__block'))
-		setHeight(products.slice(start, finish).find('.product__desc-items'))
-		setHeight(products.slice(start, finish).find('.product__prices'))
-
-		start  = start + step
-		finish = finish + step
+		$('.stocks__wrap').removeClass('swiper')
+		$('.stocks__grid').removeClass('swiper-wrapper').addClass('_flex')
+		$('.stocks__item').removeClass('swiper-slide')
 	}
 }
+
+
+// function productsHeight(context, step) {
+// 	let start    = 0
+// 	let finish   = step
+// 	let products = context.find('.product')
+
+// 	products.height('auto')
+// 	products.find('.product__name').height('auto')
+// 	products.find('.product__box').height('auto')
+// 	products.find('.product__block').height('auto')
+// 	products.find('.product__desc-items').height('auto')
+// 	products.find('.product__prices').height('auto')
+
+// 	for (let i = 0; i < products.length; i++) {
+// 		setHeight(products.slice(start, finish))
+// 		setHeight(products.slice(start, finish).find('.product__name'))
+// 		setHeight(products.slice(start, finish).find('.product__box'))
+// 		setHeight(products.slice(start, finish).find('.product__block'))
+// 		setHeight(products.slice(start, finish).find('.product__desc-items'))
+// 		setHeight(products.slice(start, finish).find('.product__prices'))
+
+// 		start  = start + step
+// 		finish = finish + step
+// 	}
+// }

@@ -1666,11 +1666,9 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	font-size: 40px;
 	line-height: 1.3;
-	color: #3D322C;
+	color: #191A29;
 	font-weight: 500;
-	font-family: var(--second-family);
 	letter-spacing: 0.01em;
-	text-transform: uppercase;
 }
 
 .main-title_center
@@ -1686,7 +1684,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 ._marg
 {
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 /*--------------
@@ -2249,6 +2247,27 @@ input[type=checkbox]:checked + .checkbox__text::after
 		background: #E6F1FF;
 	}
 }
+
+/*------------
+    section-bg
+------------*/
+
+.section-bg
+{
+	background: #fff;
+	padding: 50px;
+	border-radius: 60px;
+}
+
+/*------------
+    stocks
+------------*/
+
+.stocks__wrap .slider-pagination
+{
+	display: none;
+}
+
 
 /*------------*/
 
