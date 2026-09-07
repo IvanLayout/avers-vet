@@ -2836,6 +2836,167 @@ input[type=checkbox]:checked + .checkbox__text::after
 	}
 }
 
+/*------------
+    products
+------------*/
+
+.products__grid
+{
+	align-items: stretch;
+	align-content: stretch;
+	margin: 10px 0 0 -20px;
+}
+
+.product
+{
+	display: block;
+	text-decoration: none;
+	position: relative;
+	border-radius: 40px;
+	overflow: hidden;
+	padding: 40px;
+
+	width: calc(100%/4 - 20px);
+	margin: 20px 0 0 20px;
+	aspect-ratio: 1 / 1.3586;
+
+	background: linear-gradient(180deg, #f5f9ff 0%, #f0f7ff 100%);
+}
+
+.product.product_big
+{
+	width: calc(100%/2 - 20px);
+	aspect-ratio: auto;
+}
+
+.product__name
+{
+	display: block;
+	color: #191A29;
+	font-size: 32px;
+	line-height: 1.2;
+	font-weight: 500;
+	position: relative;
+	z-index: 1;
+	transition: color .2s linear;
+}
+
+.product__img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+
+	width: 100%;
+	height: 100%;
+}
+
+.product.product_big .product__img
+{
+	justify-content: flex-end;
+}
+
+.product__img img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.product__info
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+.product__info-icon
+{
+	height: 110px;
+	display: block;
+}
+
+.product__info-icon img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.product__info-desc
+{
+	display: block;
+	margin-top: auto;
+	color: #fff;
+}
+
+.product__desc
+{
+	margin-top: 20px;
+	display: inline-block;
+	line-height: 33px;
+	border-radius: 70px;
+	background: #fff;
+	padding: 0 18px;
+	color: #191A29;
+}
+
+.product__arrow
+{
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	width: 47px;
+	height: 47px;
+	background: transparent;
+
+	border: 2px solid #2262B7;
+	border-radius: 14px;
+	z-index: 2;
+	transition: background .2s linear;
+}
+
+.product__arrow svg
+{
+	display: block;
+	width: 25px;
+	height: 15px;
+
+	fill: #2262B7;
+}
+
+@media (any-hover: hover)
+{
+	.product:hover .product__name
+	{
+		color: #E94E1B;
+	}
+
+	.product:hover .product__arrow
+	{
+		background: #E6F1FF;
+	}
+}
 /*------------*/
 
 @media (any-hover: hover)
