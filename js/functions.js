@@ -257,6 +257,19 @@ $(() => {
 			showMaskOnHover: false
 		})
 	})
+
+
+	$('body').on('click', '.header__burger', function(e) {
+		e.preventDefault()
+
+		if( $(this).hasClass('_active') ) {
+			$(this).removeClass('_active')
+			$('.header__block').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+			$('.header__block').addClass('_show')
+		}
+	})
 })
 
 
