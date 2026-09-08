@@ -733,28 +733,6 @@ button
 	max-height: 100%;
 }
 
-.btn-icon
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	flex-wrap: wrap;
-
-	width: 18px;
-	height: 18px;
-
-	margin-right: 11px;
-	flex-shrink: 0;
-}
-
-.btn-icon img
-{
-	display: block;
-	max-width: 100%;
-	max-height: 100%;
-}
-
 .btn-white
 {
     /* color: #B8956A;
