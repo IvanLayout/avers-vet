@@ -3044,6 +3044,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	font-size: 32px;
 	line-height: 1.2;
 	font-weight: 500;
+	white-space: nowrap;
 }
 
 .help-banner__phone-number a
@@ -3361,6 +3362,101 @@ input[type=checkbox]:checked + .checkbox__text::after
 		background: #E6F1FF;
 	}
 }
+
+/*------------
+    advantages
+------------*/
+
+.advantages__title
+{
+	text-align: center;
+	color: #191A29;
+	font-size: 64px;
+	font-weight: 500;
+	line-height: 1.3;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+}
+
+.advantages__title span
+{
+	background: linear-gradient(180deg, #2262B7 0%, #5088EA 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #2262B7;
+}
+
+.advantages__items
+{
+	margin-top: 62px;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.advantages__item
+{
+	width: calc(50% - 15px);
+	margin-top: 20px;
+}
+
+.advantages__bg
+{
+	max-width: 497px;
+	background: #fff;
+	padding: 40px;
+	border-radius: 40px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.advantages__item:nth-child(even) .advantages__bg
+{
+	margin-left: auto;
+}
+
+.advantages__icon
+{
+	width: 100px;
+	height: 100px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	background: #F2F8FF;
+	border-radius: 25px;
+	padding: 20px;
+}
+
+.advantages__icon img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.advantages__info
+{
+	flex: 1 0 auto;
+}
+
+.advantages__name
+{
+	color: #191A29;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.advantages__desc
+{
+	margin-top: 10px;
+}
+
+
 /*------------*/
 
 @media (any-hover: hover)
