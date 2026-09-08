@@ -166,16 +166,11 @@ $(window).on('load', () => {
 		stocksSlider()
 	}
 
-	// if( $('.products__grid').length ){
-	// 	$('.products__grid').each(function() {
-	// 		productsHeight($(this), parseInt($(this).css('--products_count')))
-	// 	})
-
-	// 	$('.products__grid').find('.product').removeClass('_loaded')
-	// 	setTimeout(() => {
-	// 		$('.products__grid').find('.product').addClass('_loaded')
-	// 	}, 100)
-	// }
+	if( $('.specialists__grid').length ){
+		$('.specialists__grid').each(function() {
+			specialistsHeight($(this), parseInt($(this).css('--products_count')))
+		})
+	}
 });
 
 
@@ -208,16 +203,11 @@ $(window).on('resize', () => {
 		stocksSlider()
 	}
 
-	// if( $('.products__grid').length ){
-	// 	$('.products__grid').each(function() {
-	// 		productsHeight($(this), parseInt($(this).css('--products_count')))
-	// 	})
-
-	// 	$('.products__grid').find('.product').removeClass('_loaded')
-	// 	setTimeout(() => {
-	// 		$('.products__grid').find('.product').addClass('_loaded')
-	// 	}, 100)
-	// }
+	if( $('.specialists__grid').length ){
+		$('.specialists__grid').each(function() {
+			specialistsHeight($(this), parseInt($(this).css('--specialists_count')))
+		})
+	}
 });
 
 
@@ -277,27 +267,23 @@ function stocksSlider(){
 }
 
 
-// function productsHeight(context, step) {
-// 	let start    = 0
-// 	let finish   = step
-// 	let products = context.find('.product')
+function specialistsHeight(context, step) {
+	let start    = 0
+	let finish   = step
+	let specialists = context.find('.specialist')
 
-// 	products.height('auto')
-// 	products.find('.product__name').height('auto')
-// 	products.find('.product__box').height('auto')
-// 	products.find('.product__block').height('auto')
-// 	products.find('.product__desc-items').height('auto')
-// 	products.find('.product__prices').height('auto')
+	specialists.height('auto')
+	specialists.find('.specialist__name').height('auto')
+	specialists.find('.specialist__speciality').height('auto')
+	specialists.find('.specialist__bot').height('auto')
 
-// 	for (let i = 0; i < products.length; i++) {
-// 		setHeight(products.slice(start, finish))
-// 		setHeight(products.slice(start, finish).find('.product__name'))
-// 		setHeight(products.slice(start, finish).find('.product__box'))
-// 		setHeight(products.slice(start, finish).find('.product__block'))
-// 		setHeight(products.slice(start, finish).find('.product__desc-items'))
-// 		setHeight(products.slice(start, finish).find('.product__prices'))
+	for (let i = 0; i < specialists.length; i++) {
+		setHeight(specialists.slice(start, finish))
+		setHeight(specialists.slice(start, finish).find('.specialist__name'))
+		setHeight(specialists.slice(start, finish).find('.specialist__speciality'))
+		setHeight(specialists.slice(start, finish).find('.specialist__bot'))
 
-// 		start  = start + step
-// 		finish = finish + step
-// 	}
-// }
+		start  = start + step
+		finish = finish + step
+	}
+}
