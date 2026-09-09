@@ -84,6 +84,51 @@ $(() => {
 	}
 
 
+	if ($('.reviews__slider').length) {
+		new Swiper(".reviews__slider", {
+			loop: true,
+			spaceBetween: 20,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 20,
+					slidesPerView: 1,
+				},
+				'480': {
+					spaceBetween: 20,
+					slidesPerView: 2,
+				},
+				'768': {
+					spaceBetween: 20,
+					slidesPerView: 2
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 3
+				}
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			}
+		})
+	}
+
+
 	//
 	$('body').on('click', '.amount__btn_minus', function (e) {
 		e.preventDefault()
