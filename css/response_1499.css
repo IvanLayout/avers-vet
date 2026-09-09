@@ -4,5 +4,52 @@
 	/*------------
 		Commit
 	------------*/
+
+	.main-services__item
+	{
+		border-radius: 35px;
+	}
+
+	.main-services__info
+	{
+		padding-top: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 	
+	.main-services__name,
+	.stocks__name,
+	.product__name,
+	.specialist__all-name,
+	.help-banner__phone-number
+	{
+		font-size: 24px;
+	}
+
+	.main-services__desc
+	{
+		margin-top: 12px;
+	}
+
+	.main-services__arrow
+	{
+		bottom: 30px;
+		left: 30px;
+	}
+
+
+	.stocks__item
+	{
+		border-radius: 35px;
+	}
+
+	.stocks__price-box
+	{
+		margin-top: 15px;
+	}
+
+	.stocks__desc
+	{
+		margin-top: 20px;
+	}
 }
