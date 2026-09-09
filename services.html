@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Переключение IE в последнию версию, на случай если в настройках пользователя стоит меньшая -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>АВЕРС</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1699.css" media="(max-width: 1699px)">
+		<link rel="stylesheet" href="css/response_1499.css" media="(max-width: 1499px)">
+		<link rel="stylesheet" href="css/response_1319.css" media="(max-width: 1319px)">
+		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<!-- Шапка -->
+				<header class="header">
+					<div class="cont">
+						<div class="header__flex _flex">
+							<div class="header__logo">
+								<a href="/">
+									<img src="images/logo.svg" alt="">
+								</a>
+							</div>
+							<div class="header-search">
+								<form action="" class="header-search__form">
+									<div class="header-search__form-flex _flex">
+										<input type="text" value="" placeholder="Искать" id="search-input" class="header-search__form-input">
+									</div>
+								</form>
+							</div>
+							<div class="header__contacts _flex">
+								<div class="header__tel">
+									<a href="tel:+74952604555"><span>+7 495 260-45-55</span></a>
+									<div class="header__tel-desc">Экстренная помощь 24/7</div>
+								</div>
+
+								<div class="header__adres">
+									<div class="header__adres-city">г. Химки</div>
+									<div class="header__adres-desc">пр. Мельникова 27</div>
+								</div>
+							</div>
+							
+							<button type="button" class="header__burger"></button>
+						</div>
+					</div>
+
+					<div class="header__block">
+						<div class="cont">
+							<div class="header__block-bg">
+								<div class="header__block-flex _flex">
+									<nav class="header__menu">
+										<div class="header__menu-item">
+											<a href="/" class="header__menu-link">Услуги</a>
+										</div>
+										<div class="header__menu-item">
+											<a href="/" class="header__menu-link">Врачи</a>
+										</div>
+										<div class="header__menu-item">
+											<a href="/" class="header__menu-link">О клинике</a>
+										</div>
+										<div class="header__menu-item">
+											<a href="/" class="header__menu-link">Отзывы</a>
+										</div>
+										<div class="header__menu-item">
+											<a href="/" class="header__menu-link">Статьи</a>
+										</div>
+										<div class="header__menu-item">
+											<a href="/" class="header__menu-link">Вакансии</a>
+										</div>
+										<div class="header__menu-item">
+											<a href="/" class="header__menu-link">Контакты</a>
+										</div>
+									</nav>
+									<div class="header__block-coll _flex">
+										<div class="header__adreses">
+											<div class="header__adreses-item">
+												<div class="header__adreses-city">Химки</div>
+												<div class="header__adreses-adres">пр. Мельникова 27</div>
+												<div class="header__adreses-time">24/7, бесплатная парковка</div>
+											</div>
+											<div class="header__adreses-item">
+												<div class="header__adreses-city">Путилково</div>
+												<div class="header__adreses-adres">пр. Мельникова 27</div>
+												<div class="header__adreses-time">24/7, бесплатная парковка</div>
+											</div>
+										</div>
+										<div class="header__info">
+											<div class="header__info-title">Если питомцу <br>плохо — не ждите</div>
+											<div class="header__info-tel">
+												<a href="tel:+ 74952604555">
+													<span>+ 7 (495) 260-45-55</span>
+												</a>
+											</div>
+											<div class="header__info-time">Экстренная помощь 24/7</div>
+											<div class="header__info-btns _flex">
+												<a href="/" class="btn-red">
+													<span class="btn-red__wrap">
+														<span class="btn-red__icon">
+															<img data-src="images/ic_zap.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														Срочная помощь
+													</span>
+												</a>
+												<button type="button" class="btn-blue">
+													<span class="btn-blue__wrap">
+														<span class="btn-blue__icon">
+															<img data-src="images/ic_zap.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														Перезвонить мне
+													</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!-- End Шапка -->
+
+				<section class="page-head">
+					<div class="cont">
+						<div class="page-head__bg">
+							<div class="breadcrumbs">
+								<div class="breadcrumbs__scroll">
+									<a href="/">Главная</a> <span class="breadcrumbs_sep">—</span> Услуги
+								</div>
+							</div>
+
+							<h1 class="page-title">услуги</h1>
+
+							<div class="page-head__desc">Клиника «Аверс» работает по принципам доказательной медицины. Круглосуточный приём в двух филиалах: Химки и Путилково. От диагностики до сложной хирургии — всё под одной крышей.</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer class="footer _marg">
+				<div class="cont">
+					<div class="section-bg">
+						<div class="footer__flex _flex">
+							<div class="footer__coll">
+								<div class="footer__logo">
+									<a href="/">
+										<img src="images/logo.svg" alt="">
+									</a>
+								</div>
+
+								<div class="footer__tel">
+									<a href="tel:+74952604555">+7 495 260-45-55</a>
+								</div>
+								<div class="footer__time">Экстренная помощь 24/7</div>
+
+								<div class="footer__adreses">
+									<div class="footer__adres _flex">
+										<div class="footer__adres-box">
+											<div class="footer__adres-name">г. Химки пр.Мельникова 27</div>
+											<div class="footer__adres-link">
+												<a href="/">Построить маршрут</a>
+											</div>
+										</div>
+										<div class="footer__adres-time">
+											<img data-src="images/time_work.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</div>
+									</div>
+									<div class="footer__adres _flex">
+										<div class="footer__adres-box">
+											<div class="footer__adres-name">г. Путилково пр.Мельникова 27</div>
+											<div class="footer__adres-link">
+												<a href="/">Построить маршрут</a>
+											</div>
+										</div>
+										<div class="footer__adres-time">
+											<img data-src="images/time_work.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="footer__menu">
+								<div class="footer__menu-item">
+									<a href="/" class="footer__menu-link">Услуги</a>
+								</div>
+								<div class="footer__menu-item">
+									<a href="/" class="footer__menu-link">Врачи</a>
+								</div>
+								<div class="footer__menu-item">
+									<a href="/" class="footer__menu-link">О клинике</a>
+								</div>
+								<div class="footer__menu-item">
+									<a href="/" class="footer__menu-link">Отзывы</a>
+								</div>
+								<div class="footer__menu-item">
+									<a href="/" class="footer__menu-link">Статьи</a>
+								</div>
+								<div class="footer__menu-item">
+									<a href="/" class="footer__menu-link">Вакансии</a>
+								</div>
+								<div class="footer__menu-item">
+									<a href="/" class="footer__menu-link">Контакты</a>
+								</div>
+							</div>
+
+							<div class="footer__colr">
+								<div class="footer__socials _flex">
+									<a href="/" class="footer__socials-item">
+										<img data-src="images/ic_soc1.svg" src="images/img_plug.png" alt="" class="lazyload">
+									</a>
+									<a href="/" class="footer__socials-item">
+										<img data-src="images/ic_soc2.svg" src="images/img_plug.png" alt="" class="lazyload">
+									</a>
+								</div>
+
+								<div class="footer__yn _flex">
+									<div class="footer__yn-icon">
+										<img data-src="images/rev_yn.svg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+
+									<div class="footer__yn-box">
+										<div class="footer__yn-top _flex">
+											<div class="footer__yn-info">Хорошее место 2026</div>
+											<div class="footer__yn-star">5.0</div>
+										</div>
+
+										<div class="footer__yn-desc">Выбор пользователей Яндекс</div>
+									</div>
+								</div>
+
+								<div class="footer__copy">2026 &copy; ООО «Аверс». Информация на сайте носит <br>ознакомительный характер и не является публичной офертой.</div>
+
+								<div class="footer__links _flex">
+									<a href="/">Лицензия</a>
+									<a href="/">Политика конфиденциальности</a>
+								</div>
+
+								<div class="footer__creator _flex">
+									<div class="footer__creator-desc">Дизайн, разработка</div>
+
+									<a href="/" class="footer__creator-img">
+										<img src="images/logo_creator.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<div class="supports-error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
