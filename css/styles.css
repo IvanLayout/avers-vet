@@ -3046,6 +3046,11 @@ input[type=checkbox]:checked + .checkbox__text::after
     stocks
 ------------*/
 
+.stocks__slider
+{
+	margin-top: 30px;
+}
+
 .stocks__wrap .slider-pagination
 {
 	display: none;
