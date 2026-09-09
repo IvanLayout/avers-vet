@@ -1466,11 +1466,50 @@
 						<div class="main-title">Клиники рядом с вами</div>
 
 						<div class="tabs-container adresess__flex _flex">
-							<div class="tabs adresess__col"></div>
-
-							<div class="adresess__col">
+							<div class="adresess__coll">
+								<div class="tab-content level1 adresess__content _active" id="tab_adres1">
+									<div class="map map-js" id="map"></div>
+								</div>
+								<div class="tab-content level1 adresess__content" id="tab_adres2">
+									<div class="map map-js" id="map2"></div>
+								</div>
+							</div>
+							<div class="tabs adresess__colr">
 								<div class="tabs__item">
-									<!-- <button type="button" data-content="#tab_adres1" data-level="level1" class="adresess__tab tabs__button_js _active"></button> -->
+									<button type="button" data-content="#tab_adres1" data-level="level1" class="adresess__tab tabs__button_js _active"></button>
+									<div class="adresess__top _flex">
+										<div class="adresess__top-box">
+											<div class="adresess__title">Путилково</div>
+											<div class="adresess__sity">пр. Мельникова 27</div>
+											<div class="adresess__route">
+												<a href="/" class="adresess__route-link">Построить маршрут</a>
+											</div>
+										</div>
+										<div class="adresess__time">
+											<img data-src="images/time_work.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</div>
+									</div>
+									<div class="adresess__tel">
+										<a href="tel:+74952604555">+7 495 260-45-55</a>
+									</div>
+								</div>
+								<div class="tabs__item">
+									<button type="button" data-content="#tab_adres2" data-level="level1" class="adresess__tab tabs__button_js"></button>
+									<div class="adresess__top _flex">
+										<div class="adresess__top-box">
+											<div class="adresess__title">Химки</div>
+											<div class="adresess__sity">пр. Мельникова 27</div>
+											<div class="adresess__route">
+												<a href="/" class="adresess__route-link">Построить маршрут</a>
+											</div>
+										</div>
+										<div class="adresess__time">
+											<img data-src="images/time_work.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</div>
+									</div>
+									<div class="adresess__tel">
+										<a href="tel:+74952604555">+7 495 260-45-55</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1856,6 +1895,7 @@
 		<script src="js/fancybox.js"></script>
 		<script src="js/inputmask.min.js"></script>
 		<script src="js/nice-select.js"></script>
+		<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU"></script>
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>

@@ -186,8 +186,6 @@ body
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height:         fill-available;
-
-    background: linear-gradient(180deg, #f5f9ff 0%, #f0f7ff 100%);
 }
 
 
@@ -218,6 +216,8 @@ button
     flex-direction: column;
 
     min-height: 100%;
+
+    background: linear-gradient(180deg, #f5f9ff 0%, #f0f7ff 100%);
 }
 
 .main
@@ -4570,11 +4570,231 @@ input[type=checkbox]:checked + .checkbox__text::after
 	justify-content: space-between;
 	align-items: stretch;
 	align-content: stretch;
+	margin-top: 30px;
 }
 
-.adresess__col
+.adresess__coll
 {
 	width: calc(50% - 10px);
+	display: flex;
+	flex-direction: column;
+}
+
+.adresess__colr{
+	width: calc(50% - 10px);
+}
+
+.adresess__content{
+	width: 100%;
+	display: none;
+}
+
+.adresess__content._active{
+	flex-grow: 1;
+	display: block;
+	animation: adresessFadeIn .5s linear forwards;
+}
+
+@keyframes adresessFadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.map
+{
+    width: 100%;
+	min-height: 100%;
+	border-radius: 40px;
+	overflow: hidden;
+}
+
+.ymaps-map{
+	background: #E8EDF3 !important;
+}
+
+.ymaps-layers-pane{
+	background-color: #E8EDF3;
+	mix-blend-mode: luminosity;
+}
+
+.ymaps-b-balloon__content-holster{
+	padding: 6px 15px !important;
+}
+
+.ymaps-b-balloon__tl,
+.ymaps-b-balloon__tr,
+.ymaps-b-balloon__bl,
+.ymaps-b-balloon__br,
+.ymaps-b-balloon__close,
+.ymaps-b-balloon-shadow{
+	display: none !important;
+}
+
+.ymaps-b-balloon{
+	width: 168px !important;
+}
+
+.ymaps-b-balloon__content{
+	border: none !important;
+	border-radius: 10px !important;
+}
+
+.ymaps-b-balloon__content > *{
+	width: 100% !important;
+	height: auto !important;
+}
+
+.map-balloon__title {
+	font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+	color: #E94E1B;
+	line-height: 1.3;
+}
+
+.map-balloon__text {
+    font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.3;
+	color: #737373;
+}
+
+
+.tabs__item{
+	padding: 37px 30px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 290px;
+}
+
+.tabs__item + .tabs__item{
+	margin-top: 20px;
+}
+
+.adresess__tab{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	border-radius: 40px;
+	border: 1px solid transparent;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover){
+	.adresess__tab:hover{
+		border-color: #2262B7;
+	}
+}
+
+.adresess__tab._active,
+.adresess__tab:active{
+	border-color: #2262B7;
+}
+
+.adresess__top{
+	gap: 16px;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	position: relative;
+	pointer-events: none;
+	width: 100%;
+}
+
+.adresess__title{
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 1.2;
+	color: var(--chernyy);
+}
+
+.adresess__sity{
+	margin-top: 10px;
+}
+
+.adresess__route{
+	margin-top: 10px;
+
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.adresess__route-link{
+	margin-top: 10px;
+	color: #2262B7;
+	text-decoration: none;
+	border-bottom: 1px solid currentColor;
+	transition: border .2s linear;
+	pointer-events: auto;
+}
+
+@media (any-hover: hover){
+	.adresess__route-link:hover{
+		border-bottom: 1px solid transparent;
+	}
+}
+
+.adresess__route-link:active{
+	border-bottom: 1px solid transparent;
+}
+
+.adresess__time{
+	flex-shrink: 0;
+	flex-shrink: 0;
+	width: 84px;
+	height: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	padding: 3px 5px;
+
+	background: linear-gradient(180deg, #f5f9ff 0%, #f0f7ff 100%);
+	border-radius: 50px;
+}
+.adresess__time img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.adresess__tel{
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 1.2;
+	position: relative;
+	padding-top: 20px;
+	margin-top: auto;
+	pointer-events: none;
+}
+
+.adresess__tel a{
+	color: #2262B7;
+	text-decoration: none;
+	border-bottom: 1px solid currentColor;
+	transition: border .2s linear;
+	pointer-events: auto;
+}
+
+@media (any-hover: hover){
+	.adresess__tel a:hover{
+		border-bottom: 1px solid transparent;
+	}
+}
+
+.adresess__tel a:active{
+	border-bottom: 1px solid transparent;
 }
 
 /*------------
@@ -4596,6 +4816,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 .footer
 {
 	position: relative;
+	padding-bottom: 60px;
 }
 
 .footer__flex{

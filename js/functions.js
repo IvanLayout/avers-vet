@@ -1,6 +1,6 @@
 $(() => {
 	// Observer API
-	const boxes = document.querySelectorAll('.lazyload')
+	const boxes = document.querySelectorAll('.lazyload, .map-js')
 
 	function scrollTracking(entries) {
 		for (const entry of entries) {
@@ -14,6 +14,18 @@ $(() => {
 				entry.target.srcset = entry.target.getAttribute('data-srcset')
 
 				entry.target.classList.add('loaded')
+			}
+
+			if (
+				entry.target.classList.contains('map-js') &&
+				!entry.target.classList.contains('map-loaded')
+			) {
+
+				if (yandexMapsReady) {
+					initMap(entry.target);
+				} else {
+					mapsQueue.push(entry.target);
+				}
 			}
 		}
 	}
@@ -333,3 +345,89 @@ function setHeight(className){
 }
 
 const is_touch_device = () => !!('ontouchstart' in window)
+
+
+let yandexMapsReady = false;
+
+if (document.querySelector('.map-js')) {
+	const mapsQueue = [];
+
+	ymaps.ready(() => {
+		yandexMapsReady = true;
+
+		mapsQueue.forEach(map => {
+			initMap(map);
+		});
+
+		mapsQueue.length = 0;
+	});
+
+	function initMap(element) {
+		if (element.classList.contains('map-loaded')) {
+			return;
+		}
+
+		// Захист від прихованих tab
+		if (element.offsetParent === null) {
+			return;
+		}
+
+		element.classList.add('map-loaded');
+
+		let center;
+		let placemark;
+
+		switch (element.id) {
+			case 'map':
+				center = [55.714115, 37.435331];
+				placemark = [55.714115, 37.435331];
+				balloonContent = `
+					<div class="map-balloon">
+						<div class="map-balloon__title">Аверс</div>
+						<div class="map-balloon__text">
+							Ветеринарная клиника
+						</div>
+					</div>
+				`;
+				break;
+
+			case 'map2':
+				center = [55.655402, 37.880554];
+				placemark = [55.655402, 37.880554];
+				balloonContent = `
+					<div class="map-balloon">
+						<div class="map-balloon__title">Аверс</div>
+						<div class="map-balloon__text">
+							Ветеринарная клиника
+						</div>
+					</div>
+				`;
+				break;
+
+			default:
+				return;
+		}
+
+		const myMap = new ymaps.Map(element.id, {
+			center: center,
+			zoom: 16
+		});
+
+		const myPlacemark = new ymaps.Placemark(
+			placemark,
+			{
+				balloonContent: balloonContent
+			},
+			{
+				iconImageHref: 'images/marker.svg',
+				iconImageSize: [47, 47],
+				iconImageOffset: [-23, -23],
+				balloonOffset: [114, 43],
+				hideIconOnBalloonOpen: false
+			}
+		);
+
+		myMap.geoObjects.add(myPlacemark);
+		myPlacemark.balloon.open();
+	}
+}
