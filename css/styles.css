@@ -4144,17 +4144,19 @@ input[type=checkbox]:checked + .checkbox__text::after
 	flex-direction: column;
 }
 
+.modal-review .review
+{
+	padding: 0;
+	background: none;
+	border-radius: 0;
+}
+
 .review__wrap
 {
 	flex: 1 0 auto;
 
 	display: flex;
 	flex-direction: column;
-}
-
-.review__top
-{
-
 }
 
 .review__avatar
@@ -4166,6 +4168,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 	background: #fff;
 	border-radius: 15px;
 	overflow: hidden;
+}
+
+.modal-review .review__avatar
+{
+	background: #F0F5FF;
+	border-radius: 50%;
 }
 
 .review__avatar-name
@@ -4226,6 +4234,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	margin-top: 13px;
 	flex-wrap: nowrap;
+}
+
+.modal-review .review__flex
+{
+	margin-top: 24px;
 }
 
 .review-rating
@@ -4298,6 +4311,19 @@ input[type=checkbox]:checked + .checkbox__text::after
 	flex: 1 0 auto;
 }
 
+.review__text
+{
+	margin-top: 24px;
+	padding-top: 24px;
+	border-top: 1px solid #D4E2F4;
+}
+
+.text-block.review__text p
+{
+	margin-bottom: 16px;
+	color: #737373;
+}
+
 .review__box-btn
 {
 	margin-top: 15px;
@@ -4318,6 +4344,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 32px;
 	border-top: 1px solid #E8F1F8;
 	justify-content: space-between;
+}
+
+.modal-review .review__bot
+{
+	margin-top: 70px;
 }
 
 .review__doctor
@@ -4992,4 +5023,10 @@ input[type=radio]:checked + .radio-icon__box
 .modal-stock__agree
 {
 	margin-top: 15px;
+}
+
+
+.modal-review
+{
+	padding: 40px;
 }
