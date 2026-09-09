@@ -41,10 +41,10 @@ $(() => {
 		})
 	}
 
-	if ($('.main-collections__slider').length) {
-		new Swiper(".main-collections__slider", {
+	if ($('.articles__slider').length) {
+		new Swiper(".articles__slider", {
 			loop: true,
-			spaceBetween: 0,
+			spaceBetween: 16,
 			slidesPerView: 1,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -68,18 +68,37 @@ $(() => {
 				el: '.slider-pagination',
 				clickable: true
 			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 16,
+					slidesPerView: 1,
+				},
+				'480': {
+					spaceBetween: 16,
+					slidesPerView: 2,
+				},
+				'768': {
+					spaceBetween: 20,
+					slidesPerView: 3,
+				}
+			},
 			on: {
 				init: function (swiper) {
-					let posTop = $(swiper.el).find('.main-collections__box').innerHeight()
-
-					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posTop)
-				},
-				resize: function (swiper) {
-					let posTop = $(swiper.el).find('.main-collections__box').innerHeight()
-
-					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posTop)
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
 				}
 			}
+			// on: {
+			// 	init: function (swiper) {
+			// 		let posTop = $(swiper.el).find('.main-collections__box').innerHeight()
+
+			// 		$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posTop)
+			// 	},
+			// 	resize: function (swiper) {
+			// 		let posTop = $(swiper.el).find('.main-collections__box').innerHeight()
+
+			// 		$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posTop)
+			// 	}
+			// }
 		})
 	}
 
