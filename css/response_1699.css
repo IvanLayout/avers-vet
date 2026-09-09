@@ -4,5 +4,12 @@
 	/*------------
 		Commit
 	------------*/
-	
+
+	.main-services__name,
+	.stocks__name,
+	.product__name,
+	.specialist__all-name
+	{
+		font-size: 28px;
+	}
 }
