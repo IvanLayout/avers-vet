@@ -1477,6 +1477,92 @@ input[type=radio]:checked + .radio__text::after
 	opacity: 1;
 }
 
+
+
+
+.radio-icons
+{
+	margin: -5px 0 0 -20px;
+	align-items: stretch;
+    align-content: stretch;
+}
+
+.radio-icon
+{
+	margin: 20px 0 0 20px;
+	min-width: 207px;
+}
+
+.radio-icon input[type=radio]
+{
+    display: none;
+}
+
+.radio-icon__label
+{
+    position: relative;
+
+    display: block;
+
+    cursor: pointer;
+	height: 100%;
+}
+
+.radio-icon__box 
+{
+    min-height: 60px;
+	height: 100%;
+	border-radius: 15px;
+    border: 1px solid transparent;
+    padding: 10px 15px 10px 41px;
+	box-shadow: 0.94px 0.94px 7.59px #E9E9E9;
+    transition: border .2s linear, box-shadow .2s linear;
+    cursor: pointer;
+	position: relative;
+	display: block;
+}
+
+.radio-icon__box:before
+{
+	position: absolute;
+	content: '';
+	top: 10px;
+	left: 15px;
+
+	display: block;
+
+	width: 17px;
+	height: 17px;
+
+	background: url(../images/ic_marker.svg) 50% 50% no-repeat;
+}
+
+.radio-icon__name
+{
+	font-size: 16px;
+    font-weight: 600;
+    color: var(--chernyy);
+    line-height: normal;
+    display: block;
+	text-transform: uppercase;
+}
+
+.radio-icon__adres
+{
+	display: block;
+	font-size: 14px;
+	line-height: 20px;
+	color: #737373;
+}
+
+input[type=radio]:checked + .radio-icon__box
+{
+	border-color: #2262B7;
+	box-shadow: none;
+}
+
+
+
 .checkbox + .checkbox
 {
 	margin-top: 10px;
@@ -4905,87 +4991,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 .modal-stock__choice
 {
 	margin-top: 35px;
-}
-
-.radio-icons
-{
-	margin: -5px 0 0 -20px;
-	align-items: stretch;
-    align-content: stretch;
-}
-
-.radio-icon
-{
-	margin: 20px 0 0 20px;
-	min-width: 207px;
-}
-
-.radio-icon input[type=radio]
-{
-    display: none;
-}
-
-.radio-icon__label
-{
-    position: relative;
-
-    display: block;
-
-    cursor: pointer;
-	height: 100%;
-}
-
-.radio-icon__box 
-{
-    min-height: 60px;
-	height: 100%;
-	border-radius: 15px;
-    border: 1px solid transparent;
-    padding: 10px 15px 10px 41px;
-	box-shadow: 0.94px 0.94px 7.59px #E9E9E9;
-    transition: border .2s linear, box-shadow .2s linear;
-    cursor: pointer;
-	position: relative;
-	display: block;
-}
-
-.radio-icon__box:before
-{
-	position: absolute;
-	content: '';
-	top: 10px;
-	left: 15px;
-
-	display: block;
-
-	width: 17px;
-	height: 17px;
-
-	background: url(../images/ic_marker.svg) 50% 50% no-repeat;
-}
-
-.radio-icon__name
-{
-	font-size: 16px;
-    font-weight: 600;
-    color: var(--chernyy);
-    line-height: normal;
-    display: block;
-	text-transform: uppercase;
-}
-
-.radio-icon__adres
-{
-	display: block;
-	font-size: 14px;
-	line-height: 20px;
-	color: #737373;
-}
-
-input[type=radio]:checked + .radio-icon__box
-{
-	border-color: #2262B7;
-	box-shadow: none;
 }
 
 .modal-stock__bot
