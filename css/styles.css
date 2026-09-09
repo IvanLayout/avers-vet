@@ -932,63 +932,79 @@ button
 .text-block .title
 {
 	font-weight: 500;
-	font-size: 40px;
+	font-size: 64px;
 	line-height: 1.3;
-	color: #3D322C;
-	font-family: var(--second-family);
-	text-transform: uppercase;
+	color: var(--chernyy);
 
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .text-block h2
 {
 	font-weight: 500;
-	font-size: 24px;
+	font-size: 40px;
 	line-height: 1.3;
-	color: #3D322C;
-	font-family: var(--second-family);
-	text-transform: uppercase;
+	color: var(--chernyy);
 
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .text-block * + h2{
-	margin-top: 64px;
+	/* margin-top: 64px; */
 }
 
 .text-block h3
 {
-	/* font-weight: 500;
-	font-size: 28px;
-	line-height: 1.3;
-	color: #1B2745;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 1.2;
+	color: var(--chernyy);
 
-    margin-bottom: 24px; */
+    /* margin-bottom: 24px; */
 }
 
 .text-block * + h3{
-	margin-top: 50px;
+	/* margin-top: 50px; */
 }
 
 .text-block h4
 {
-	/* font-weight: 500;
-	font-size: 20px;
+	font-weight: 500;
+	font-size: 24px;
 	line-height: 1.3;
-	color: #1B2745;
+	color: var(--chernyy);
 
-    margin-bottom: 10px; */
+    margin-bottom: 20px;
+}
+
+.text-block h4 span
+{
+	color: #2262B7;
 }
 
 .text-block * + h4{
-	margin-top: 50px;
+	/* margin-top: 50px; */
 }
 
 
 .text-block p
 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.text-block blockquote
+{
+	background: #F2F8FF;
+	border-radius: 10px;
+	padding: 8px 20px;
+	color: #2262B7;
+
+	margin-bottom: 30px;
+}
+
+.text-block p + blockquote
+{
+	margin-top: -6px;
 }
 
 .text-block img
@@ -996,57 +1012,57 @@ button
     display: block;
 
     max-width: 100%;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .text-block * + img
 {
-	margin-top: 30px;
+	/* margin-top: 30px; */
 }
 
 .text-block p a,
 .text-block ul a,
 .text-block ol a
 {
-    color: #B8956A;
+    /* color: #B8956A;
 
     text-decoration: none;
 
     border-bottom: 1px solid;
 
-    transition: border .2s linear;
+    transition: border .2s linear; */
 }
 
 @media (any-hover: hover)
 {
-    .text-block p a:hover,
+    /* .text-block p a:hover,
 	.text-block ul a:hover,
 	.text-block ol a:hover
     {
         border-color: transparent;
-    }
+    } */
 }
 
 .text-block ul
 {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	list-style: none;
 }
 
-.text-block * + ul
+.text-block h4 + ul
 {
-	margin-top: 22px;
+	margin-top: -4px;
 }
 
 .text-block ul li + li
 {
-	margin-top: 15px;
+	
 }
 
 .text-block ul li
 {
 	position: relative;
-	padding-left: 22px;
+	padding-left: 24px;
 }
 
 .text-block ul li::before
@@ -1054,7 +1070,7 @@ button
 	position: absolute;
 	content: '';
 	top: 9px;
-    left: 8px;
+    left: 10px;
 
 	display: block;
 
@@ -1062,37 +1078,18 @@ button
 	height: 3px;
 
 	border-radius: 50%;
-	background-color: #5A4A42;
+	background-color: #737373;
 }
 
 .text-block ol
 {
-    margin-left: 22px;
-	margin-bottom: 20px;
+    /* margin-left: 22px;
+	margin-bottom: 20px; */
 }
 
 .text-block ol li + li
 {
-	margin-top: 15px;
-}
-
-.text-block__slider
-{
-	margin-bottom: 30px;
-}
-
-.text-block * + .text-block__slider
-{
-	margin-top: 30px;
-}
-
-.text-block__item-img img
-{
-	margin-bottom: 0;
-	width: 100%;
-	max-width: none;
-	aspect-ratio: 1 / 1.227;
-	object-fit: cover;
+	/* margin-top: 15px; */
 }
 /*------------------
     Form elements
@@ -1629,13 +1626,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .select-wrap .nice-select .current.selected{
 	border-color: #A1C2E2;
-	color: #191A29;
+	color: var(--chernyy);
 }
 
 .select-wrap .nice-select.open .current
 {
     border-color: #2262B7;
-	color: #191A29;
+	color: var(--chernyy);
 }
 
 .select-wrap .nice-select .current:after
@@ -1717,7 +1714,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
     position: relative;
 
-    color: #191A29;
+    color: var(--chernyy);
     font-size: 16px;
     line-height: 1.3;
 
@@ -4198,7 +4195,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .review__name
 {
-	color: #191A29;
+	color: var(--chernyy);
 	font-size: 24px;
 	font-weight: 500;
 }
@@ -4291,7 +4288,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .review__all-btn
 {
-	color: #191A29;
+	color: var(--chernyy);
 	font-size: 12px;
 	font-weight: 600;
 	border-bottom: 1px solid currentColor;
@@ -4369,6 +4366,69 @@ input[type=checkbox]:checked + .checkbox__text::after
 	width: 100%;
 }
 
+
+/*------------
+    main-about
+------------*/
+
+.main-about__cols
+{
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.main-about__coll
+{
+	width: calc(50% - 10px);
+	position: relative;
+	background: #fff;
+	overflow: hidden;
+	border-radius: 60px;
+	padding: 50px 50px 115px;
+}
+
+.main-about__colr
+{
+	width: calc(50% - 10px);
+	position: relative;
+	overflow: hidden;
+	border-radius: 60px;
+}
+
+.main-about__img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.main-about__text-block
+{
+	margin-top: 20px;
+	max-width: 664px;
+}
+
+.main-about__text-block blockquote
+{
+	max-width: 639px;
+}
+
+.main-about__btn
+{
+	margin-top: 32px;
+}
+
+.main-about__btn .btn-blue__icon
+{
+	width: 21px;
+	height: 21px;
+	margin-top: -10px;
+}
 /*------------*/
 
 @media (any-hover: hover)
