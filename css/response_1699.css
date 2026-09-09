@@ -5,11 +5,75 @@
 		Commit
 	------------*/
 
+	.main-title
+	{
+		font-size: 38px;
+	}
+
+	.section-bg
+	{
+		padding: 40px;
+	}
+
 	.main-services__name,
 	.stocks__name,
 	.product__name,
-	.specialist__all-name
+	.specialist__all-name,
+	.help-banner__phone-number
 	{
 		font-size: 28px;
+	}
+
+	.stocks__item
+	{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.stocks__btns
+	{
+		gap: 20px;
+	}
+
+
+	.help-banner__coll
+	{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.help-banner__img
+	{
+		padding-left: 0;
+		justify-content: center;
+	}
+
+	.help-banner__colr
+	{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+
+	.surgery-serv__name,
+	.advantages__name,
+	.specialist__name,
+	.review__name
+	{
+		font-size: 22px;
+	}
+
+
+	.advantages__title
+	{
+		font-size: 60px;
+	}
+
+
+	.main-about__coll
+	{
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-bottom: 80px;
 	}
 }
