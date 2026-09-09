@@ -2358,7 +2358,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .slider-button-prev
 {
-    left: 0;
+    left: 10px;
 }
 
 .slider-button-prev._top
@@ -2371,7 +2371,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .slider-button-next
 {
-    right: 0;
+    right: 10px;
 }
 
 .slider-button-next._top
@@ -2926,12 +2926,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 	text-decoration: none;
 	background: #fff;
 	border-radius: 60px;
-	overflow: hidden;
 
 	width: calc(100%/3 - 20px);
 	margin: 20px 0 0 20px;
 
 	aspect-ratio: 1 / .7637;
+	height: auto;
 }
 
 .main-services__info
@@ -3004,6 +3004,9 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	width: 100%;
 	height: 100%;
+
+	overflow: hidden;
+	border-radius: 60px;
 }
 
 .main-services__img img
@@ -3049,11 +3052,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 .stocks__slider
 {
 	margin-top: 30px;
-}
-
-.stocks__wrap .slider-pagination
-{
-	display: none;
 }
 
 .stocks__grid._flex
@@ -3574,12 +3572,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 	text-decoration: none;
 	position: relative;
 	border-radius: 40px;
-	overflow: hidden;
+	
 	padding: 40px;
 
 	width: calc(100%/4 - 20px);
 	margin: 20px 0 0 20px;
 	aspect-ratio: 1 / 1.3586;
+	height: auto;
 
 	background: #fff;
 	transition: background .2s linear;
@@ -3633,6 +3632,9 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	width: 100%;
 	height: 100%;
+
+	overflow: hidden;
+	border-radius: 40px;
 }
 
 .product.product_big .product__img
