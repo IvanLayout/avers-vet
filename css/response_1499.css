@@ -4,6 +4,22 @@
 	/*------------
 		Commit
 	------------*/
+	.text-block h4
+	{
+		font-size: 20px;
+	}
+
+
+	.main-title 
+	{
+		font-size: 32px;
+	}
+
+
+	.first-section__bg
+	{
+		border-radius: 35px;
+	}
 
 	.first-section__title 
 	{
@@ -33,7 +49,15 @@
 	}
 
 
-	.main-services__item
+	.section-bg
+	{
+		border-radius: 35px;
+		padding: 30px;
+	}
+
+
+	.main-services__item,
+	.main-services__img
 	{
 		border-radius: 35px;
 	}
@@ -72,6 +96,8 @@
 	.stocks__item
 	{
 		border-radius: 35px;
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 
 	.stocks__price-box
@@ -82,5 +108,209 @@
 	.stocks__desc
 	{
 		margin-top: 20px;
+	}
+
+	.stocks__btns
+	{
+		margin-top: 25px;
+		padding-top: 25px;
+		gap: 15px;
+	}
+
+	.stocks__btn
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	.help-banner__bg
+	{
+		border-radius: 35px;
+	}
+
+	.help-banner__coll
+	{
+		width: calc(40% + 4px);
+	}
+
+	.help-banner__colr
+	{
+		width: calc(24% + 5px);
+	}
+
+
+	.surgery-serv__item
+	{
+		border-radius: 35px;
+		padding: 20px;
+	}
+
+	.surgery-serv__icon
+	{
+		border-radius: 15px;
+		width: 90px;
+		height: 90px;
+	}
+
+	.surgery-serv__name,
+	.advantages__name,
+	.specialist__name,
+	.review__name
+	{
+		font-size: 20px;
+	}
+
+
+	.product
+	{
+		border-radius: 35px;
+		padding: 25px;
+	}
+
+	.product__img,
+	.product_all::after
+	{
+		border-radius: 35px;
+	}
+
+	.product__info
+	{
+		padding: 30px;
+	}
+
+	.product__info-icon 
+	{
+		height: 70px;
+	}
+
+	.product__desc
+	{
+		margin-top: 12px;
+		font-size: 14px;
+	}
+
+	.product__arrow
+	{
+		left: 25px;
+		bottom: 25px;
+	}
+
+
+	.advantages__title 
+	{
+		font-size: 54px;
+	}
+
+	.advantages__item
+	{
+		border-radius: 25px;
+		padding: 25px;
+		max-width: 440px;
+	}
+
+	.advantages__icon
+	{
+		width: 90px;
+		height: 90px;
+		border-radius: 15px;
+		padding: 15px;
+	}
+
+
+	.specialist
+	{
+		border-radius: 20px;
+	}
+
+	.specialist__img
+	{
+		border-radius: 20px;
+	}
+
+	.specialist__location
+	{
+		top: 15px;
+		left: 15px;
+	}
+
+	.specialist__info
+	{
+		border-radius: 15px;
+	}
+
+	.specialist_all::after
+	{
+		border-radius: 20px;
+	}
+
+	.specialist__all-name
+	{
+		padding: 20px;
+	}
+
+	.specialist__arrow
+	{
+		left: 20px;
+		bottom: 20px;
+	}
+
+
+	.reviews__slider .slider-button-prev._top, 
+	.reviews__slider .slider-button-next._top 
+	{
+		top: -60px;
+	}
+
+
+	.review
+	{
+		border-radius: 20px;
+		padding: 20px;
+	}
+
+
+	.main-about__coll
+	{
+		border-radius: 35px;
+		padding: 30px 30px 50px;
+	}
+
+	.main-about__colr
+	{
+		border-radius: 35px;
+	}
+
+
+	.adresess__tab
+	{
+		border-radius: 20px;
+	}
+
+	.tabs__item
+	{
+		padding: 27px 20px;
+	}
+
+
+	.article__thumb
+	{
+		border-radius: 20px;
+	}
+
+	.article__name
+	{
+		margin-top: 10px;
+		font-size: 20px;
+	}
+
+	.article__desc
+	{
+		margin-top: 5px;
+	}
+
+	.article__tags
+	{
+		margin-top: 15px;
 	}
 }

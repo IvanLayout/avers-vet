@@ -5,6 +5,11 @@
 		Commit
 	------------*/
 
+	.text-block h4
+	{
+		font-size: 22px;
+	}
+
 	.first-section__title
 	{
 		font-size: 80px;
@@ -66,7 +71,8 @@
 	.surgery-serv__name,
 	.advantages__name,
 	.specialist__name,
-	.review__name
+	.review__name,
+	.article__name
 	{
 		font-size: 22px;
 	}
