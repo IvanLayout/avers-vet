@@ -29,7 +29,12 @@
 	}
 
 	.main-services__name,
-	.stocks__name
+	.stocks__name,
+	.product__name,
+	.specialist__all-name,
+	.adresess__title,
+	.adresess__tel,
+	.first-info__title
 	{
 		font-size: 22px;
 	}
@@ -57,8 +62,7 @@
 		height: 80px;
 	}
 
-	.surgery-serv__name, 
-	.advantages__name, 
+	.surgery-serv__name,
 	.specialist__name, 
 	.review__name,
 	.review__avatar-name,
