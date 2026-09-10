@@ -4216,6 +4216,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 40px;
 }
 
+.reviews__slider .slider-button-prev._top,
+.reviews__slider .slider-button-next._top
+{
+	top: -68px;
+}
+
 .review
 {
 	background: linear-gradient(180deg, #f5f9ff 0%, #f0f7ff 100%);

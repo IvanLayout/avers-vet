@@ -137,12 +137,21 @@ $(() => {
 					slidesPerView: 3
 				}
 			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
 			pagination: {
 				bulletActiveClass: 'slider-dot_active',
 				bulletClass: 'slider-dot',
 				clickableClass: 'slider-pagination-clickable',
 				el: '.slider-pagination',
 				clickable: true
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				}
 			}
 		})
 	}
