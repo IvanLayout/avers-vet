@@ -277,9 +277,11 @@ $(() => {
 		if( $(this).hasClass('_active') ) {
 			$(this).removeClass('_active')
 			$('.header__block').removeClass('_show')
+			$('body').removeClass('_look-heade')
 		} else {
 			$(this).addClass('_active')
 			$('.header__block').addClass('_show')
+			$('body').addClass('_look-heade')
 		}
 	})
 })

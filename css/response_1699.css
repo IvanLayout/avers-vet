@@ -1,5 +1,17 @@
 @media (max-width: 1699px)
 {
+	.header__block{
+		padding-bottom: 40px;
+	}
+
+	.header__block-bg{
+		padding: 40px;
+		height: calc(100vh - 175px);
+	}
+
+	.header__menu{
+		width: 20%;
+	}
 
 	/*------------
 		Commit

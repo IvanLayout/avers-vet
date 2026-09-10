@@ -1,6 +1,47 @@
 @media (max-width: 479px)
 {
+	.header{
+		padding-top: 14px;
+		padding-bottom: 19px;
+	}
+
+	.header__flex{
+		gap: 16px;
+	}
+
+	.header__logo{
+		width: auto;
+	}
+
+	.header__logo img{
+		height: 37px;
+	}
+
+	.header__info-btn{
+		width: 100%;
+	}
+
+	.header__burger{
+		width: 30px;
+		height: 30px;
+		border-radius: 7px;
+	}
 	
+	.header__burger::before{
+		background-size: 13px auto;
+	}
+
+	.header__burger::after{
+		background-size: 18px auto;
+	}
+
+	.header__block {
+		top: 70px;
+	}
+
+	.header__block-bg{
+		height: calc(100vh - 70px);
+	}
 	/*------------
 		Commit
 	------------*/

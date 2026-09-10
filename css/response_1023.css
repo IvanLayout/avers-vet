@@ -1,5 +1,88 @@
 @media (max-width: 1023px)
 {
+	.wrap{
+		padding-top: 100px;
+	}
+
+	._look-heade{
+		overflow: hidden;
+	}
+
+	.header{
+		position: absolute;
+		width: 100%;
+	}
+
+	._look-heade .header{
+		background: #fff;
+		position: fixed;
+	}
+
+	.header__logo{
+		width: auto;
+	}
+
+	.header__logo img{
+		height: 50px;
+	}
+
+	.header__block-flex{
+		flex-wrap: wrap;
+		padding-bottom: 20px;
+		gap: 20px;
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.header__block-coll{
+		order: -1;
+		width: 100%;
+		max-width: none;
+	}
+
+	.header__menu{
+		width: 100%;
+	}
+
+	.header__menu-item + .header__menu-item{
+		margin-top: 20px;
+	}
+
+	.header__block{
+		position: fixed;
+		left: 0;
+		top: 100px;
+		background: #fff;
+		padding: 0;
+	}
+
+	.header__block-bg{
+		height: calc(100vh - 100px);
+		padding: 0;
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	.header__block .header-search{
+		display: block;
+	}
+
+	.header-search{
+		width: 100%;
+		padding-top: 19px;
+		border-top: 1px solid rgba(34, 98, 183, 0.2);
+	}
+
+	.header__adreses-city{
+		margin-bottom: 5px;
+	}
+
+	.header__adreses-adres{
+		margin-bottom: 5px;
+	}
 	
 	/*------------
 		Commit
@@ -29,7 +112,15 @@
 
 	.btn-blue
 	{
-		line-height: 45px;
+		line-height: 40px;
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.btn-red{
+		line-height: 40px;
+		padding-left: 24px;
+		padding-right: 24px;
 	}
 
 

@@ -1,5 +1,28 @@
 @media (max-width: 1499px)
 {
+	.header__adreses{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.header__info{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.footer{
+		padding-bottom: 40px;
+	}
+
+
+	.main-form__wrap{
+		padding: 5% 0;
+	}
+
+	.main-form__bg{
+		width: 60%;
+		bottom: -16%;
+	}
 	
 	/*------------
 		Commit
@@ -15,10 +38,16 @@
 		font-size: 32px;
 	}
 
+	.header__block{
+		padding-bottom: 30px;
+	}
 
 	.header__block-bg
 	{
 		border-radius: 35px;
+		padding-left: 30px;
+		padding-right: 30px;
+		height: calc(100vh - 165px);
 	}
 
 	.header__adreses
