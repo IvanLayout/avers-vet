@@ -129,7 +129,7 @@ $(() => {
 					slidesPerView: 2,
 				},
 				'768': {
-					spaceBetween: 20,
+					spaceBetween: 15,
 					slidesPerView: 2
 				},
 				'1024': {
@@ -374,7 +374,8 @@ function stocksSlider(){
 					spaceBetween: 10,
 				},
 				'768': {
-					spaceBetween: 20,
+					spaceBetween: 15,
+					slidesPerView: 2
 				}
 			},
 		})

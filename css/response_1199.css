@@ -20,6 +20,32 @@
 		width: 140px;
 	}
 
+	.header-search__form-input
+	{
+		height: 50px;
+	}
+
+
+	.first-section__flex
+	{
+		padding-top: 50px;
+	}
+
+	.first-section__title 
+	{
+		font-size: 60px;
+	}
+
+	.first-info 
+	{
+		width: 360px;
+	}
+
+	.first-info__bg
+	{
+		padding: 25px 20px;
+	}
+
 
 	.main-services__name, 
 	.stocks__name

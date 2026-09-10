@@ -32,7 +32,8 @@
 	.help-banner__phone-number,
 	.adresess__title,
 	.adresess__tel,
-	.first-info__title
+	.first-info__title,
+	.header__info-title
 	{
 		font-size: 28px;
 	}
@@ -73,7 +74,9 @@
 	.specialist__name,
 	.review__name,
 	.article__name,
-	.review__avatar-name
+	.review__avatar-name,
+	.header__adreses-city,
+	.header__adreses-city
 	{
 		font-size: 22px;
 	}

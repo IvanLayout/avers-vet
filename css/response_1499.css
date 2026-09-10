@@ -16,6 +16,17 @@
 	}
 
 
+	.header__block-bg
+	{
+		border-radius: 35px;
+	}
+
+	.header__adreses
+	{
+		border-radius: 20px;
+	}
+
+
 	.first-section__bg
 	{
 		border-radius: 35px;
@@ -82,7 +93,8 @@
 	.help-banner__phone-number,
 	.adresess__title,
 	.adresess__tel,
-	.first-info__title
+	.first-info__title,
+	.header__info-title
 	{
 		font-size: 24px;
 	}
