@@ -21,6 +21,12 @@
 		border-radius: 35px;
 	}
 
+	.first-section__flex
+	{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
 	.first-section__title 
 	{
 		font-size: 70px;
@@ -156,7 +162,8 @@
 	.surgery-serv__name,
 	.advantages__name,
 	.specialist__name,
-	.review__name
+	.review__name,
+	.review__avatar-name
 	{
 		font-size: 20px;
 	}

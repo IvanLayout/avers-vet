@@ -3889,7 +3889,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	padding: 15px;
 
 	aspect-ratio: 1 / 1.349;
-	height: auto;
+	/* height: auto; */
 
 	display: flex;
 	flex-direction: column;
@@ -4182,6 +4182,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 	flex-direction: column;
 }
 
+.review__top
+{
+	align-items: center;
+	align-content: center;
+}
+
 .review__avatar
 {
 	width: 60px;
@@ -4367,6 +4373,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 32px;
 	border-top: 1px solid #E8F1F8;
 	justify-content: space-between;
+	align-items: center;
+	align-content: center;
 }
 
 .modal-review .review__bot

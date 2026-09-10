@@ -72,7 +72,8 @@
 	.advantages__name,
 	.specialist__name,
 	.review__name,
-	.article__name
+	.article__name,
+	.review__avatar-name
 	{
 		font-size: 22px;
 	}

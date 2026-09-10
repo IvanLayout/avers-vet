@@ -5,4 +5,105 @@
 		Commit
 	------------*/
 	
+	.first-section__title
+	{
+		font-size: 64px;
+	}
+
+	.first-info
+	{
+		width: 410px;
+	}
+
+	.first-section__mouse
+	{
+		bottom: 20px;
+	}
+
+
+	.main-services__info
+	{
+		padding-top: 24px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.main-services__name,
+	.stocks__name
+	{
+		font-size: 22px;
+	}
+
+	.main-services__arrow
+	{
+		left: 20px;
+		bottom: 20px;
+	}
+
+	.stocks__btns
+	{
+		justify-content: center;
+	}
+
+	.stocks__btn
+	{
+		width: 100%;
+	}
+
+
+	.surgery-serv__icon
+	{
+		width: 80px;
+		height: 80px;
+	}
+
+	.surgery-serv__name, 
+	.advantages__name, 
+	.specialist__name, 
+	.review__name,
+	.review__avatar-name,
+	.article__name
+	{
+		font-size: 18px;
+	}
+
+
+	.advantages__icon
+	{
+		width: 80px;
+		height: 80px;
+	}
+
+	.advantages__item
+	{
+		max-width: 380px;
+	}
+
+
+	.specialists__grid
+	{
+		--products_count: 3;
+	}
+
+	.specialist
+	{
+		aspect-ratio: 1 / 1.4;
+	}
+
+
+	.review__bot
+	{
+		margin-top: 20px;
+	}
+
+
+	.footer__coll 
+	{
+		width: 360px;
+	}
+
+	.footer__colr 
+	{
+		width: 410px;
+	}
 }
