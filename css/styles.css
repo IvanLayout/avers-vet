@@ -3864,9 +3864,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 .specialists__top
 {
 	margin-top: 30px;
-	border-radius: 15px;
-	background: #F4F9FF;
-	padding: 23px 30px;
 }
 
 .specialists__grid

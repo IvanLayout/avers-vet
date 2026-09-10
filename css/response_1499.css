@@ -5,6 +5,34 @@
 		Commit
 	------------*/
 
+	.first-section__title 
+	{
+		font-size: 70px;
+		line-height: 1.2;
+	}
+
+	.first-info
+	{
+		width: 430px;
+	}
+
+	.first-info__bg
+	{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.first-info__tel
+	{
+		font-size: 22px;
+	}
+
+	.first-info__adreses 
+	{
+		margin-top: 50px;
+	}
+
+
 	.main-services__item
 	{
 		border-radius: 35px;
@@ -21,7 +49,10 @@
 	.stocks__name,
 	.product__name,
 	.specialist__all-name,
-	.help-banner__phone-number
+	.help-banner__phone-number,
+	.adresess__title,
+	.adresess__tel,
+	.first-info__title
 	{
 		font-size: 24px;
 	}

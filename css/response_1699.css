@@ -5,6 +5,11 @@
 		Commit
 	------------*/
 
+	.first-section__title
+	{
+		font-size: 80px;
+	}
+
 	.main-title
 	{
 		font-size: 38px;
@@ -19,7 +24,10 @@
 	.stocks__name,
 	.product__name,
 	.specialist__all-name,
-	.help-banner__phone-number
+	.help-banner__phone-number,
+	.adresess__title,
+	.adresess__tel,
+	.first-info__title
 	{
 		font-size: 28px;
 	}
@@ -75,5 +83,10 @@
 		padding-left: 40px;
 		padding-right: 40px;
 		padding-bottom: 80px;
+	}
+
+	.product__info-icon
+	{
+		height: 90px;
 	}
 }
