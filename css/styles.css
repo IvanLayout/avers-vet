@@ -3978,7 +3978,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	margin-top: 10px;
 	font-size: 14px;
-	line-height: 20px;
 }
 
 .specialist__bot
@@ -4908,17 +4907,22 @@ input[type=checkbox]:checked + .checkbox__text::after
 	position: relative;
 	color: #2262B7;
 	text-decoration: none;
+	
+}
+
+.footer__tel a span
+{
 	border-bottom: 1px solid currentColor;
 	transition: border .2s linear;
 }
 
 @media (any-hover: hover){
-	.footer__tel a:hover{
+	.footer__tel a:hover span{
 		border-bottom-color: transparent;
 	}
 }
 
-.footer__tel a:active{
+.footer__tel a:active span{
 	border-bottom-color: transparent;
 }
 

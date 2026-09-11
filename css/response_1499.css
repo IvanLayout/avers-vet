@@ -200,6 +200,11 @@
 		height: 90px;
 	}
 
+	.surgery-serv__info 
+	{
+		width: calc(100% - 110px);
+	}
+
 	.surgery-serv__name,
 	.advantages__name,
 	.specialist__name,

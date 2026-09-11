@@ -63,6 +63,11 @@
 		height: 80px;
 	}
 
+	.surgery-serv__info 
+	{
+		width: calc(100% - 100px);
+	}
+
 	.surgery-serv__name,
 	.specialist__name, 
 	.review__name,

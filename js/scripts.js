@@ -406,13 +406,13 @@ function specialistsHeight(context, step) {
 	let finish   = step
 	let specialists = context.find('.specialist')
 
-	specialists.height('auto')
+	// specialists.height('auto')
 	specialists.find('.specialist__name').height('auto')
 	specialists.find('.specialist__speciality').height('auto')
 	specialists.find('.specialist__bot').height('auto')
 
 	for (let i = 0; i < specialists.length; i++) {
-		setHeight(specialists.slice(start, finish))
+		// setHeight(specialists.slice(start, finish))
 		setHeight(specialists.slice(start, finish).find('.specialist__name'))
 		setHeight(specialists.slice(start, finish).find('.specialist__speciality'))
 		setHeight(specialists.slice(start, finish).find('.specialist__bot'))

@@ -108,6 +108,11 @@
 	{
 		font-size: 26px;
 	}
+
+	.main-title__mob-none
+	{
+		display: none;
+	}
 	
 	.main-services .cont
 	{
@@ -125,7 +130,6 @@
 		width: calc(100% / 2 - 10px);
 		margin-top: 10px;
 		margin-left: 10px;
-		/* aspect-ratio: 1 / 1.4905; */
 		aspect-ratio: 1 / 1.4;
 	}
 
@@ -144,6 +148,11 @@
 		font-size: 18px;
 	}
 
+
+	.stocks__item
+	{
+		border-radius: 20px;
+	}
 
 	.stocks .cont,
 	.help-banner .cont
@@ -227,6 +236,7 @@
 		width: calc(100% / 1 - 10px);
 		margin-top: 10px;
 		margin-left: 10px;
+		border-radius: 20px;
 	}
 
 
@@ -247,6 +257,12 @@
 		width: calc(100% / 2 - 10px);
 		margin-top: 10px;
 		margin-left: 10px;
+		border-radius: 20px;
+	}
+
+	.product_all::after
+	{
+		border-radius: 20px;
 	}
 
 	.product__name 
@@ -381,6 +397,11 @@
 	}
 
 
+	.main-about__colr
+	{
+		border-radius: 20px;
+	}
+
 	.main-about__btn
 	{
 		margin-top: 20px;
@@ -488,5 +509,10 @@
 		width: 100%;
 		padding-top: 20px;
 		border-top: 1px solid rgba(34, 98, 183, .2);
+	}
+	
+	.footer__adres-name
+	{
+		font-size: 14px;
 	}
 }
