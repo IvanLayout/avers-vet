@@ -1,6 +1,12 @@
 @media (max-width: 1319px)
 {
-	
+	.advantages__bg-img{
+		padding-bottom: 50px;
+	}
+
+	.advantages__items{
+		margin-top: 50px;
+	}
 	/*------------
 		Commit
 	------------*/
@@ -82,11 +88,6 @@
 	{
 		width: 80px;
 		height: 80px;
-	}
-
-	.advantages__item
-	{
-		max-width: 380px;
 	}
 
 

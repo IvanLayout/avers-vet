@@ -42,6 +42,21 @@
 	.header__block-bg{
 		height: calc(100vh - 70px);
 	}
+
+	
+	.advantages .cont{
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		align-content: flex-end;
+		flex-wrap: wrap;
+	}
+
+	.advantages__bg-img{
+		width: 450px;
+		margin-left: -38px;
+		margin-right: -38px;
+	}
 	/*------------
 		Commit
 	------------*/

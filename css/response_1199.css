@@ -58,6 +58,11 @@
 		padding-bottom: 20px;
 	}
 
+	.advantages__bg img{
+		width: 80%;
+		max-width: 800px;
+	}
+
 	/*------------
 		Commit
 	------------*/
