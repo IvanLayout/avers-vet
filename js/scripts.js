@@ -74,8 +74,8 @@ $(() => {
 					slidesPerView: 1,
 				},
 				'480': {
-					spaceBetween: 16,
-					slidesPerView: 2,
+					spaceBetween: 10,
+					slidesPerView: 1,
 				},
 				'768': {
 					spaceBetween: 15,
