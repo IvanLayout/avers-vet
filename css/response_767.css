@@ -70,5 +70,320 @@
 	/*------------
 		Commit
 	------------*/
+
+	.text-block h4
+	{
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+
+	.text-block p
+	{
+		margin-bottom: 15px;
+	}
+
+	.text-block blockquote
+	{
+		margin-bottom: 20px;
+		padding: 10px;
+	}
+
+	.text-block ul li
+	{
+		padding-left: 20px;
+	}
+
+	.text-block ul li::before
+	{
+		top: 7px;
+		left: 9px
+	}
+
+	._marg
+	{
+		margin-top: 35px;
+	}
+
+	.main-title
+	{
+		font-size: 26px;
+	}
 	
+	.main-services .cont
+	{
+		padding: 0;
+	}
+
+	.main-services__grid 
+	{
+		margin-top: -10px;
+		margin-left: -10px;
+	}
+
+	.main-services__item
+	{
+		width: calc(100% / 2 - 10px);
+		margin-top: 10px;
+		margin-left: 10px;
+		/* aspect-ratio: 1 / 1.4905; */
+		aspect-ratio: 1 / 1.4;
+	}
+
+	.main-services__info
+	{
+		padding-bottom: 24px;
+	}
+
+	.main-services__arrow
+	{
+		display: none;
+	}
+
+	.main-services__name
+	{
+		font-size: 18px;
+	}
+
+
+	.stocks .cont,
+	.help-banner .cont
+	{
+		padding: 0;
+	}
+
+
+	.help-banner__coll
+	{
+		padding: 25px 20px 0;
+	}
+
+	.help-banner__desc
+	{
+		margin-top: 16px;
+	}
+
+	.symptoms_marg
+	{
+		margin-top: 14px;
+	}
+
+	.symptoms__item
+	{
+		line-height: 30px;
+		padding: 0 10px;
+	}
+
+	.symptoms__icon
+	{
+		height: 20px;
+	}
+
+	.help-banner__note
+	{
+		margin-top: 30px;
+		font-size: 12px;
+		padding-bottom: 24px;
+		border-bottom: 1px solid rgba(255, 255, 255, .3);
+	}
+
+	.help-banner__colr
+	{
+		padding: 24px 20px;
+	}
+
+	.help-banner__box
+	{
+		margin-top: 0;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.help-banner__phone
+	{
+		display: inline-block;
+	}
+
+	.help-banner__box-btns
+	{
+		margin-top: 16px;
+		width: 100%;
+		max-width: 100%;
+	}
+
+
+	.surgery-serv .cont
+	{
+		padding: 0;
+	}
+
+	.surgery-serv__grid 
+	{
+		margin-left: -10px;
+		margin-top: 7px;
+	}
+
+	.surgery-serv__item
+	{
+		width: calc(100% / 1 - 10px);
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+
+	.products .cont
+	{
+		padding: 0;
+	}
+
+	.products__grid
+	{
+		margin-left: -10px;
+		margin-top: 7px;
+	}
+
+	.product, 
+	.product.product_big 
+	{
+		width: calc(100% / 2 - 10px);
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	.product__name 
+	{
+		font-size: 18px;
+	}
+
+
+	.advantages .cont
+	{
+		padding: 0;
+	}
+
+	.advantages__title 
+	{
+		font-size: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.advantages__items + .advantages__items
+	{
+		margin-top: 10px;
+	}
+
+	.advantages__item 
+	{
+		width: calc(50% - 5px);
+		padding: 20px;
+	}
+
+	.advantages__name
+	{
+		font-size: 18px;
+	}
+
+
+	.specialists .cont
+	{
+		padding: 0;
+	}
+
+	.specialists__grid
+	{
+		margin-left: -10px;
+	}
+
+	.specialist 
+	{
+		width: calc(100% / var(--products_count) - 10px);
+		margin-top: 10px;
+		margin-left: 10px;
+		padding: 5px;
+	}
+
+	.specialist__location 
+	{
+		top: 10px;
+		left: 10px;
+	}
+
+	.specialist__info
+	{
+		padding: 10px 10px 13px;
+	}
+
+	.specialist__speciality
+	{
+		font-size: 12px;
+		margin-top: 5px;
+	}
+
+	.specialist__bot
+	{
+		display: none;
+	}
+
+	.specialist__all-name
+	{
+		font-size: 18px;
+	}
+
+
+	.reviews .cont
+	{
+		padding: 0;
+	}
+
+	.reviews__slider
+	{
+		margin-top: 15px;
+	}
+
+	.review-rating 
+	{
+		margin-top: 1px;
+	}
+
+	.review__pet-info::before
+	{
+		height: 14px;
+	}
+
+	.review__box-btn
+	{
+		margin-top: 12px;
+	}
+
+	.review__all-btn
+	{
+		border-bottom: none;
+	}
+
+	.review__bot
+	{
+		margin-top: 16px;
+	}
+
+	.review__btn-video
+	{
+		text-transform: none;
+	}
+
+	.reviews__btn > *
+	{
+		width: 100%;
+	}
+
+	.review__desc
+	{
+		margin-top: 18px;
+	}
+
+
+	.main-about__btn
+	{
+		margin-top: 20px;
+		width: 100%;
+	}
 }

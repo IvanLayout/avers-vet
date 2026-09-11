@@ -78,6 +78,10 @@ $(() => {
 					slidesPerView: 2,
 				},
 				'768': {
+					spaceBetween: 15,
+					slidesPerView: 2,
+				},
+				'1024': {
 					spaceBetween: 20,
 					slidesPerView: 3,
 				}
@@ -125,8 +129,8 @@ $(() => {
 					slidesPerView: 1,
 				},
 				'480': {
-					spaceBetween: 20,
-					slidesPerView: 2,
+					spaceBetween: 10,
+					slidesPerView: 1,
 				},
 				'768': {
 					spaceBetween: 15,
@@ -369,9 +373,11 @@ function stocksSlider(){
 			breakpoints: {
 				'320': {
 					spaceBetween: 10,
+					slidesPerView: 1
 				},
 				'480': {
 					spaceBetween: 10,
+					slidesPerView: 1
 				},
 				'768': {
 					spaceBetween: 15,

@@ -88,6 +88,11 @@
 		Commit
 	------------*/
 
+	.text-block ul li::before
+	{
+		top: 8px;
+	}
+
 	.main-title
 	{
 		font-size: 30px;
@@ -119,6 +124,13 @@
 
 	.btn-red{
 		line-height: 40px;
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.btn-border
+	{
+		line-height: 38px;
 		padding-left: 24px;
 		padding-right: 24px;
 	}
@@ -174,6 +186,29 @@
 		margin-top: 17px;
 	}
 
+	.stocks__btn-more
+	{
+		border-bottom: none;
+		padding-right: 20px;
+	}
+
+	.stocks__btn-more::after
+	{
+		position: absolute;
+		content: '';
+		top: 50%;
+		right: 0;
+		
+		display: block;
+
+		width: 14px;
+		height: 8px;
+
+		margin-top: -5px;
+
+		background: url(../images/ic_arrow2.svg) 50% 50% no-repeat;
+	}
+
 
 	.surgery-serv__grid
 	{
@@ -205,8 +240,8 @@
 	.product__desc
 	{
 		font-size: 12px;
-		line-height: 30px;
 		margin-top: 10px;
+		padding: 9px 14px 7px;
 	}
 
 
@@ -247,10 +282,15 @@
 	}
 
 
-	.reviews__slider .slider-button-prev,
-	.reviews__slider .slider-button-next
+	.slider-button-prev,
+	.slider-button-next
 	{
 		display: none;
+	}
+
+	.swiper_visible
+	{
+		margin-top: 20px;
 	}
 
 	.reviews__head
@@ -342,10 +382,28 @@
 		border-radius: 35px;
 	}
 
+	.main-about .cont
+	{
+		padding: 0;
+	}
+
+	.main-about__title-mob
+	{
+		display: block;
+	}
+
+	.main-about__cols
+	{
+		margin-top: 15px;
+	}
+
 	.main-about__coll
 	{
 		width: 100%;
 		order: 2;
+		padding: 0;
+		margin-top: 15px;
+		border-radius: 0;
 	}
 
 	.main-about__colr
@@ -357,5 +415,83 @@
 	.main-about__img
 	{
 		position: relative;
+	}
+
+	.main-about__coll .main-title
+	{
+		display: none;
+	}
+
+	.main-about__text-block
+	{
+		margin-top: 0;
+	}
+
+
+	.help-banner__abs,
+	.help-banner__abs2
+	{
+		display: none;
+	}
+
+	.help-banner__coll,
+	.help-banner__colr
+	{
+		width: 100%;
+	}
+
+	.help-banner__colc
+	{
+		display: none;
+	}
+
+	.help-banner__btn-bord
+	{
+		line-height: 38px;
+	}
+
+	.help-banner__phone-number
+	{
+		font-size: 22px;
+	}
+
+	.help-banner__phone-number a
+	{
+		padding-left: 34px;
+	}
+
+	.help-banner__phone-number a::before
+	{
+		width: 22px;
+		height: 23px;
+		margin-top: -10px;
+	}
+
+
+	.adresess__coll,
+	.adresess__colr
+	{
+		width: calc(50% - 7.5px);
+	}
+
+	.tabs__item + .tabs__item
+	{
+		margin-top: 15px;
+	}
+
+
+	.main-form__wrap
+	{
+		padding-bottom: 30%;
+	}
+
+	.main-form__wrap-box 
+	{
+		width: 100%;
+	}
+
+	.main-form__bg
+	{
+		width: 80%;
 	}
 }

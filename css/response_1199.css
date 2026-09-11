@@ -126,7 +126,7 @@
 
 	.section-bg
 	{
-		padding: 20px;
+		padding: 25px 20px;
 	}
 
 
@@ -244,11 +244,26 @@
 		width: 20px;
 		height: 10px;
 	}
+	
+
+	.main-form__bg
+	{
+		right: 0;
+	}
+
+	.main-form__wrap-box
+	{
+		width: 63%;
+	}
 
 
-	.footer__coll,
-	.footer__colr
+	.footer__coll
 	{
 		width: 330px;
+	}
+
+	.footer__colr
+	{
+		width: 350px;
 	}
 }
