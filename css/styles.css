@@ -4809,15 +4809,15 @@ input[type=checkbox]:checked + .checkbox__text::after
 	position: relative;
 }
 
-.main-form__wrap-box{
+.main-form__box{
 	width: calc(55% + 2px);
 	position: relative;
 	z-index: 1;
 }
 
-.main-form__form
+.main-form__main-title
 {
-	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .main-form__form .form__input
@@ -4826,11 +4826,33 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 
-.request-sent
+.form-success
 {
-	text-align: center;
-
 	display: none;
+}
+
+.main-form__form._send + .form-success{
+	display: flex;
+}
+
+.main-form__form._send{
+	display: none;
+}
+
+.main-form .form__line{
+	margin-bottom: 10px;
+}
+
+.request-sent{
+	text-align: center;
+	max-width: 786px;
+	width: 80%;
+	flex-direction: column;
+}
+
+.request-sent__box{
+	width: 100%;
+	margin: auto;
 }
 
 .request-sent__icon
@@ -4839,30 +4861,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 	height: 90px;
 	margin: 0 auto 16px;
 
-	background: #fff;
+	background: #fff url(../images/ic_check_big.svg) 50% 50% no-repeat;
 	display: block;
 
 	padding: 10px;
 	border-radius: 32px;
 	position: relative;
-}
-
-.request-sent__icon::after
-{
-	position: absolute;
-	content: '';
-	top: 50%;
-	left: 50%;
-
-	display: block;
-
-	width: 34px;
-	height: 26px;
-
-	margin-top: -13px;
-	margin-left: -17px;
-
-	background: url(../images/ic_check_big.svg) 50% 50% no-repeat;
 }
 
 .request-sent__icon img

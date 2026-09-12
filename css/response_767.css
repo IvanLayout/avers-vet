@@ -510,14 +510,13 @@
 	}
 
 
+	.main-form__main-title{
+		margin-bottom: 20px;
+	}
+
 	.main-form__wrap 
 	{
 		padding-bottom: 55%;
-	}
-
-	.main-form__form
-	{
-		margin-top: 20px;
 	}
 
 	.form__flex .form__line 

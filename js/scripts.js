@@ -289,6 +289,23 @@ $(() => {
 			if (_self.val() > maximum) _self.val(maximum)
 		})
 	})
+
+	$('body').on('submit', '.form-ajax', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: $(this).data('content'),
+			type: 'inline'
+		}])
+	})
+
+	$('body').on('submit', '.main-form__form', function (e) {
+		e.preventDefault()
+
+		$(this).addClass('_send')
+	})
 });
 
 
@@ -301,6 +318,10 @@ $(window).on('load', () => {
 		$('.specialists__grid').each(function() {
 			specialistsHeight($(this), parseInt($(this).css('--products_count')))
 		})
+	}
+
+	if ($('.main-form').length) {
+		setRequestSentHeight()
 	}
 });
 
@@ -338,6 +359,10 @@ $(window).on('resize', () => {
 		$('.specialists__grid').each(function() {
 			specialistsHeight($(this), parseInt($(this).css('--specialists_count')))
 		})
+	}
+
+	if ($('.main-form').length) {
+		setRequestSentHeight()
 	}
 });
 
@@ -420,4 +445,26 @@ function specialistsHeight(context, step) {
 		start  = start + step
 		finish = finish + step
 	}
+}
+
+function setRequestSentHeight() {
+	$('.main-form').each(function() {
+		const $mainForm = $(this);
+		const $form = $mainForm.find('.main-form__form');
+		const $requestSent = $mainForm.find('.request-sent');
+
+		// Скидаємо попередні значення перед вимірюванням
+		$requestSent.css({
+			height: '',
+			'min-height': ''
+		});
+
+		const formHeight = $form.outerHeight();
+
+		if ($form.hasClass('_send')) {
+			$requestSent.css('min-height', formHeight);
+		} else {
+			$requestSent.css('height', formHeight);
+		}
+	});
 }

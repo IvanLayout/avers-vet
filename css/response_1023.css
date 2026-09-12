@@ -542,7 +542,7 @@
 		padding-bottom: 30%;
 	}
 
-	.main-form__wrap-box 
+	.main-form__box 
 	{
 		width: 100%;
 	}
@@ -550,5 +550,16 @@
 	.main-form__bg
 	{
 		width: 80%;
+	}
+
+	.request-sent{
+		width: 100%;
+		max-width: none;
+	}
+
+	.request-sent__icon{
+		width: 40px;
+		height: 40px;
+		background-size: 27px auto;
 	}
 }
