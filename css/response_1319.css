@@ -38,6 +38,14 @@
 	.first-section__coll{
 		padding-bottom: 40px;
 	}
+
+	.header-search__box{
+		padding: 20px;
+	}
+
+	.specialists__top{
+		padding: 20px;
+	}
 	/*------------
 		Commit
 	------------*/

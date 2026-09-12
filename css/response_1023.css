@@ -562,4 +562,46 @@
 		height: 40px;
 		background-size: 27px auto;
 	}
+
+	.specialists__top{
+		flex-wrap: wrap;
+		padding: 0;
+		background: none;
+		border-radius: 0;
+		margin-top: 20px;
+		gap: 15px;
+	}
+
+	.specialists__search{
+		order: -1;
+		width: 100%;
+	}
+
+	.specialists__search-open{
+		display: none;
+	}
+
+	.specialists__search-modal{
+		position: relative;
+		width: 100%;
+		visibility: visible;
+		pointer-events: auto;
+		opacity: 1;
+	}
+
+	.form-search .form-search__input{
+		border-color: #A1C2E2;
+	}
+
+	.sorting__form{
+		gap: 15px;
+	}
+
+	.sorting__item{
+		width: calc(50% - 15px/2);
+	}
+
+	.sorting__form .select-wrap .nice-select .current{
+		border-color: #A1C2E2;
+	}
 }

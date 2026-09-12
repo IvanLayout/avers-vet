@@ -67,6 +67,28 @@
 	.header__tel-desc{
 		font-size: 10px;
 	}
+
+	.specialists__top{
+		margin-top: 15px;
+		gap: 10px;
+	}
+
+	.sorting__form{
+		gap: 10px;
+	}
+
+	.sorting__item{
+		width: calc(50% - 10px/2);
+	}
+
+	.form-search .form-search__input{
+		height: 40px;
+		border-radius: 5px;
+		font-size: 12px;
+		padding-left: 42px;
+		background-size: 18px auto;
+		background-position: 14px 50%;
+	}
 	/*------------
 		Commit
 	------------*/
