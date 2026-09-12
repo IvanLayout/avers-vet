@@ -164,6 +164,21 @@
 	.help-banner__coll
 	{
 		padding: 25px 20px 0;
+		width: 100%;
+	}
+
+	.help-banner__box-btns{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+
+	.help-banner__box-btn{
+		margin: 0;
+		width: calc(50% - 8px)
 	}
 
 	.help-banner__desc
@@ -197,7 +212,8 @@
 
 	.help-banner__colr
 	{
-		padding: 24px 20px;
+		padding: 24px 20px 25px;
+		width: 100%;
 	}
 
 	.help-banner__box

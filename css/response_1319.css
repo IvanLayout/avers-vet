@@ -7,6 +7,37 @@
 	.advantages__items{
 		margin-top: 50px;
 	}
+
+
+	.help-banner__colc{
+		display: none;
+	}
+
+	.help-banner__coll{
+		width: 60%;
+	}
+
+	.help-banner__colr{
+		width: 40%;
+		justify-content: flex-end;
+	}
+
+	.help-banner__abs{
+		display: none;
+	}
+
+	.help-banner__abs2{
+		display: none;
+	}
+
+
+	.first-section__flex{
+		padding-top: 80px;
+	}
+
+	.first-section__coll{
+		padding-bottom: 40px;
+	}
 	/*------------
 		Commit
 	------------*/

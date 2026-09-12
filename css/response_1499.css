@@ -24,6 +24,10 @@
 		bottom: -16%;
 	}
 	
+
+	.first-section__mouse{
+		left: 30px;
+	}
 	/*------------
 		Commit
 	------------*/
@@ -178,12 +182,26 @@
 
 	.help-banner__coll
 	{
-		width: calc(40% + 4px);
+		width: calc(39% + 4px);
+		padding-right: 16px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 
 	.help-banner__colr
 	{
-		width: calc(24% + 5px);
+		width: calc(25% + 5px);
+		padding-left: 16px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.help-banner__note{
+		margin-top: 30px;
+	}
+
+	.symptoms__item{
+		padding: 0 13px;
 	}
 
 

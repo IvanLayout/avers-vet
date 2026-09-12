@@ -63,6 +63,27 @@
 		max-width: 800px;
 	}
 
+
+	.help-banner__coll{
+		width: 66%;
+	}
+
+	.help-banner__colr{
+		width: 34%;
+	}
+
+	.first-section__mouse{
+		left: 20px;
+	}
+
+	.first-section__coll {
+		padding-bottom: 50px;
+	}
+
+	.first-info__adreses {
+		margin-top: 30px;
+	}
+
 	/*------------
 		Commit
 	------------*/
@@ -91,6 +112,9 @@
 	.first-section__flex
 	{
 		padding-top: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 30px;
 	}
 
 	.first-section__title 
