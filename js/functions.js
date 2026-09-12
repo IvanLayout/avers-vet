@@ -143,6 +143,12 @@ $(() => {
 			$(this).addClass('_active')
 			$(activeTab).addClass('_active')
 			$(`.tab-content[data-id='${activeTab}']`).addClass('_active')
+
+			if ( $(this).closest('.tabs__item').length ){
+				parent.find('.tabs__item').removeClass('_active')
+
+				$(this).closest('.tabs__item').addClass('_active')
+			}
 		}
 	})
 

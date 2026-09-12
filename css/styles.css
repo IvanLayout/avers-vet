@@ -4629,11 +4629,21 @@ input[type=checkbox]:checked + .checkbox__text::after
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	min-height: 290px;
+	height: auto;
+	aspect-ratio: 1/.326;
+	min-height: 190px;
+	width: 100%;
 }
 
 .tabs__item + .tabs__item{
 	margin-top: 20px;
+}
+
+.tabs__item-content{
+	pointer-events: none;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 }
 
 .adresess__tab{
@@ -4645,17 +4655,20 @@ input[type=checkbox]:checked + .checkbox__text::after
 	background: #fff;
 	border-radius: 40px;
 	border: 1px solid transparent;
-	transition: border .2s linear;
+	transition: border .2s linear, color .2s linear;
+	font-size: 0;
 }
 
 @media (any-hover: hover){
 	.adresess__tab:hover{
+		color: #2262B7;
 		border-color: #2262B7;
 	}
 }
 
 .adresess__tab._active,
 .adresess__tab:active{
+	color: #2262B7;
 	border-color: #2262B7;
 }
 

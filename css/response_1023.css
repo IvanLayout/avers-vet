@@ -115,6 +115,32 @@
 	.swiper-slide.stocks__item{
 		height: auto;
 	}
+
+
+	.tabs__item{
+		padding: 20px;
+	}
+
+	.adresess__title{
+		font-size: 18px;
+	}
+
+	.adresess__tel{
+		font-size: 18px;
+	}
+
+
+	.footer__colr{
+		width: 100%;
+	}
+
+	.footer__menu{
+		width: 35%;
+	}
+
+	.footer__copy br{
+		display: none;
+	}
 	/*------------
 		Commit
 	------------*/

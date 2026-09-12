@@ -425,15 +425,88 @@
 	}
 
 
+	.adresess__flex{
+		position: relative;
+		margin-top: 20px;
+	}
+
 	.adresess__coll
 	{
 		width: 100%;
-		height: 200px;
+		height: 688px;
+		order: 2;
+		margin-top: 30px;
 	}
 
 	.adresess__colr
 	{
 		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.tabs__item{
+		width: calc(50% - 8px);
+		position: static;
+		min-height: 1px;
+		aspect-ratio: auto;
+		padding: 0;
+	}
+	
+	.tabs__item + .tabs__item{
+		margin-top: 0;
+	}
+
+	.adresess__tab{
+		position: relative;
+		height: auto;
+		border-color: rgba(25, 26, 41, 0.3);
+
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 38px;
+		color: var(--chernyy);
+		background: transparent;
+	}
+
+	.tabs__item-content{
+		position: absolute;
+		left: 20px;
+		bottom: 20px;
+		width: calc(100% - 40px);
+
+		border-radius: 20px;
+		background: #fff;
+		border: 2px solid #2262B7;
+		padding: 18px;
+		min-height: 192px;
+
+		display: none;
+	}
+
+	.tabs__item._active .tabs__item-content{
+		display: flex;
+	}
+
+	.adresess__time {
+		width: 60px;
+		height: 27px;
+		padding: 6px;
+	}
+
+	.adresess__title{
+		font-size: 20px;
+	}
+
+	.adresess__sity{
+		margin-top: 6px;
+	}
+
+	.adresess__tel{
+		font-size: 16px;
 	}
 
 

@@ -353,6 +353,10 @@
 	}
 
 
+	.map{
+		border-radius: 35px;
+	}
+
 	.adresess__tab
 	{
 		border-radius: 20px;
