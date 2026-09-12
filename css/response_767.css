@@ -352,6 +352,10 @@
 		border-radius: 20px;
 	}
 
+	.product__img, .product_all::after{
+		border-radius: 20px;
+	}
+
 	.product_all::after
 	{
 		border-radius: 20px;
