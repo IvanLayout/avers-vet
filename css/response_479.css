@@ -1,5 +1,9 @@
 @media (max-width: 479px)
 {
+	.wrap{
+		padding-top: 70px;
+	}
+
 	.header{
 		padding-top: 14px;
 		padding-bottom: 19px;
@@ -73,6 +77,24 @@
 
 	.sorting__item{
 		width: 100%;
+	}
+
+	.first-section__bg{
+		margin-left: -20px;
+		margin-right: -20px;
+		width: calc(100% + 40px);
+	}
+
+	.first-section__globaltitle{
+		max-width: 188px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.first-section__desc{
+		max-width: 295px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	/*------------
 		Commit

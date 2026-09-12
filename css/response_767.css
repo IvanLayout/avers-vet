@@ -89,6 +89,60 @@
 		background-size: 18px auto;
 		background-position: 14px 50%;
 	}
+
+	.first-section__bg{
+		background: url(../images/tmp/banner_bg_mob.jpg) 50%/cover no-repeat;
+	}
+
+	.first-section__flex{
+		padding-bottom: 3px;
+		min-height: 1px;
+		align-items: flex-start;
+		align-content: flex-start;
+	}
+
+	.first-section__globaltitle{
+		padding-left: 0;
+		font-weight: 400;
+		color: var(--chernyy);
+	}
+
+	.first-section__globaltitle::before{
+		display: none;
+	}
+
+	.first-section__desc{
+		max-width: 428px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.first-section__btns{
+		justify-content: center;
+	}
+	
+	.first-section__video{
+		position: relative;
+		border-radius: 0 0 35px 35px;
+		height: auto;
+		aspect-ratio: 1/1.25;
+		-webkit-mask-image: linear-gradient(
+			to bottom,
+			transparent 0%,
+			#000 5%
+		);
+
+		mask-image: linear-gradient(
+			to bottom,
+			transparent 0%,
+			#000 5%
+		);
+	}
+
+	.first-section__coll{
+		width: 100%;
+		text-align: center;
+	}
 	/*------------
 		Commit
 	------------*/

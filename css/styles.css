@@ -2702,6 +2702,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	align-content: stretch;
 	position: relative;
 	padding: 130px 50px 50px 50px;
+	z-index: 1;
 }
 
 .first-section__coll{
@@ -2900,6 +2901,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
+	z-index: 2;
 }
 
 

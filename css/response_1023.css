@@ -141,6 +141,32 @@
 	.footer__copy br{
 		display: none;
 	}
+
+	.first-section__mouse{
+		display: none;
+	}
+	
+	.first-info{
+		display: none;
+	}
+
+	.first-section__flex{
+		padding-bottom: 50px;
+	}
+
+	.first-section__coll{
+		padding-bottom: 0;
+		width: 350px;
+	}
+
+	.first-section__title {
+		font-size: 48px;
+	}
+
+	.first-section__btns{
+		margin-top: 24px;
+		gap: 10px;
+	}
 	/*------------
 		Commit
 	------------*/
