@@ -448,4 +448,53 @@
 		width: 50px;
 		height: 20px;
 	}
+
+
+	.modal__title
+	{
+		font-size: 20px;
+	}
+
+	.radio-icon__name,
+	.radio-icon__adres
+	{
+		font-size: 12px;
+	}
+
+	.modal-stock__price-old
+	{
+		font-size: 12px;
+	}
+
+	.modal-stock__price
+	{
+		font-size: 16px;
+	}
+
+	.modal-stock__agree
+	{
+		margin-top: 20px;
+	}
+
+
+	.modal-review .review-rating__star 
+	{
+		width: 15px;
+		height: 14px;
+	}
+
+	.modal-review .review-rating__star + .review-rating__star
+	{
+		margin-left: 6px;
+	}
+
+	.modal-review .review__flex .review-rating
+	{
+		margin-top: 0;
+	}
+
+	.modal-review .review__pet-info::before 
+	{
+		top: 0px;
+	}
 }

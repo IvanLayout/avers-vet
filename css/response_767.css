@@ -492,6 +492,11 @@
 		margin-top: 18px;
 	}
 
+	.review__flex .review-rating 
+	{
+		margin-top: 1px;
+	}
+
 
 	.main-about__colr
 	{
@@ -682,5 +687,101 @@
 	.footer__adres-name
 	{
 		font-size: 14px;
+	}
+
+
+	.modal
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.modal__title
+	{
+		font-size: 26px;
+	}
+
+	.modal-stock__top-title
+	{
+		margin-bottom: 15px;
+	}
+
+	.modal-stock__info
+	{
+		margin-top: 20px;
+	}
+
+	.modal-stock__list li::before 
+	{
+		top: 3.5px;
+	}
+
+	.modal-stock__choice
+	{
+		margin-top: 20px;
+	}
+
+	.radio-icons._flex
+	{
+		margin-left: -15px;
+	}
+
+	.radio-icons._flex .radio-icon
+	{
+		width: calc(100%/2 - 15px);
+		margin-left: 15px;
+		margin-top: 15px;
+	}
+
+	.radio-icon
+	{
+		min-width: 1px;
+	}
+
+	.radio-icon__box
+	{
+		padding-left: 36px;
+	}
+
+	.radio-icon__box:before
+	{
+		left: 13px;
+	}
+
+	.radio-icon__name
+	{
+		font-size: 14px;
+	}
+
+	.radio-icon__adres
+	{
+		margin-top: 5px;
+	}
+
+	.modal-stock__bot
+	{
+		margin-top: 20px;
+	}
+
+	.modal-stock__price
+	{
+		font-size: 20px;
+	}
+
+
+	.modal-review .review__flex
+	{
+		margin-top: 15px;
+	}
+
+	.review__text
+	{
+		margin-top: 20px;
+		padding-top: 20px;
+	}
+
+	.modal-review .review__bot
+	{
+		margin-top: 20px;
 	}
 }
