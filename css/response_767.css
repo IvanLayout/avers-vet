@@ -690,6 +690,61 @@
 	}
 
 
+	.page-head .cont
+	{
+		padding: 0;
+	}
+
+	.page-head__bg
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 36px;
+	}
+
+	.breadcrumbs
+	{
+		margin-bottom: 10px;
+	}
+
+	.page-head__desc
+	{
+		margin-top: 10px;
+	}
+
+	.page-title 
+	{
+		font-size: 42px;
+	}
+
+
+	.faq-section.faq-section_marg
+	{
+		margin-top: 40px;
+	}
+
+	.faq-section__accordion
+	{
+		margin-top: 20px;
+	}
+
+	.faq-section__item
+	{
+		border-radius: 5px;
+	}
+
+	.faq-section__item + .faq-section__item
+	{
+		margin-top: 10px;
+	}
+
+	.faq-section__open
+	{
+		font-size: 14px;
+	}
+
+
+
 	.modal
 	{
 		padding-left: 20px;

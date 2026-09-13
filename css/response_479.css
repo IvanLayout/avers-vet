@@ -364,6 +364,31 @@
 	}
 
 
+	.page-title
+	{
+		font-size: 40px;
+	}
+
+
+	.faq-section__open
+	{
+		font-size: 12px;
+		padding-left: 15px;
+		padding-right: 60px;
+	}
+
+	.accordion__open-icon
+	{
+		right: 15px;
+	}
+
+	.faq-section__data
+	{
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+
 	.footer__logo a, 
 	.footer__logo img
 	{

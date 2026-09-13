@@ -194,14 +194,18 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 16,
-					slidesPerView: 1,
+					spaceBetween: 10,
+					slidesPerView: 1
 				},
 				'480': {
-					spaceBetween: 16,
-					slidesPerView: 2,
+					spaceBetween: 10,
+					slidesPerView: 1
 				},
 				'768': {
+					spaceBetween: 15,
+					slidesPerView: 2
+				},
+				'1024': {
 					spaceBetween: 20,
 					slidesPerView: 3,
 				},
