@@ -413,4 +413,10 @@
 	{
 		font-size: 22px;
 	}
+
+
+	.sorting__item 
+	{
+		width: calc(100%/3 - 20px);
+	}
 }

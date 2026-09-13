@@ -111,4 +111,10 @@
 	{
 		height: 90px;
 	}
+
+
+	.sorting__item_small 
+	{
+		width: 20%;
+	}
 }
