@@ -768,8 +768,8 @@ button
 ------------*/
 .wrap-btn
 {
-	/* margin-top: 40px;
-	text-align: center; */
+	margin-top: 40px;
+	text-align: center;
 }
 
 .btn-blue
@@ -4668,6 +4668,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 .sorting__item
 {
 	width: 26.18%;
+}
+
+.sorting__item_small
+{
+	width: 17.14%;
 }
 
 .sorting__flex .select-wrap
