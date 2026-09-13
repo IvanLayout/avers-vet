@@ -100,6 +100,28 @@
 	.first-section__btn{
 		width: 100%;
 	}
+
+	.first-info__bg{
+		border-radius: 40px;
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.first-info__adres{
+		align-items: flex-start;
+		align-content: flex-start;
+	}
+
+	.first-info__adres-time{
+		width: 60px;
+		height: 27px;
+		padding: 6px;
+	}
+
+	.help-banner__circle1{
+		bottom: 170px;
+	}
 	/*------------
 		Commit
 	------------*/

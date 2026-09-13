@@ -143,6 +143,31 @@
 		width: 100%;
 		text-align: center;
 	}
+
+	.first-info__title{
+		font-size: 20px;
+	}
+
+	.first-info__tel{
+		font-size: 16px;
+	}
+
+	.first-info__adres{
+		width: 100%;
+	}
+
+	.first-info__adres-name{
+		font-size: 14px;
+	}
+
+	.help-banner__circle4{
+		display: none;
+	}
+
+	.help-banner__circle1 {
+		bottom: 127px;
+		left: 20px;
+	}
 	/*------------
 		Commit
 	------------*/

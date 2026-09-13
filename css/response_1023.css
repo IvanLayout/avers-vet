@@ -168,6 +168,61 @@
 		margin-top: 24px;
 		gap: 10px;
 	}
+
+	.first-info._mob{
+		display: block;
+		margin-top: 20px;
+		width: 100%;
+	}
+
+	.first-info__bg{
+		padding: 20px;
+	}
+
+	.first-info__title{
+		text-align: left;
+	}
+
+	.first-info__title br{
+		display: none;
+	}
+
+	.first-info__tel{
+		text-align: left;
+		margin-top: 14px;
+		font-size: 18px;
+	}
+
+	.first-info__time{
+		text-align: left;
+		margin-top: 5px;
+	}
+
+	.first-info__adreses{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		gap: 20px;
+		margin-top: 22px;
+	}
+
+	.first-info__adres + .first-info__adres{
+		margin-top: 0;
+	}
+
+	.first-info__adres-box{
+		text-align: left;
+	}
+
+	.first-info__adres-name{
+		text-align: left;
+	}
+
+	.first-info__adres{
+		width: calc(50% - 10px);
+	}
 	/*------------
 		Commit
 	------------*/
