@@ -3155,6 +3155,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin: 20px 0 0 20px;
 }
 
+.stocks__slider .stocks__item
+{
+	height: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 .stocks__info
 {
 	flex: 1 0 auto;
@@ -3231,6 +3238,11 @@ input[type=checkbox]:checked + .checkbox__text::after
     -webkit-line-clamp: 2;
 }
 
+.stocks__slider .stocks__desc
+{
+	margin-top: 14px;
+}
+
 .stocks__btns
 {
 	margin-top: 40px;
@@ -3241,6 +3253,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	align-items: center;
 	align-content: center;
 	gap: 30px;
+}
+
+.stocks__slider .stocks__btns
+{
+	padding-top: 30px;
 }
 
 .stocks__btn-more
@@ -5087,6 +5104,109 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 10px;
 }
 
+
+/*------------
+    faq-section
+------------*/
+
+.faq-section__accordion
+{
+	margin-top: 30px;
+}
+
+.faq-section__item
+{
+	background: #fff;
+	border-radius: 15px;
+}
+
+.faq-section__item + .faq-section__item 
+{
+    margin-top: 20px;
+}
+
+.faq-section__open
+{
+	width: 100%;
+	padding: 24px 107px 24px 30px;
+
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 1.3;
+	color: var(--chernyy);
+	text-align: left;
+	position: relative;
+	display: block;
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.faq-section__open:hover
+	{
+		color: #2262B7;
+	}
+}
+
+.accordion__open-icon
+{
+	width: 47px;
+	height: 47px;
+	position: absolute;
+	right: 30px;
+	top: 50%;
+	margin-top: -23px;
+	border: 2px solid #2262B7;
+	border-radius: 15px;
+}
+
+.accordion__open-icon::before
+{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 14px;
+	border-radius: 2px;
+	margin-top: -7px;
+	margin-left: -1px;
+	background: #E94E1B;
+	transition: opacity .2s linear;
+}
+
+.accordion__item._active .accordion__open-icon::before{
+	opacity: 0;
+}
+
+.accordion__open-icon::after
+{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 14px;
+	height: 2px;
+	margin-top: -1px;
+	margin-left: -7px;
+	border-radius: 2px;
+	background: #E94E1B;
+}
+
+.faq-section__data
+{
+	padding: 0 30px 24px;
+}
+
+.faq-section__data .text-block
+{
+	max-width: 1545px;
+}
+
+.accordion__data
+{
+	display: none;
+}
 
 /*------------*/
 
