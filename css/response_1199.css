@@ -84,6 +84,15 @@
 		margin-top: 30px;
 	}
 
+
+	.help-banner__circle2{
+		display: none;
+	}
+
+	.help-banner__circle3{
+		display: none;
+	}
+
 	/*------------
 		Commit
 	------------*/
