@@ -3662,9 +3662,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .products__grid
 {
-	align-items: stretch;
-	align-content: stretch;
-	margin: 10px 0 0 -20px;
+	margin-top: 30px;
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-auto-flow: dense;
 }
 
 .product
@@ -3676,10 +3678,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 	
 	padding: 40px;
 
-	width: calc(100%/4 - 20px);
-	margin: 20px 0 0 20px;
 	aspect-ratio: 1 / 1.3586;
-	height: auto;
+	height: 100%;
 
 	background: #fff;
 	transition: background .2s linear;
@@ -3687,8 +3687,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .product.product_big
 {
-	width: calc(100%/2 - 20px);
 	aspect-ratio: auto;
+	grid-column: span 2;
 }
 
 .product_all::after
