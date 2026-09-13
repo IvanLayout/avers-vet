@@ -203,6 +203,10 @@ $(() => {
 				},
 				'768': {
 					spaceBetween: 20,
+					slidesPerView: 3,
+				},
+				'1600': {
+					spaceBetween: 20,
 					slidesPerView: 4,
 				}
 			},

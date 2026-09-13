@@ -5131,7 +5131,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	padding: 24px 107px 24px 30px;
 
 	font-weight: 500;
-	font-size: 25px;
+	font-size: 24px;
 	line-height: 1.3;
 	color: var(--chernyy);
 	text-align: left;
@@ -5671,4 +5671,18 @@ input[type=checkbox]:checked + .checkbox__text::after
 .modal-review
 {
 	padding: 40px;
+}
+
+@media (max-width: 1799px)
+{
+	.stocks__slider .stocks__btns
+	{
+		gap: 20px;
+	}
+
+	.stocks__slider .stocks__btn
+	{
+		padding-left: 18px;
+		padding-right: 18px;
+	}
 }

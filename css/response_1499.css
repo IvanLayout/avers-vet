@@ -392,4 +392,20 @@
 	{
 		margin-top: 15px;
 	}
+
+
+	.page-head__bg
+	{
+		border-radius: 35px;
+	}
+
+	.page-title
+	{
+		font-size: 60px;
+	}
+
+	.faq-section__open
+	{
+		font-size: 22px;
+	}
 }

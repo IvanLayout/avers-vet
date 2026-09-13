@@ -91,6 +91,16 @@
 	{
 		font-size: 14px;
 	}
+
+	.page-head__bg
+	{
+		padding: 30px;
+	}
+
+	.page-title 
+	{
+		font-size: 50px;
+	}
 	
 	.header__flex,
 	.header__contacts
