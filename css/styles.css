@@ -5441,10 +5441,9 @@ input[type=checkbox]:checked + .checkbox__text::after
 	max-width: 680px;
 }
 
-.service-info__cols
+.service-info__floatBox
 {
-	justify-content: space-between;
-	width: 100%;
+	
 }
 
 .service-info__coll
@@ -5459,12 +5458,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 	width: calc(49% - 13px);
 }
 
-.service-info__img
-{
-	position: relative;
-	top: -55px;
-}
-
 .service-info__img img
 {
 	display: block;
@@ -5477,8 +5470,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .service-info__wrap
 {
-	/* margin-top: 50px; */
-	margin-top: -5px;
+	margin-top: 50px;
 }
 
 .service-info__grid._flex
