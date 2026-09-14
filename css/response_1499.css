@@ -417,6 +417,6 @@
 
 	.sorting__item 
 	{
-		width: calc(100%/3 - 20px);
+		width: calc(100%/3 - (40px/3));
 	}
 }
