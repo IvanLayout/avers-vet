@@ -750,17 +750,17 @@
 		margin-top: 20px;
 	}
 
-	.faq-section__item
+	.accordion__item
 	{
 		border-radius: 5px;
 	}
 
-	.faq-section__item + .faq-section__item
+	.accordion__item + .accordion__item
 	{
 		margin-top: 10px;
 	}
 
-	.faq-section__open
+	.accordion__open
 	{
 		font-size: 14px;
 	}
@@ -798,39 +798,39 @@
 		margin-top: 20px;
 	}
 
-	.radio-icons._flex
+	.global-icons._flex
 	{
 		margin-left: -15px;
 	}
 
-	.radio-icons._flex .radio-icon
+	.global-icons._flex .global-icon
 	{
 		width: calc(100%/2 - 15px);
 		margin-left: 15px;
 		margin-top: 15px;
 	}
 
-	.radio-icon
+	.global-icon
 	{
 		min-width: 1px;
 	}
 
-	.radio-icon__box
+	.global-icon__box
 	{
 		padding-left: 36px;
 	}
 
-	.radio-icon__box:before
+	.global-icon__box:before
 	{
 		left: 13px;
 	}
 
-	.radio-icon__name
+	.global-icon__name
 	{
 		font-size: 14px;
 	}
 
-	.radio-icon__adres
+	.global-icon__adres
 	{
 		margin-top: 5px;
 	}

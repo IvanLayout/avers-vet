@@ -396,7 +396,7 @@
 	}
 
 
-	.faq-section__open
+	.accordion__open
 	{
 		font-size: 12px;
 		padding-left: 15px;
@@ -506,8 +506,8 @@
 		font-size: 20px;
 	}
 
-	.radio-icon__name,
-	.radio-icon__adres
+	.global-icon__name,
+	.global-icon__adres
 	{
 		font-size: 12px;
 	}
