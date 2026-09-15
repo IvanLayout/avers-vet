@@ -5992,6 +5992,17 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 10px;
 	text-align: center;
 }
+
+/*------------
+    call-away
+------------*/
+
+.call-away__bg
+{
+	background: #E94E1B;
+	border-radius: 60px;
+}
+
 /*------------*/
 
 @media (any-hover: hover)
