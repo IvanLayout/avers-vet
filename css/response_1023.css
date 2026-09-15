@@ -706,6 +706,7 @@
 
 	.form-search .form-search__input{
 		border-color: #A1C2E2;
+		box-shadow: transparent;
 	}
 
 	.sorting__form{
