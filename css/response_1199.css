@@ -271,6 +271,17 @@
 	}
 
 
+	.service-branch__tabs
+	{
+		margin-left: -15px;
+	}
+
+	.tabs__text
+	{
+		margin-left: 15px;
+	}
+
+
 	.slider-button-prev._top
 	{
 		top: -67px;

@@ -322,6 +322,10 @@ $(window).on('load', () => {
 		stocksSlider()
 	}
 
+	if ($('.service-info__wrap').length){
+		serviceSlider()
+	}
+
 	if( $('.specialists__grid').length ){
 		$('.specialists__grid').each(function() {
 			specialistsHeight($(this), parseInt($(this).css('--products_count')))
@@ -363,6 +367,10 @@ $(window).on('resize', () => {
 		stocksSlider()
 	}
 
+	if ($('.service-info__wrap').length){
+		serviceSlider()
+	}
+
 	if( $('.specialists__grid').length ){
 		$('.specialists__grid').each(function() {
 			specialistsHeight($(this), parseInt($(this).css('--specialists_count')))
@@ -381,7 +389,7 @@ function stocksSlider(){
 		$('.stocks__grid').addClass('swiper-wrapper').removeClass('_flex')
 		$('.stocks__item').addClass('swiper-slide')
 
-		advantagesSwiperSlider = new Swiper('.stocks__wrap', {
+		stocksSwiperSlider = new Swiper('.stocks__wrap', {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -420,9 +428,9 @@ function stocksSlider(){
 		})
 	} else if ($(window).width() > 1023 && $('.stocks__wrap').hasClass('swiper-initialized')) {
 		if ($('.stocks__wrap').length === 1 && $('.stocks__wrap').hasClass('swiper-initialized')) {
-			advantagesSwiperSlider.destroy(true, true)
+			stocksSwiperSlider.destroy(true, true)
 		} else if ($('.stocks__wrap').length >= 2 && $('.stocks__wrap').hasClass('swiper-initialized')) {
-			advantagesSwiperSlider.forEach(function (element) {
+			stocksSwiperSlider.forEach(function (element) {
 				element.destroy(true, true)
 			})
 		}
@@ -432,6 +440,65 @@ function stocksSlider(){
 		$('.stocks__item').removeClass('swiper-slide')
 	}
 }
+
+function serviceSlider(){
+	if ( $(window).width() < 1024 && !$('.service-info__wrap').hasClass('swiper-initialized') ) {
+		$('.service-info__wrap').addClass('swiper')
+		$('.service-info__grid').addClass('swiper-wrapper').removeClass('_flex')
+		$('.service-info__item').addClass('swiper-slide')
+
+		serviceSwiperSlider = new Swiper('.service-info__wrap', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 10,
+			slidesPerView: 1,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 10,
+					slidesPerView: 1
+				},
+				'480': {
+					spaceBetween: 10,
+					slidesPerView: 1
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 2
+				}
+			},
+		})
+	} else if ($(window).width() > 1023 && $('.service-info__wrap').hasClass('swiper-initialized')) {
+		if ($('.service-info__wrap').length === 1 && $('.service-info__wrap').hasClass('swiper-initialized')) {
+			serviceSwiperSlider.destroy(true, true)
+		} else if ($('.service-info__wrap').length >= 2 && $('.service-info__wrap').hasClass('swiper-initialized')) {
+			serviceSwiperSlider.forEach(function (element) {
+				element.destroy(true, true)
+			})
+		}
+
+		$('.service-info__wrap').removeClass('swiper')
+		$('.service-info__grid').removeClass('swiper-wrapper').addClass('_flex')
+		$('.service-info__item').removeClass('swiper-slide')
+	}
+}
+
 
 
 function specialistsHeight(context, step) {

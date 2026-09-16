@@ -660,6 +660,111 @@
 		padding-right: 20px;
 	}
 
+	
+
+	.service-head__info
+	{
+		width: 100%;
+		padding-right: 40px;
+		position: relative;
+		z-index: 2;
+	}
+
+	.service-head__item + .service-head__item
+	{
+		margin-top: 15px;
+	}
+
+	.service-head__img
+	{
+		width: 100%;
+		margin-top: -22%;
+	}
+
+
+	.service-info__wrap
+	{
+		margin-top: 35px;
+	}
+
+	.service-info__top
+	{
+		float: none;
+		width: 100%;
+	}
+
+	.service-info__colr
+	{
+		float: none;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.service-info__coll
+	{
+		float: none;
+		width: 100%;
+	}
+
+	.service-info__floatBox .clear
+	{
+		display: none;
+	}
+
+	.service-info__grid._flex .service-info__item 
+	{
+		width: calc(100% / 2 - 20px);
+	}
+
+
+	.service-branch__coll
+	{
+		width: 100%;
+	}
+
+	.service-branch__colr
+	{
+		width: 100%;
+		margin-top: 20px;
+	}
+	
+	.service-branch__box-bot
+	{
+		display: none;
+	}
+
+	.service-branch__mob-btn
+	{
+		display: block;
+	}
+
+
+	.text-block__symptoms 
+	{
+		margin-left: -10px;
+	}
+
+	.text-block__symptom
+	{
+		margin: 10px 0 0 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		line-height: 30px;
+	}
+
+
+	.stages-process
+	{
+		margin-left: -15px;
+	}
+
+	.stages-process__item 
+	{
+		width: calc(100% / 2 - 15px);
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+
 
 	.wrap-btn
 	{

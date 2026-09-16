@@ -5641,16 +5641,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	max-width: 680px;
 }
 
-.service-info__floatBox
-{
-	
-}
-
 .service-info__coll
 {
 	width: calc(51% - 17px);
 	max-width: 680px;
-	padding-top: 20px;
+	margin-top: 20px;
 }
 
 .service-info__colr
@@ -5990,6 +5985,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 	background: linear-gradient(180deg, rgba(245, 249, 255, 0.9) 0%, rgba(240, 247, 255, 0.9) 100%);
 	border-radius: 40px;
 	padding: 30px 40px 48px;
+}
+
+.service-branch__mob-btn
+{
+	display: none;
+	width: 100%;
+	margin-top: 25px;
 }
 
 .equipment__items
