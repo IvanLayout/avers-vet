@@ -33,6 +33,18 @@
 	.help-banner__circle1{
 		bottom: 2%;
 	}
+
+
+	.info-section__bg{
+		padding-left: 30px;
+		padding-right: 0;
+		border-radius: 35px;
+	}
+
+	.info-section__coll{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 	/*------------
 		Commit
 	------------*/

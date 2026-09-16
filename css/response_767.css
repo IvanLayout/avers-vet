@@ -168,6 +168,49 @@
 		bottom: 127px;
 		left: 20px;
 	}
+
+
+	.info-section__bg{
+		padding-right: 20px;
+		background-image: none;
+	}
+
+	.info-section__img{
+		display: none;
+	}
+
+	.info-section{
+		margin-top: 35px;
+	}
+
+
+	.cat-links{
+		gap: 16px;
+	}
+
+	.cat-links__link {
+		line-height: 40px;
+		font-size: 14px;
+	}
+
+
+	.articles__grid .article {
+		width: calc(100% - 15px);
+	}
+
+	.page-head__btns{
+		gap: 16px;
+	}
+
+	.page-head__btn{
+		min-width: 1px;
+	}
+
+	.page-head__info-item {
+		border-radius: 19px;
+		padding: 6px 14px;
+		line-height: 16px;
+	}
 	/*------------
 		Commit
 	------------*/
