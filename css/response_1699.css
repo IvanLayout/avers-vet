@@ -88,7 +88,8 @@
 	.article__name,
 	.review__avatar-name,
 	.header__adreses-city,
-	.header__adreses-city
+	.header__adreses-city,
+	.service-info__name
 	{
 		font-size: 22px;
 	}

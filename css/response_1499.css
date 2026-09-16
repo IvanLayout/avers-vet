@@ -419,4 +419,83 @@
 	{
 		width: calc(100%/3 - (40px/3));
 	}
+
+
+	.service-info__item
+	{
+		border-radius: 35px;
+		padding: 25px;
+	}
+
+	.service-info__icon
+	{
+		width: 80px;
+		height: 80px;
+		padding: 21px;
+		border-radius: 20px;
+	}
+
+	.service-info__name
+	{
+		font-size: 20px;
+	}
+
+
+	.service-branch__coll 
+	{
+		width: 350px;
+	}
+
+	.service-branch__nav
+	{
+		border-radius: 35px;
+	}
+
+
+	.service-branch__colr 
+	{
+		width: calc(100% - 380px);
+		max-width: 100%;
+	}
+
+
+	.stages-process__item
+	{
+		border-radius: 35px;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 25px;
+	}
+
+	.stages-process__name
+	{
+		font-size: 18px;
+	}
+
+	.stages-process__number
+	{
+		height: 85px;
+	}
+
+
+	.service-branch__bg
+	{
+		border-radius: 35px;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 40px;
+	}
+
+
+	.service-branch__tabs
+	{
+		margin-left: -35px;
+	}
+
+	.tabs__text
+	{
+		font-size: 18px;
+		margin-left: 35px;
+		padding-bottom: 21px;
+	}
 }

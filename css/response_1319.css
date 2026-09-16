@@ -162,6 +162,73 @@
 	}
 
 
+	.service-head__info
+	{
+		padding-left: 40px;
+		padding-right: 20px;
+	}
+
+	.service-head__desc
+	{
+		margin-top: 10px;
+	}
+
+	.service-head__box
+	{
+		margin-top: 40px;
+	}
+
+	.service-info__grid._flex .service-info__item
+	{
+		width: calc(100% / 3 - 20px);
+	}
+
+
+	.tabs-bg
+	{
+		margin-bottom: 30px;
+	}
+
+
+	.stages-process__item
+	{
+		width: calc(100% / 2 - 20px);
+	}
+
+	.service-branch__item + .service-branch__item 
+	{
+		margin-top: 35px;
+	}
+	
+	.service-branch__item-title.left
+	{
+		width: 100%;
+	}
+
+	.service-branch__img
+	{
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.service-branch__text-block
+	{
+		width: 100%;
+	}
+
+
+	.equipment__item
+	{
+		width: calc(100% / 2 - 20px);
+	}
+
+
+	.treatment-table__price
+	{
+		font-size: 20px;
+	}
+
+
 	.footer__coll 
 	{
 		width: 360px;

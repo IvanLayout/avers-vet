@@ -5680,6 +5680,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 .service-branch__nav-btn
 {
 	color: var(--chernyy);
+	text-align: left;
 	font-size: 16px;
 	line-height: 1.3;
 	transition: color .2s linear;
@@ -6001,7 +6002,156 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	background: #E94E1B;
 	border-radius: 60px;
+
+	justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+
+	position: relative;
 }
+
+/* .help-banner__circle1 
+{
+    position: absolute;
+    left: 43px;
+    bottom: 59px;
+    width: 47px;
+    height: 47px;
+    background: #fff;
+    filter: blur(50px);
+    border-radius: 50%;
+} */
+
+.call-away__coll 
+{
+    padding: 50px 50px 75px;
+    color: #fff;
+    width: 43%;
+    position: relative;
+}
+
+.call-away__desc 
+{
+    margin-top: 20px;
+    color: #fff;
+}
+
+.call-away__colc 
+{
+    position: relative;
+    width: 32%;
+}
+
+/* .call-away__colc::before
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+
+	display: block;
+
+	width: 670px;
+	height: 670px;
+
+	margin-top: -335px;
+	margin-left: -335px;
+
+	border-radius: 50%;
+	border: 1px solid #fff;
+	opacity: .5;
+} */
+
+.call-away__img 
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    /* padding-left: 30px; */
+    width: 100%;
+    height: calc(100% + 34px);
+}
+
+.call-away__img img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+
+	height: 100%;
+}
+
+.call-away__img img.loaded
+{
+	height: auto;
+}
+
+
+.call-away__colr
+{
+    padding: 50px 50px 75px;
+    width: 25%;
+    position: relative;
+
+	text-align: right;
+}
+
+.call-away__phone-number
+{
+	font-size: 32px;
+	line-height: 1.2;
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+.call-away__phone-number a
+{
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	padding-left: 49px;
+	color: #fff;
+}
+
+.call-away__phone-number span
+{
+	border-bottom: 1px solid #fff;
+}
+
+.call-away__phone-number a::before
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 0;
+
+	display: block;
+
+	width: 29px;
+	height: 30px;
+
+	margin-top: -15px;
+
+	background: url(../images/ic_tel.svg) 50%/contain;
+}
+
+.call-away__phone-desc
+{
+	margin-top: 5px;
+	text-align: right;
+	color: rgba(255, 255, 255, .8);
+}
+
+.call-away__box-btns
+{
+	margin-top: 32px;
+}
+
 
 /*------------*/
 
