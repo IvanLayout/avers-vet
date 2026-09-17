@@ -318,6 +318,14 @@ $(() => {
 		}
 	});
 
+	$('.search-input').on('input change', function () {
+		if ($(this).val().trim() !== '') {
+			$(this).addClass('_full');
+		} else {
+			$(this).removeClass('_full');
+		}
+	});
+
 	$('#search-input').on('focus', function () {
 		if ($(this).val().trim() !== '') {
 			$('.header-search__box').addClass('_show');
@@ -327,6 +335,10 @@ $(() => {
 	$('body').on('click', '.header-search__form-clear', function(e) {
 		$('#search-input').removeClass('_full');
 		$('.header-search__box').removeClass('_show');
+	})
+
+	$('body').on('click', '.search-clear', function(e) {
+		$('.search-input').removeClass('_full');
 	})
 
 	$('.form-search__input').on('input change', function () {

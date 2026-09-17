@@ -363,6 +363,52 @@
 	.articles-cats__name{
 		font-size: 18px;
 	}
+
+
+	.main-subtitle{
+		margin-top: 16px;
+	}
+
+	.section-error__img{
+		width: 400px;
+		margin-top: 20px;
+	}
+
+	.section-error__wrapbtn{
+		margin-top: 20px;
+	}
+
+	.section-error .big-search{
+		margin-top: 30px;
+	}
+
+
+	.big-search .big-search__input{
+		height: 50px;
+	}
+
+	.big-search__clear{
+		height: 50px;
+	}
+
+	.page-links__grid{
+		gap: 12px;
+	}
+
+	.page-links__link{
+		padding: 0 19px;
+		min-height: 42px;
+		border-radius: 10px;
+	}
+
+	.page-links__link-icon{
+		width: 20px;
+		height: 20px;
+	}
+
+	.section-error__btn{
+		min-width: 220px;
+	}
 	/*------------
 		Commit
 	------------*/

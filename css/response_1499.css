@@ -80,6 +80,11 @@
 	.articles-cats__name{
 		font-size: 20px;
 	}
+
+
+	.section-error .big-search{
+		margin-top: 50px;
+	}
 	/*------------
 		Commit
 	------------*/

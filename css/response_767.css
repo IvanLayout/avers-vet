@@ -278,6 +278,35 @@
 	.articles-cats__item {
 		width: calc(100% - 15px);
 	}
+
+	.big-search .big-search__input{
+		height: 40px;
+		border-radius: 5px;
+		padding-left: 40px;
+		padding-right: 40px;
+		font-size: 12px;
+		background-position: 15px 50%;
+		background-size: 16px auto;
+	}
+
+	.big-search__clear{
+		width: 40px;
+		height: 40px;
+		margin-left: -40px;
+	}
+
+	.big-search__clear svg{
+		width: 18px;
+		height: 18px;
+	}
+
+	.section-error .big-search{
+		margin-top: 24px;
+	}
+
+	.section-error__wrap{
+		padding: 0;
+	}
 	/*------------
 		Commit
 	------------*/
