@@ -3160,6 +3160,90 @@ input[type=checkbox]:checked + .checkbox__text::after
 .info-section__img img.loaded{
 	height: auto;
 }
+
+.page-head__box{
+	margin-top: 15px;
+}
+
+.page-head__time{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.page-head__info{
+	margin-top: 40px;
+}
+
+.page-head__info-title{
+	font-size: 12px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+}
+
+.page-head__info-flex{
+	margin-top: 15px;
+	gap: 15px;
+	justify-content: center;
+}
+
+.page-head__info-item{
+	background: #e6f1ff;
+	border-radius: 20px;
+	color: #2262B7;
+	padding: 10px 20px;
+	line-height: 20px;
+}
+
+.page-head__btns{
+	margin-top: 40px;
+	justify-content: center;
+	gap: 20px;
+}
+
+.page-head__btn{
+	min-width: 223px;
+}
+
+.share-items_marg{
+	margin-top: 50px;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	gap: 15px;
+}
+
+.share-items__title{
+	flex-shrink: 0;
+	font-weight: 600;
+	font-size: 12px;
+}
+
+.share-items__flex{
+	gap: 12px;
+}
+
+.share-items__item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: #E6F1FF;
+	color: #2262B7;
+	text-decoration: none;
+}
+
+.share-items__item svg{
+	display: block;
+	width: 20px;
+	height: 20px;
+	fill: none;
+	stroke: currentColor;
+}
 /*------------
     Commit
 ------------*/

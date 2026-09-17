@@ -93,6 +93,26 @@
 		display: none;
 	}
 
+	.info-section__bg{
+		padding-left: 20px;
+	}
+
+	.info-section__coll{
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	.info-section__img{
+		width: 50%;
+	}
+
+	.info-section__btns{
+		margin-top: 24px;
+	}
+
+	.page-title br{
+		display: none;
+	}
 	/*------------
 		Commit
 	------------*/

@@ -44,7 +44,7 @@ $(() => {
 	if ($('.articles__slider').length) {
 		new Swiper(".articles__slider", {
 			loop: true,
-			spaceBetween: 16,
+			spaceBetween: 15,
 			slidesPerView: 1,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -70,11 +70,11 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 16,
+					spaceBetween: 15,
 					slidesPerView: 1,
 				},
 				'480': {
-					spaceBetween: 10,
+					spaceBetween: 15,
 					slidesPerView: 1,
 				},
 				'768': {
@@ -110,7 +110,7 @@ $(() => {
 	if ($('.reviews__slider').length) {
 		new Swiper(".reviews__slider", {
 			loop: true,
-			spaceBetween: 20,
+			spaceBetween: 15,
 			slidesPerView: 1,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -125,11 +125,11 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 20,
+					spaceBetween: 15,
 					slidesPerView: 1,
 				},
 				'480': {
-					spaceBetween: 10,
+					spaceBetween: 15,
 					slidesPerView: 1,
 				},
 				'768': {
@@ -168,7 +168,7 @@ $(() => {
 	if ($('.stocks__slider').length) {
 		new Swiper(".stocks__slider", {
 			loop: true,
-			spaceBetween: 16,
+			spaceBetween: 15,
 			slidesPerView: 1,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -194,11 +194,11 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 10,
+					spaceBetween: 15,
 					slidesPerView: 1
 				},
 				'480': {
-					spaceBetween: 10,
+					spaceBetween: 15,
 					slidesPerView: 1
 				},
 				'768': {

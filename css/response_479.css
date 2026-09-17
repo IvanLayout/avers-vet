@@ -122,6 +122,34 @@
 	.help-banner__circle1{
 		bottom: 170px;
 	}
+
+
+	.info-section__btn{
+		width: 100%;
+	}
+
+	.info-section{
+		margin-top: 20px;
+	}
+
+	.articles .cont{
+		padding: 0;
+	}
+
+
+	.page-head__btn{
+		width: 100%;
+	}
+
+
+	.share-items__flex{
+		gap: 10px;
+	}
+
+	.share-items__item{
+		width: 40px;
+		height: 40px;
+	}
 	/*------------
 		Commit
 	------------*/
