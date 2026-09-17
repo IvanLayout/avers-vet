@@ -6686,6 +6686,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	padding-right: 30px;
 	border-radius: 0 15px 15px 0;
+	text-align: right;
 }
 
 .treatment-table__name
@@ -7267,6 +7268,47 @@ input[type=checkbox]:checked + .checkbox__text::after
 	opacity: .5;
 }
 
+/*------------
+    section-price
+------------*/
+
+.section-price__flex
+{
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	gap: 10px 30px;
+}
+
+.section-price__wrap
+{
+	width: 100%;
+
+	overflow: hidden;
+    overflow-y: auto;
+
+    max-height: 580px;
+	position: relative;
+	padding-right: 25px;
+	width: calc(100% + 25px);
+	margin-right: -25px;
+}
+
+.section-price__wrap::-webkit-scrollbar
+{
+    width: 5px;
+    height: 5px;
+
+    background-color: rgba(115, 115, 115, .1);
+    border-radius: 4px;
+	padding-top: 20px;
+}
+
+.section-price__wrap::-webkit-scrollbar-thumb
+{
+    background-color: rgba(115, 115, 115, .2);
+    border-radius: 5px;
+}
 /*------------*/
 
 @media (any-hover: hover)
