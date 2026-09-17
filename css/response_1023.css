@@ -305,6 +305,47 @@
 	.share-items_marg{
 		margin-top: 24px;
 	}
+	
+
+	.article-text__coll{
+		width: 100%;
+		max-width: none;
+	}
+
+	.article-text__colr{
+		width: 100%;
+		max-width: none;
+		margin-top: 30px;
+	}
+
+	.subject{
+		max-width: none;
+	}
+
+	.article-grade{
+		max-width: none;
+		padding: 19px;
+	}
+
+	.article .blockquote-error{
+		max-width: none;
+	}
+
+	.text-block .blockquote-error{
+		padding: 19px;
+	}
+
+	.article-text .text-block h4{
+		margin-bottom: 10px;
+	}
+
+	.article-text__text-block{
+		margin-top: 30px;
+	}
+
+	.small-service__name{
+		font-size: 20px;
+	}
 	/*------------
 		Commit
 	------------*/

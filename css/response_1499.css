@@ -58,6 +58,18 @@
 	.small-title{
 		font-size: 20px;
 	}
+
+	.article-text__info-name{
+		font-size: 20px;
+	}
+
+	.subject__title{
+		font-size: 20px;
+	}
+
+	.small-service__item + .small-service__item{
+		margin-top: 20px;
+	}
 	/*------------
 		Commit
 	------------*/

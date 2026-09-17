@@ -3417,7 +3417,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 10px;
 }
 
-.text-block ul li::before{
+.article-text .text-block ul li::before{
 	top: 7.5px;
 	left: 0;
 	width: 5px;
@@ -3464,15 +3464,19 @@ input[type=checkbox]:checked + .checkbox__text::after
 	color: #E94E1B;
 }
 
+.article-text .text-block ul._error li,
 .text-block ul._error li{
 	padding-left: 36px;
 	min-height: 24px;
+	padding-top: 2px;
 }
 
+.article-text .text-block ul._error li + li,
 .text-block ul._error li + li{
 	margin-top: 12px;
 }
 
+.article-text .text-block ul._error li::before,
 .text-block ul._error li::before{
 	top: 0;
 	left: 0;
@@ -3575,6 +3579,14 @@ input[type=checkbox]:checked + .checkbox__text::after
 .article-grade__link:active svg,
 .article-grade__link.active svg{
 	fill: #2262B7;
+}
+
+.article-grade{
+	max-width: 760px;
+}
+
+.article .blockquote-error{
+	max-width: 760px;
 }
 /*------------
     Commit

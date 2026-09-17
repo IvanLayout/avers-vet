@@ -205,6 +205,75 @@
 		padding: 6px 14px;
 		line-height: 16px;
 	}
+
+	.article-text .text-block ul li::before {
+		top: 5px;
+		width: 4px;
+		height: 4px;
+	}
+
+	.text-block ul._error{
+		padding-bottom: 2px;
+	}
+
+	.article-text .text-block ul._error li,
+	.text-block ul._error li{
+		padding-left: 30px;
+		min-height: 16px;
+	}
+
+	.article-text .text-block ul._error li + li,
+	.text-block ul._error li + li{
+		margin-top: 10px;
+	}
+
+	.article-text .text-block ul._error li::before,
+	.text-block ul._error li::before{
+		width: 20px;
+		height: 20px;
+		background-size: 8px auto;
+	}
+
+	.article-text__tags{
+		flex-wrap: wrap;
+	}
+
+	.article-text__tags-title{
+		width: 100%;
+		margin-top: 0;
+	}
+
+	.article-text__tag{
+		font-size: 12px;
+	}
+
+	.small-service__name{
+		font-size: 18px;
+	}
+
+	.small-title{
+		font-size: 18px;
+	}
+
+	.article-text__info-name{
+		font-size: 18px;
+	}
+
+	.subject__title{
+		font-size: 18px;
+	}
+
+	.small-service__items{
+		margin-top: 16px;
+	}
+
+	.small-service__item + .small-service__item{
+		margin-top: 16px;
+	}
+
+	.subject__item {
+		margin-top: 12px;
+	}
 	/*------------
 		Commit
 	------------*/

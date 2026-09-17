@@ -113,6 +113,37 @@
 	.page-title br{
 		display: none;
 	}
+
+	.small-service__boxr{
+		width: 130px;
+	}
+
+	.subject {
+		padding: 20px;
+		border-radius: 20px;
+	}
+
+	.article-text__info{
+		padding: 20px;
+		border-radius: 20px;
+	}
+
+	.small-service{
+		padding: 20px;
+		border-radius: 20px;
+	}
+
+	.small-service__name {
+		font-size: 18px;
+	}
+
+	.article-text .text-block ul li::before{
+		top: 6.5px;
+	}
+
+	.article-text .text-block ul li p{
+		padding-left: 10px;
+	}
 	/*------------
 		Commit
 	------------*/

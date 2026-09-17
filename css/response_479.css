@@ -159,6 +159,33 @@
 		min-height: 200px;
 		object-fit: cover;
 	}
+	
+	.article-text .cont{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.article-text__tag{
+		padding: 6px 12px;
+	}
+
+	.small-service__item{
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.small-service__boxr{
+		width: 100%;
+	}
+
+	.article-grade__top{
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.article-grade__view{
+		width: 100%;
+	}
 	/*------------
 		Commit
 	------------*/
