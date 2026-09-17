@@ -13,6 +13,14 @@
 		width: 20%;
 	}
 
+
+	.small-service__name{
+		font-size: 22px;
+	}
+
+	.small-title{
+		font-size: 22px;
+	}
 	/*------------
 		Commit
 	------------*/
