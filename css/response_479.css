@@ -186,6 +186,16 @@
 	.article-grade__view{
 		width: 100%;
 	}
+
+	.section-error .cont{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.page-search .cont{
+		padding-left: 0;
+		padding-right: 0;
+	}
 	/*------------
 		Commit
 	------------*/

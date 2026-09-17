@@ -106,6 +106,63 @@ $(() => {
 		})
 	}
 
+	if ($('.specialists__slider').length) {
+		new Swiper(".specialists__slider", {
+			loop: true,
+			spaceBetween: 10,
+			slidesPerView: 2,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 10,
+					slidesPerView: 2,
+				},
+				'480': {
+					spaceBetween: 10,
+					slidesPerView: 2,
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 2,
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 3,
+				},
+				'1320': {
+					spaceBetween: 20,
+					slidesPerView: 4,
+				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				}
+			}
+		})
+	}
+
 
 	if ($('.reviews__slider').length) {
 		new Swiper(".reviews__slider", {

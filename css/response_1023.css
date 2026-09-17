@@ -409,6 +409,18 @@
 	.section-error__btn{
 		min-width: 220px;
 	}
+
+	.big-search_marg{
+		margin-top: 24px;
+	}
+
+	.search-empty{
+		margin-top: 24px;
+	}
+
+	.treatment__wrap_marg{
+		margin-top: 20px;
+	}
 	/*------------
 		Commit
 	------------*/
@@ -611,7 +623,7 @@
 		--products_count: 2;
 	}
 
-	.specialist
+	.specialists__grid .specialist
 	{
 		width: calc(100% / var(--products_count) - 15px);
 		margin-top: 15px;

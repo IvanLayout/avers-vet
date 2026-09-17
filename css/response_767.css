@@ -307,6 +307,14 @@
 	.section-error__wrap{
 		padding: 0;
 	}
+
+	.big-search_marg{
+		margin-top: 20px;
+	}
+
+	.search-empty{
+		margin-top: 20px;
+	}
 	/*------------
 		Commit
 	------------*/
@@ -588,10 +596,13 @@
 
 	.specialist 
 	{
+		padding: 5px;
+	}
+
+	.specialists__grid .specialist{
 		width: calc(100% / var(--products_count) - 10px);
 		margin-top: 10px;
 		margin-left: 10px;
-		padding: 5px;
 	}
 
 	.specialist__location 
