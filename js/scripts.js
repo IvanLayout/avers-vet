@@ -223,6 +223,64 @@ $(() => {
 	}
 
 
+	if ($('.certs__slider').length) {
+		new Swiper(".certs__slider", {
+			loop: true,
+			spaceBetween: 15,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+					slidesPerView: 1,
+				},
+				'480': {
+					spaceBetween: 15,
+					slidesPerView: 1,
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 2
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 2
+				},
+				'1200': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				}
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				}
+			}
+		})
+	}
+
+
 	//
 	$('body').on('click', '.amount__btn_minus', function (e) {
 		e.preventDefault()

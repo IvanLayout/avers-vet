@@ -276,11 +276,11 @@ $(() => {
 		if ($(this).hasClass('_active')) {
 			$(this).removeClass('_active')
 
-			$(this).closest('.education__items').find('._hide').removeClass('_show')
+			$(this).closest('.education').find('._hide').removeClass('_show')
 		} else {
 			$(this).addClass('_active')
 
-			$(this).closest('.education__items').find('._hide').addClass('_show')
+			$(this).closest('.education').find('._hide').addClass('_show')
 		}
 	})
 
