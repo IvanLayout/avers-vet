@@ -274,6 +274,10 @@
 	.subject__item {
 		margin-top: 12px;
 	}
+
+	.articles-cats__item {
+		width: calc(100% - 15px);
+	}
 	/*------------
 		Commit
 	------------*/

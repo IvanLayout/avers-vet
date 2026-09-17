@@ -70,6 +70,16 @@
 	.small-service__item + .small-service__item{
 		margin-top: 20px;
 	}
+
+	.articles-cats__item {
+		padding-left: 20px;
+		padding-right: 20px;
+		border-radius: 25px;
+	}
+
+	.articles-cats__name{
+		font-size: 20px;
+	}
 	/*------------
 		Commit
 	------------*/

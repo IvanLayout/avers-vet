@@ -346,6 +346,23 @@
 	.small-service__name{
 		font-size: 20px;
 	}
+
+
+	.articles-cats__grid {
+		margin: 15px 0 0 -15px;
+		gap: 15px 0;
+	}
+
+	.articles-cats__item {
+		border-radius: 20px;
+		min-height: 1px;
+		width: calc(100% / 2 - 15px);
+		margin-left: 15px;
+	}
+
+	.articles-cats__name{
+		font-size: 18px;
+	}
 	/*------------
 		Commit
 	------------*/
