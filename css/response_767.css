@@ -183,13 +183,7 @@
 		margin-top: 35px;
 	}
 
-
-	.cat-links{
-		gap: 16px;
-	}
-
 	.cat-links__link {
-		line-height: 40px;
 		font-size: 14px;
 	}
 
@@ -224,6 +218,10 @@
 	{
 		font-size: 18px;
 		margin-bottom: 10px;
+	}
+
+	.text-block * + h4{
+		margin-top: 20px;
 	}
 
 	.text-block * + h5 

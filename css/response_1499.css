@@ -45,6 +45,19 @@
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
+
+
+	.section-img__img{
+		border-radius: 35px;
+	}
+
+	.small-service__name{
+		font-size: 20px;
+	}
+
+	.small-title{
+		font-size: 20px;
+	}
 	/*------------
 		Commit
 	------------*/
