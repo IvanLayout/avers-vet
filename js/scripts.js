@@ -451,8 +451,8 @@ function serviceSlider(){
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
-			spaceBetween: 10,
-			slidesPerView: 1,
+			spaceBetween: 15,
+			slidesPerView: 'auto',
 			preloadImages: false,
 			lazy: {
 				loadPrevNext: true,
@@ -471,12 +471,12 @@ function serviceSlider(){
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 10,
-					slidesPerView: 1
+					spaceBetween: 15,
+					slidesPerView: 'auto'
 				},
 				'480': {
-					spaceBetween: 10,
-					slidesPerView: 1
+					spaceBetween: 15,
+					slidesPerView: 'auto'
 				},
 				'768': {
 					spaceBetween: 15,

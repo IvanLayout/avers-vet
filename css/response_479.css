@@ -143,7 +143,13 @@
 		top: 5px;
 	}
 
-	.text-block h4
+	.text-block h3
+	{
+		font-size: 20px;
+	}
+
+	.text-block h4,
+	.text-block h5
 	{
 		font-size: 16px;
 	}
@@ -412,6 +418,153 @@
 	{
 		padding-right: 15px;
 		padding-left: 15px;
+	}
+
+
+	.service-head__info
+	{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.service-head__area
+	{
+		font-size: 16px;
+	}
+
+	.service-head__items 
+	{
+		max-width: 190px;
+	}
+
+	.service-head__item
+	{
+		border-radius: 15px;
+		padding: 7px;
+	}
+
+	.service-head__item-desc
+	{
+		font-size: 16px;
+	}
+
+
+	.service-info .section-bg
+	{
+		padding-top: 40px;
+	}
+
+	.service-info__coll
+	{
+		margin-top: 10px;
+	}
+
+
+	.service-info__wrap
+	{
+		margin-top: 24px;
+	}
+
+	.service-info__item
+	{
+		padding: 20px;
+	}
+
+	.service-info__icon
+	{
+		width: 50px;
+		height: 50px;
+		border-radius: 15px;
+		padding: 12px;
+	}
+
+	.service-info__name
+	{
+		margin-top: 45px;
+		font-size: 16px;
+	}
+
+
+	.tabs-bg
+	{
+		margin-bottom: 20px;
+	}
+
+	.tabs__text
+	{
+		font-size: 14px;
+	}
+
+
+	.service-branch__nav-title
+	{
+		font-size: 16px;
+	}
+
+	.service-branch__nav-btn
+	{
+		font-size: 12px;
+	}
+
+
+	.text-block__symptom
+	{
+		line-height: 25px;
+	}
+
+	.stages-process
+	{
+		margin-top: 10px;
+	}
+
+	.stages-process__item
+	{
+		margin-top: 10px;
+	}
+
+
+	.service-branch__item-title + .text-block
+	{
+		margin-top: 10px;
+	}
+
+	.equipment__items
+	{
+		margin-top: 10px;
+	}
+
+	.equipment__item
+	{
+		border-radius: 5px;
+		padding: 5px;
+	}
+
+	.equipment__icon
+	{
+		border-radius: 5px;
+		padding: 9px;
+	}
+
+	
+	.treatment__tabs .global-icon__name
+	{
+		font-size: 14px;
+	}
+
+	.global-icon__box:before 
+	{
+		left: 11px;
+	}
+
+
+	.treatment-table__price
+	{
+		font-size: 16px;
+	}
+
+	.treatment__bot-btn
+	{
+		width: 100%;
 	}
 
 

@@ -17,6 +17,11 @@
 		Commit
 	------------*/
 
+	.text-block h3
+	{
+		font-size: 30px;
+	}
+
 	.text-block h4
 	{
 		font-size: 22px;

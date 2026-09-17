@@ -36,6 +36,11 @@
 	/*------------
 		Commit
 	------------*/
+	.text-block h3
+	{
+		font-size: 28px;
+	}
+
 	.text-block h4
 	{
 		font-size: 20px;
@@ -492,10 +497,23 @@
 		margin-left: -35px;
 	}
 
+	.service-branch__item-title,
+	.service-head__item-desc
+	{
+		font-size: 22px;
+	}
+
 	.tabs__text
 	{
 		font-size: 18px;
 		margin-left: 35px;
 		padding-bottom: 21px;
+	}
+
+
+	.service-head__bg,
+	.service-head__bg-img
+	{
+		border-radius: 35px;
 	}
 }

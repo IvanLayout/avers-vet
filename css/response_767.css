@@ -172,10 +172,25 @@
 		Commit
 	------------*/
 
+	.text-block h3 
+	{
+		font-size: 22px;
+	}
+
 	.text-block h4
 	{
 		font-size: 18px;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
+	}
+
+	.text-block * + h5 
+	{
+		margin-top: 20px;
+	}
+
+	.text-block h5
+	{
+		font-size: 18px;
 	}
 
 	.text-block p
@@ -676,6 +691,131 @@
 	}
 
 
+	.service-branch__item-title
+	{
+		font-size: 20px;
+	}
+
+	.service-branch__item + .service-branch__item
+	{
+		margin-top: 20px;
+	}
+
+
+	.service-branch__bg
+	{
+		border-radius: 20px;
+		padding: 20px;
+	}
+
+	.equipment__item 
+	{
+		width: calc(100% / 1 - 20px);
+		max-width: 100%;
+		padding: 10px;
+		margin-top: 10px;
+	}
+
+
+	.tabs.global-icons
+	{
+		margin-left: -15px;
+	}
+
+	.tabs.global-icons .global-icon
+	{
+		width: calc(100%/2 - 15px);
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+
+
+	.treatment .cont
+	{
+		padding: 0;
+	}
+
+	.treatment__data
+	{
+		padding-top: 20px;
+	}
+
+	.treatment-table
+	{
+		border-spacing: 0;
+	}
+
+	.treatment-table tr + tr
+	{
+		margin-top: 10px;
+	}
+
+	.treatment-table tr
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+
+		border-radius: 15px;
+		padding: 15px;
+		background: #F4F9FF;
+	}
+
+	.treatment-table td
+	{
+		padding: 0;
+	}
+
+	.treatment-table td:last-child
+	{
+		padding-right: 0;
+	}
+
+	.treatment-table__info
+	{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.treatment-table__price
+	{
+		font-size: 18px;
+	}
+
+	.treatment__bot
+	{
+		margin-top: 15px;
+	}
+
+
+	.stages-process__item
+	{
+		width: calc(100% / 1 - 15px);
+		border-radius: 20px;
+		padding: 20px;
+		min-height: 204px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	.stages-process__number
+	{
+		height: 114px;
+		top: auto;
+		bottom: 20px;
+		right: 20px;
+	}
+
+	.stages-process__desc
+	{
+		max-width: 200px;
+	}
+
+
 	.footer
 	{
 		padding-bottom: 0;
@@ -750,7 +890,8 @@
 		margin-top: 20px;
 	}
 
-	.accordion__item
+	.accordion__item,
+	.accordion__open-border::after
 	{
 		border-radius: 5px;
 	}
@@ -765,6 +906,108 @@
 		font-size: 14px;
 	}
 
+
+	.service-head__info
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.service-head .cont
+	{
+		padding: 0;
+	}
+
+	.service-head__box
+	{
+		margin-top: 35px;
+	}
+
+	.service-head__box + .service-head__box
+	{
+		margin-top: 25px;
+	}
+
+	.service-head__area
+	{
+		font-size: 18px;
+	}
+
+
+	.service-info .cont,
+	.service-branch .cont
+	{
+		padding: 0;
+	}
+
+
+	.service-info__wrap
+	{
+		overflow: visible;
+	}
+
+	.service-info__item
+	{
+		width: 320px;
+		border-radius: 20px;
+	}
+
+	.service-info__img img
+	{
+		border-radius: 20px;
+	}
+
+	.service-info__name
+	{
+		font-size: 18px;
+	}
+
+	.service-branch__wrap
+	{
+		margin-top: 25px;
+	}
+
+	.tabs-bg
+	{
+		background: none;
+		border-radius: 0;
+		padding: 0;
+	}
+
+	.service-branch__tabs
+	{
+		overflow: hidden;
+		overflow-x: auto;
+		flex-wrap: nowrap;
+		margin-right: -20px;
+		padding-right: 20px;
+	}
+
+	.tabs__text
+	{
+		margin-top: 0;
+		padding-bottom: 8px;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+
+	.service-branch__nav
+	{
+		border-radius: 20px;
+		padding: 20px;
+	}
+
+	.service-branch__nav-title
+	{
+		font-size: 18px;
+	}
+
+	.service-branch__img img
+	{
+		border-radius: 20px;
+	}
+	
 
 
 	.modal

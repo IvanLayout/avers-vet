@@ -1570,6 +1570,7 @@ input[type=radio]:checked + .radio__text::after
 {
 	margin: 20px 0 0 20px;
 	min-width: 207px;
+	display: block;
 }
 
 .global-icon input[type=radio]
@@ -5590,6 +5591,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 	padding: 14px;
 
 	justify-content: space-between;
+	align-items: center;
+	align-content: center;
 }
 
 .service-head__item-icon
@@ -5757,6 +5760,7 @@ input[type=checkbox]:checked + .checkbox__text::after
     
 	text-transform: uppercase;
 	padding-bottom: 24px;
+	white-space: nowrap;
 	border-bottom: 2px solid transparent;
 
 	transition: color .2s linear, border .2s linear;
@@ -5864,6 +5868,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 .text-block + .service-branch__item-title
 {
 	margin-top: 30px;
+}
+
+.service-branch__item-title + .text-block
+{
+	margin-top: 20px;
 }
 
 .text-block__symptoms

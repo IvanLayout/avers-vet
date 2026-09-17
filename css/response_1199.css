@@ -101,6 +101,11 @@
 		font-size: 14px;
 	}
 
+	.text-block h3
+	{
+		font-size: 24px;
+	}
+
 	.page-head__bg
 	{
 		padding: 30px;
@@ -317,6 +322,12 @@
 	.main-form__box
 	{
 		width: 63%;
+	}
+
+
+	.service-head__item-desc
+	{
+		font-size: 20px;
 	}
 
 

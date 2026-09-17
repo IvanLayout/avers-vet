@@ -670,9 +670,24 @@
 		z-index: 2;
 	}
 
+	.service-head__area
+	{
+		font-size: 20px;
+	}
+
+	.service-head__items 
+	{
+		max-width: 260px;
+	}
+
 	.service-head__item + .service-head__item
 	{
 		margin-top: 15px;
+	}
+
+	.service-head__item-desc 
+	{
+		font-size: 18px;
 	}
 
 	.service-head__img
@@ -711,15 +726,20 @@
 		display: none;
 	}
 
-	.service-info__grid._flex .service-info__item 
+	.service-info__item
 	{
-		width: calc(100% / 2 - 20px);
+		height: auto;
 	}
 
 
 	.service-branch__coll
 	{
 		width: 100%;
+	}
+
+	.service-branch__nav-title
+	{
+		font-size: 22px;
 	}
 
 	.service-branch__colr
@@ -742,6 +762,7 @@
 	.text-block__symptoms 
 	{
 		margin-left: -10px;
+		margin-top: 10px;
 	}
 
 	.text-block__symptom
@@ -750,12 +771,14 @@
 		padding-left: 10px;
 		padding-right: 10px;
 		line-height: 30px;
+		border-radius: 15px;
 	}
 
 
 	.stages-process
 	{
 		margin-left: -15px;
+		margin-top: 5px;
 	}
 
 	.stages-process__item 
@@ -763,6 +786,28 @@
 		width: calc(100% / 2 - 15px);
 		margin-top: 15px;
 		margin-left: 15px;
+	}
+
+
+	.treatment__tabs
+	{
+		margin-bottom: 30px;
+	}
+
+
+	.treatment-table
+	{
+		border-spacing: 0 15px;
+	}
+
+	.treatment-table td
+	{
+		padding-left: 20px;
+	}
+
+	.treatment-table td:last-child
+	{
+		padding-right: 20px;
 	}
 
 
