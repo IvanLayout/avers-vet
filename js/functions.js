@@ -269,6 +269,21 @@ $(() => {
 		}
 	})
 
+	// Показать все
+	$('body').on('click', '.education__btn', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.education__items').find('._hide').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.education__items').find('._hide').addClass('_show')
+		}
+	})
+
 	// Маска ввода
 	$('input[type=tel]').each(function(){
 		let datamask = $(this).data('mask');
