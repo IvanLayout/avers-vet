@@ -362,7 +362,7 @@
 	}
 
 
-	.modal-stock__list li::before
+	.modal-form__list li::before
 	{
 		top: 5.5px;
 	}

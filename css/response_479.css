@@ -156,7 +156,8 @@
 
 	.form .form__input,
 	.select-wrap .nice-select .current,
-	.checkbox__text
+	.checkbox__text,
+	.form .form__textarea
 	{
 		font-size: 12px;
 	}
@@ -693,17 +694,17 @@
 		font-size: 12px;
 	}
 
-	.modal-stock__price-old
+	.modal-form__price-old
 	{
 		font-size: 12px;
 	}
 
-	.modal-stock__price
+	.modal-form__price
 	{
 		font-size: 16px;
 	}
 
-	.modal-stock__agree
+	.modal-form__agree
 	{
 		margin-top: 20px;
 	}

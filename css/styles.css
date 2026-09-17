@@ -1337,6 +1337,7 @@ button
     background: #fff;
 	resize: none;
 	transition: border .2s linear;
+	border-radius: 15px;
 }
 
 .form .form__textarea.error,
@@ -6716,14 +6717,18 @@ input[type=checkbox]:checked + .checkbox__text::after
 	line-height: 1.2;
 }
 
+.modal__box
+{
+	width: 100%;
+}
 
-.modal-stock
+.modal-form
 {
 	padding-left: 40px;
 	padding-right: 40px;
 }
 
-.modal-stock__top-title
+.modal-form__top-title
 {
 	background: #EBF2FC;
 	border-radius: 14px;
@@ -6737,36 +6742,48 @@ input[type=checkbox]:checked + .checkbox__text::after
 	text-transform: uppercase;
 }
 
-.modal-stock__action
+.modal-form__top-status
+{
+	background: #EBF2FC;
+	border-radius: 14px;
+	line-height: 28px;
+	padding: 0 12px;
+	font-size: 16px;
+	color: #2262B7;
+	margin-bottom: 16px;
+	display: inline-block;
+}
+
+.modal-form__action
 {
 	margin-top: 12px;
 	color: #E94E1B;
 }
 
-.modal-stock__desc
+.modal-form__desc
 {
 	margin-top: 12px;
 	color: #737373;
 }
 
-.modal-stock__info
+.modal-form__info
 {
 	margin-top: 29px;
 }
 
-.modal-stock__title
+.modal-form__title
 {
 	font-size: 12px;
 	color: var(--chernyy);
 	text-transform: uppercase;
 }
 
-.modal-stock__list
+.modal-form__list
 {
 	margin-top: 10px;
 }
 
-.modal-stock__list li
+.modal-form__list li
 {
 	list-style: none;
 	position: relative;
@@ -6774,12 +6791,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 	color: #737373;
 }
 
-.modal-stock__list li + li
+.modal-form__list li + li
 {
 	margin-top: 8px;
 }
 
-.modal-stock__list li::before
+.modal-form__list li::before
 {
 	position: absolute;
 	content: '';
@@ -6795,25 +6812,30 @@ input[type=checkbox]:checked + .checkbox__text::after
 	background: #2262B7;
 }
 
-.modal-stock__choice
+.modal-form__choice
 {
 	margin-top: 35px;
 }
 
-.modal-stock__bot
+.modal-form__form
+{
+	margin-top: 30px;
+}
+
+.modal-form__bot
 {
 	margin-top: 30px;
 	padding-top: 17px;
 	border-top: 1px solid #D4E2F4;
 }
 
-.modal-stock__bot-flex
+.modal-form__bot-flex
 {
 	justify-content: space-between;
 	flex-wrap: nowrap;
 }
 
-.modal-stock__price-old
+.modal-form__price-old
 {
 	white-space: nowrap;
 	color: #737373;
@@ -6824,7 +6846,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-bottom: 2px;
 }
 
-.modal-stock__price
+.modal-form__price
 {
 	white-space: nowrap;
 	color: var(--chernyy);
@@ -6833,7 +6855,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	font-weight: 500;
 }
 
-.modal-stock__agree
+.modal-form__agree
 {
 	margin-top: 15px;
 }
