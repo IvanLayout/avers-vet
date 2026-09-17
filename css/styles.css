@@ -6237,27 +6237,16 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .call-away__bg
 {
-	background: #E94E1B;
-	border-radius: 60px;
-
 	justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
+	flex-wrap: nowrap;
 
 	position: relative;
-}
 
-/* .help-banner__circle1 
-{
-    position: absolute;
-    left: 43px;
-    bottom: 59px;
-    width: 47px;
-    height: 47px;
-    background: #fff;
-    filter: blur(50px);
-    border-radius: 50%;
-} */
+	background: #E94E1B url(../images/info-pattern2.png) 50% bottom / 100% auto no-repeat;
+    border-radius: 60px;
+}
 
 .call-away__coll 
 {
