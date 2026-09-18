@@ -54,6 +54,7 @@
 		align-items: flex-end;
 		align-content: flex-end;
 		flex-wrap: wrap;
+		padding: 0;
 	}
 
 	.advantages__bg-img{
@@ -139,6 +140,11 @@
 
 	.page-head__btn{
 		width: 100%;
+	}
+
+	.page-head .cont
+	{
+		padding: 0;
 	}
 
 
@@ -234,6 +240,11 @@
 		margin-top: 20px;
 	}
 
+	.main-services .cont
+	{
+		padding: 0;
+	}
+
 	.main-services__item
 	{
 		aspect-ratio: 1 / 1.4905;
@@ -251,6 +262,11 @@
 	}
 
 
+	.stocks .cont
+	{
+		padding: 0;
+	}
+
 	.stocks__item
 	{
 		padding: 20px;
@@ -267,6 +283,11 @@
 		max-height: 47px;
 	}
 
+
+	.help-banner .cont
+	{
+		padding: 0;
+	}
 
 	.help-banner__box-btns{
 		gap: 0;
@@ -311,6 +332,11 @@
 		margin-right: 5px;
 	}
 
+	.surgery-serv .cont
+	{
+		padding: 0;
+	}
+
 	.surgery-serv__item
 	{
 		padding: 10px;
@@ -340,6 +366,11 @@
 		margin-top: 5px;
 	}
 
+
+	.products .cont
+	{
+		padding: 0;
+	}
 
 	.products__grid
 	{
@@ -403,6 +434,11 @@
 	.specialist__all-name
 	{
 		font-size: 16px;
+	}
+
+	.specialists .cont
+	{
+		padding: 0;
 	}
 
 	.specialist 
@@ -496,6 +532,11 @@
 	}
 
 
+	.service-head .cont
+	{
+		padding: 0;
+	}
+
 	.service-head__info
 	{
 		padding-top: 30px;
@@ -523,6 +564,11 @@
 		font-size: 16px;
 	}
 
+
+	.service-info .cont
+	{
+		padding: 0;
+	}
 
 	.service-info .section-bg
 	{
@@ -570,6 +616,11 @@
 		font-size: 14px;
 	}
 
+
+	.service-branch .cont
+	{
+		padding: 0;
+	}
 
 	.service-branch__nav-title
 	{
@@ -620,6 +671,11 @@
 		padding: 9px;
 	}
 
+
+	.treatment .cont
+	{
+		padding: 0;
+	}
 	
 	.treatment__tabs .global-icon__name
 	{
@@ -798,6 +854,29 @@
 		font-size: 16px;
 	}
 
+
+	.reviews .cont
+	{
+		padding: 0;
+	}
+
+	
+	.main-about
+	{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+
+	.footer
+	{
+		padding-bottom: 0;
+	}
+
+	.footer .cont
+	{
+		padding: 0;
+	}
 
 	.footer__logo a, 
 	.footer__logo img

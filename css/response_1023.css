@@ -729,6 +729,8 @@
 		background: #fff;
 		padding: 25px 20px;
 		border-radius: 35px;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 
 	.main-about .cont
@@ -960,6 +962,30 @@
 	.service-branch__mob-btn
 	{
 		display: block;
+	}
+
+	.service-branch__tabs
+	{
+		overflow: hidden;
+		overflow-x: auto;
+		flex-wrap: nowrap;
+		margin-right: -20px;
+		padding-right: 20px;
+		margin-left: 0;
+		gap: 25px;
+	}
+
+	.service-branch__tabs::-webkit-scrollbar
+	{
+		display: none;
+	}
+
+	.tabs__text
+	{
+		margin-top: 12px;
+		padding-bottom: 8px;
+		/* min-width: 43px; */
+		margin-left: 0;
 	}
 
 
