@@ -888,6 +888,7 @@
 	{
 		background: #E94E1B url(../images/info-pattern3_mob.png) 50% bottom / 100% auto no-repeat;
 		gap: 0;
+		overflow: hidden;
 	}
 
 	.call-away__colr
@@ -908,9 +909,12 @@
 	.call-away__img
 	{
 		height: 260px;
+		height: 310px;
+            width: calc(100% + 80px);
+            margin-left: -40px;
 
-		width: calc(100% + 40px);
-		margin-left: -20px;
+		/* width: calc(100% + 40px);
+		margin-left: -20px; */
 		margin-top: 10px;
 		border-radius: 0 0 35px 35px;
 		overflow: hidden;
