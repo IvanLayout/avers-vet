@@ -234,7 +234,8 @@
 	}
 
 
-	.treatment-table__price
+	.treatment-table__price,
+	.section-price__price
 	{
 		font-size: 20px;
 	}

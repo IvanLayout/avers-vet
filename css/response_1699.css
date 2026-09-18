@@ -143,4 +143,11 @@
 	{
 		width: 20%;
 	}
+
+
+	.product-info__adress-title,
+	.product-info__price
+	{
+		font-size: 22px;
+	}
 }

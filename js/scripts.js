@@ -238,17 +238,6 @@ $(() => {
 				checkInView: true,
 				loadOnTransitionStart: true
 			},
-			navigation: {
-				nextEl: '.slider-button-next',
-				prevEl: '.slider-button-prev'
-			},
-			pagination: {
-				bulletActiveClass: 'slider-dot_active',
-				bulletClass: 'slider-dot',
-				clickableClass: 'slider-pagination-clickable',
-				el: '.slider-pagination',
-				clickable: true
-			},
 			breakpoints: {
 				'320': {
 					spaceBetween: 15,
@@ -271,6 +260,17 @@ $(() => {
 					slidesPerView: 4,
 				}
 			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
 			on: {
 				init: function (swiper) {
 					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
@@ -284,7 +284,7 @@ $(() => {
 		new Swiper(".certs__slider", {
 			loop: true,
 			spaceBetween: 15,
-			slidesPerView: 1,
+			slidesPerView: 'auto',
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			preloadImages: false,
@@ -299,11 +299,11 @@ $(() => {
 			breakpoints: {
 				'320': {
 					spaceBetween: 15,
-					slidesPerView: 1,
+					slidesPerView: 'auto',
 				},
 				'480': {
 					spaceBetween: 15,
-					slidesPerView: 1,
+					slidesPerView: 'auto',
 				},
 				'768': {
 					spaceBetween: 15,
@@ -314,6 +314,10 @@ $(() => {
 					slidesPerView: 2
 				},
 				'1200': {
+					spaceBetween: 20,
+					slidesPerView: 3
+				},
+				'1500': {
 					spaceBetween: 20,
 					slidesPerView: 4
 				}

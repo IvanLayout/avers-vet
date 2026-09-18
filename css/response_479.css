@@ -643,6 +643,162 @@
 	}
 
 
+	.product-info .cont
+	{
+		padding: 0;
+	}
+
+	.product-info .breadcrumbs
+	{
+		text-align: center;
+	}
+
+	.product-image__img
+	{
+		aspect-ratio: 1 / 1.203;
+	}
+
+	.product-info .main-title br
+	{
+		display: none;
+	}
+
+	.product-info__recep
+	{
+		margin-top: 6px;
+		margin-left: 0;
+		justify-content: space-between;
+	}
+
+	.product-info__recep-item 
+	{
+		padding: 10px;
+		width: calc(100%/2 - 5px);
+		margin-top: 10px;
+		margin-left: 0;
+	}
+
+	.product-info__price
+	{
+		font-size: 16px;
+		margin-top: 5px;
+	}
+
+	.product-info__bot
+	{
+		margin-top: 15px;
+		padding-top: 15px;
+
+		gap: 20px;
+	}
+
+	.product-info__all-price
+	{
+		border: none;
+		padding-right: 23px;
+	}
+
+	.product-info__all-price::after
+	{
+		position: absolute;
+		content: '';
+		top: 50%;
+		right: 0;
+
+		display: block;
+
+		width: 14px;
+		height: 8px;
+
+		margin-top: -5px;
+
+		background: url(../images/ic_arrow2.svg) 50% 50% no-repeat;
+	}
+
+
+	.product-info__adress-title
+	{
+		font-size: 16px;
+	}
+
+	.product-info__adres-time
+	{
+		width: 60px;
+		height: 27px;
+		padding: 6px 10px;
+	}
+
+
+	.education__item
+	{
+		padding-bottom: 15px;
+	}
+
+
+	.certs__slider .swiper-overflow
+	{
+		overflow: visible;
+	}
+
+	.certs__item
+	{
+		width: 240px;
+	}
+
+	.certs__name br
+	{
+		display: none;
+	}
+
+
+	.section-price .cont
+	{
+		padding: 0;
+	}
+
+	.section-price__flex
+	{
+		gap: 15px;
+	}
+
+	.section-price .main-title
+	{
+		order: 1;
+	}
+
+	.section-price__wrap
+	{
+		order: 2;
+	}
+
+	.section-price__box-btn
+	{
+		width: 100%;
+		order: 3;
+		margin-top: 10px;
+	}
+
+	.section-price__btn
+	{
+		width: 100%;
+	}
+
+	.section-price__info
+	{
+		width: 100%;
+	}
+
+	.section-price__name
+	{
+		font-size: 14px;
+	}
+
+	.section-price__price
+	{
+		font-size: 16px;
+	}
+
+
 	.footer__logo a, 
 	.footer__logo img
 	{
@@ -753,6 +909,12 @@
 	.modal-form__agree
 	{
 		margin-top: 20px;
+	}
+	
+
+	.modal-doctor__name 
+	{
+		font-size: 18px;
 	}
 
 

@@ -976,6 +976,106 @@
 	}
 
 
+	.product-info .section-bg
+	{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.product-info__image
+	{
+		width: 100%;
+	}
+
+	.product-image__img
+	{
+		border-radius: 20px;
+	}
+
+	.product-info__info
+	{
+		width: 100%;
+		margin-top: 27px;
+	}
+
+	.product-info__box
+	{
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: nowrap;
+		gap: 20px;
+	}
+
+	.product-info__box-info
+	{
+		flex-wrap: nowrap;
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	.product-info__exp
+	{
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	.product-info__rev
+	{
+		margin-top: 0;
+	}
+
+
+	.product-info__adress-title
+	{
+		margin-bottom: 15px;
+	}
+
+	.product-info__adres
+	{
+		width: 100%;
+	}
+
+
+	.certs__item
+	{
+		width: 300px;
+		border-radius: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.certs__bot
+	{
+		margin-top: 30px;
+	}
+
+	.certs__name
+	{
+		font-size: 14px;
+	}
+
+
+	.section-price__item
+	{
+		padding: 15px;
+		gap: 20px;
+		flex-wrap: wrap;
+	}
+
+	.section-price__item + .section-price__item
+	{
+		margin-top: 10px;
+	}
+
+
+	.education__year
+	{
+		font-size: 12px;
+	}
+
+
 	.footer
 	{
 		padding-bottom: 0;
@@ -1246,6 +1346,25 @@
 	.modal-form__price
 	{
 		font-size: 20px;
+	}
+
+
+	.modal-doctor__name
+	{
+		font-size: 22px;
+	}
+
+
+	.modal-thank__icon
+	{
+		width: 80px;
+		height: 80px;
+		border-radius: 20px;
+	}
+
+	.modal-thank__title
+	{
+		font-size: 28px;
 	}
 
 
