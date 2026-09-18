@@ -626,13 +626,33 @@
 
 	.call-away__img
 	{
-		width: 26%;
+		width: 30%;
 	}
 
 	.call-away__colr
 	{
-		width: 29%;
+		width: 25%;
 		padding-top: 30px;
 		padding-bottom: 40px;
+	}
+
+
+	.call-away__phone-number
+	{
+		font-size: 24px;
+	}
+
+	.help-banner__phone-number a,
+	.call-away__phone-number a
+	{
+		padding-left: 30px;
+	}
+
+	.help-banner__phone-number a::before,
+	.call-away__phone-number a::before
+	{
+		width: 23px;
+		height: 24px;
+		margin-top: -12px;
 	}
 }

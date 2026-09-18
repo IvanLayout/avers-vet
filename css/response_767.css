@@ -1207,7 +1207,34 @@
 	{
 		border-radius: 20px;
 	}
-	
+
+
+	.call-away__bg
+	{
+		gap: 30px;
+	}
+
+	.call-away__coll
+	{
+		width: 100%;
+	}
+
+	.call-away__colr
+	{
+		width: 100%;
+		padding-top: 0;
+		text-align: left;
+	}
+
+	.call-away__phone-desc
+	{
+		text-align: left;
+	}
+
+	.call-away__box-btns
+	{
+		margin-top: 16px;
+	}
 
 
 	.modal

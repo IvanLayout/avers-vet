@@ -843,18 +843,6 @@
 		font-size: 20px;
 	}
 
-	.help-banner__phone-number a
-	{
-		padding-left: 34px;
-	}
-
-	.help-banner__phone-number a::before
-	{
-		width: 22px;
-		height: 23px;
-		margin-top: -10px;
-	}
-
 
 	.adresess__coll,
 	.adresess__colr
@@ -1128,6 +1116,50 @@
 	{
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+
+
+	.call-away__bg
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+
+		gap: 20px 30px;
+		flex-wrap: wrap;
+	}
+
+	.call-away__coll
+	{
+		width: calc(60% - 15px);
+		order: 1;
+		padding-bottom: 0;
+		padding-top: 20px;
+	}
+
+	.call-away__colr
+	{
+		width: calc(40% - 15px);
+		order: 2;
+		padding-bottom: 0;
+		padding-top: 20px;
+	}
+
+	.call-away__img
+	{
+		width: 100%;
+		order: 3;
+		margin-top: 0;
+		height: 220px;
+	}
+
+	.call-away__img img
+	{
+		margin-left: 16%;
+	}
+
+	.call-away__desc
+	{
+		margin-top: 16px;
 	}
 
 

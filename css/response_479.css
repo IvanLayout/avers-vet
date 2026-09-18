@@ -310,17 +310,20 @@
 		width: 100%;
 	}
 
-	.help-banner__phone-number
+	.help-banner__phone-number,
+	.call-away__phone-number
 	{
 		font-size: 16px;
 	}
 
-	.help-banner__phone-number a 
+	.help-banner__phone-number a,
+	.call-away__phone-number a
 	{
 		padding-left: 26px;
 	}
 
-	.help-banner__phone-number a::before 
+	.help-banner__phone-number a::before,
+	.call-away__phone-number a::before
 	{
 		width: 16px;
 		height: 17px;
@@ -878,6 +881,45 @@
 	{
 		margin-left: 0;
 		margin-right: 0;
+	}
+
+
+	.call-away__bg
+	{
+		background: #E94E1B url(../images/info-pattern3_mob.png) 50% bottom / 100% auto no-repeat;
+		gap: 0;
+	}
+
+	.call-away__colr
+	{
+		margin-top: 30px;
+	}
+
+	.call-away__desc
+	{
+		max-width: 220px;
+	}
+
+	.call-away__box-btn
+	{
+		max-width: 100%;
+	}
+
+	.call-away__img
+	{
+		height: 260px;
+
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		margin-top: 10px;
+		border-radius: 0 0 35px 35px;
+		overflow: hidden;
+	}
+
+	.call-away__img img 
+	{
+		margin-left: 0;
+		border-radius: 0 0 35px 35px;
 	}
 
 

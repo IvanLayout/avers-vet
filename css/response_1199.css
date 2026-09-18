@@ -442,6 +442,22 @@
 	}
 
 
+	.call-away__coll
+	{
+		width: 40%;
+	}
+
+	.call-away__img 
+	{
+		width: 32%;
+	}
+
+	.call-away__colr
+	{
+		width: 28%;
+	}
+
+
 	.footer__coll
 	{
 		width: 330px;
