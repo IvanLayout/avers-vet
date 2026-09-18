@@ -7438,14 +7438,49 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	height: auto;
 
-	background: linear-gradient(180deg, #f5f9ff 0%, #f0f7ff 100%);
+	background: #E6F1FF;
 	border-radius: 40px;
 	padding: 30px 20px;
 
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 
 	text-decoration: none;
+
+	transition: background .2s linear;
+	position: relative;
+}
+
+.certs__item::before
+{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	background: linear-gradient(180deg, #f5f9ff 0%, #f0f7ff 100%);
+	opacity: 1;
+	transition: opacity .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.certs__item:hover::before
+	{
+		opacity: 0;
+	}
+}
+
+.certs__item > *
+{
+	position: relative;
+	z-index: 1;
 }
 
 .certs__icon
@@ -7479,13 +7514,19 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 16px;
 	color: #737373;
 	display: block;
-	flex: 1 0 auto;
 }
 
 .certs__bot
 {
+	flex: 1 0 auto;
 	margin-top: 84px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
 
+.certs__bot-flex
+{
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
@@ -7520,7 +7561,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
-	gap: 10px 30px;
+	gap: 30px;
 }
 
 .section-price__wrap
@@ -7551,6 +7592,46 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
     background-color: rgba(115, 115, 115, .2);
     border-radius: 5px;
+}
+
+.section-price__item + .section-price__item
+{
+	margin-top: 20px;
+}
+
+.section-price__item
+{
+	background: #F4F9FF;
+	padding: 16px 30px;
+
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	border-radius: 15px;
+	gap: 30px;
+}
+
+.section-price__name
+{
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--chernyy);
+}
+
+.section-price__desc
+{
+	margin-top: 5px;
+}
+
+.section-price__price
+{
+	white-space: nowrap;
+
+	font-size: 24px;
+	font-weight: 500;
+	color: var(--chernyy);
+	text-align: right;
 }
 /*------------*/
 
@@ -8007,6 +8088,14 @@ input[type=checkbox]:checked + .checkbox__text::after
 	flex-wrap: nowrap;
 }
 
+.modal-form__prices-title
+{
+	font-size: 12px;
+	color: var(--chernyy);
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+
 .modal-form__price-old
 {
 	white-space: nowrap;
@@ -8030,6 +8119,162 @@ input[type=checkbox]:checked + .checkbox__text::after
 .modal-form__agree
 {
 	margin-top: 15px;
+}
+
+
+.modal-doctor
+{
+	margin-top: 20px;
+	background: #F5F9FF;
+	border-radius: 15px;
+	padding: 10px 16px;
+	
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.modal-doctor__foto
+{
+	width: 96px;
+	height: 108px;
+	border-radius: 16px;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+}
+
+.modal-doctor__foto img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 16px;
+}
+
+.modal-doctor__info
+{
+	width: calc(100% - 112px);
+}
+
+.modal-doctor__name
+{
+	color: var(--chernyy);
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.modal-doctor__desc
+{
+	margin-top: 5px;
+	color: #737373;
+}
+
+.modal-doctor__box-info
+{
+	margin-left: -10px;
+}
+
+.modal-doctor__exp
+{
+	margin: 10px 0 0 10px;
+	position: relative;
+	padding-right: 11px;
+	color: var(--chernyy);
+}
+
+.modal-doctor__exp::after
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	right: 0;
+
+	display: block;
+
+	width: 1px;
+	height: 14px;
+	margin-top: -7px;
+
+	background: #D4E2F4;
+}
+
+.modal-doctor__rev
+{
+	margin: 10px 0 0 10px;
+}
+
+.modal-doctor__rev a
+{
+	text-decoration: none;
+	color: #2262B7;
+	border-bottom: 1px solid currentColor;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.modal-doctor__rev a:hover
+	{
+		border-bottom-color: transparent;
+	}
+}
+
+
+.modal-thank
+{
+	text-align: center;
+}
+
+.modal-thank__icon
+{
+	width: 90px;
+	height: 90px;
+
+	border-radius: 32px;
+	background: #EAF2FC;
+	position: relative;
+	margin: 0 auto;
+}
+
+.modal-thank__icon::after
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+
+	display: block;
+
+	width: 47px;
+	height: 47px;
+
+	transform: translate(-50%, -50%);
+
+	background: url(../images/ic_check_big.svg) 50% 50% no-repeat;
+}
+
+.modal-thank__title
+{
+	font-size: 32px;
+	color: var(--chernyy);
+	font-weight: 500;
+
+	margin-top: 30px;
+}
+
+.modal-thank__desc
+{
+	margin-top: 8px;
+	color: #737373;
+}
+
+.modal-thank__btn
+{
+	margin-top: 32px;
 }
 
 
