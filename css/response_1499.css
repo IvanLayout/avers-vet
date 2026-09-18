@@ -608,4 +608,31 @@
 	{
 		border-radius: 35px;
 	}
+
+
+	.call-away__bg
+	{
+		padding-left: 30px;
+		padding-right: 30px;
+		border-radius: 35px;
+	}
+
+	.call-away__coll
+	{
+		padding-top: 30px;
+		padding-bottom: 40px;
+		width: 45%;
+	}
+
+	.call-away__img
+	{
+		width: 26%;
+	}
+
+	.call-away__colr
+	{
+		width: 29%;
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
 }

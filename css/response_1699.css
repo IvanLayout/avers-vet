@@ -74,7 +74,8 @@
 	.adresess__title,
 	.adresess__tel,
 	.first-info__title,
-	.header__info-title
+	.header__info-title,
+	.call-away__phone-number
 	{
 		font-size: 28px;
 	}

@@ -7140,13 +7140,15 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	background: #E94E1B url(../images/info-pattern2.png) 50% bottom / 100% auto no-repeat;
     border-radius: 60px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 .call-away__coll 
 {
-    padding: 50px 50px 75px;
+	padding: 50px 0 75px;
     color: #fff;
-    width: 43%;
+    width: 40%;
     position: relative;
 }
 
@@ -7156,45 +7158,19 @@ input[type=checkbox]:checked + .checkbox__text::after
     color: #fff;
 }
 
-.call-away__colc 
+.call-away__img
 {
     position: relative;
-    width: 32%;
-}
 
-/* .call-away__colc::before
-{
-	position: absolute;
-	content: '';
-	top: 50%;
-	left: 50%;
-
-	display: block;
-
-	width: 670px;
-	height: 670px;
-
-	margin-top: -335px;
-	margin-left: -335px;
-
-	border-radius: 50%;
-	border: 1px solid #fff;
-	opacity: .5;
-} */
-
-.call-away__img 
-{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+	flex-shrink: 0;
+    width: 37%;
+    margin-top: -3.3%;
+    align-self: flex-end;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     align-content: flex-end;
     flex-wrap: wrap;
-    /* padding-left: 30px; */
-    width: 100%;
-    height: calc(100% + 34px);
 }
 
 .call-away__img img
@@ -7214,8 +7190,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .call-away__colr
 {
-    padding: 50px 50px 75px;
-    width: 25%;
+    padding: 50px 0 75px;
+    width: 23%;
     position: relative;
 
 	text-align: right;
@@ -7270,6 +7246,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 .call-away__box-btns
 {
 	margin-top: 32px;
+}
+
+.call-away__box-btn
+{
+	width: 100%;
+	max-width: 336px;
 }
 
 
