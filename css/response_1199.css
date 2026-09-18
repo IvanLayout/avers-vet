@@ -149,6 +149,18 @@
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
+
+	.contacts__box{
+		padding: 25px 20px;
+	}
+
+	.contacts__title{
+		font-size: 24px;
+	}
+
+	.contacts__item + .contacts__item {
+		margin-top: 16px;
+	}
 	/*------------
 		Commit
 	------------*/

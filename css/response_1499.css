@@ -85,6 +85,20 @@
 	.section-error .big-search{
 		margin-top: 50px;
 	}
+
+
+	.contacts__box{
+		border-radius: 35px;
+		padding: 30px;
+	}
+
+	.contacts .map{
+		border-radius: 35px;
+	}
+
+	.always-touch__link{
+		font-size: 20px;
+	}
 	/*------------
 		Commit
 	------------*/

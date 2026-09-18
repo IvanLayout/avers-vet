@@ -3816,6 +3816,163 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 40px;
 	text-align: center;
 }
+
+
+.always-touch__flex{
+	justify-content: space-between;
+}
+
+.always-touch__coll{
+	width: 47%;
+}
+
+.always-touch__colr{
+	width: calc(53% - 20px);
+}
+
+.always-touch__items{
+	gap: 35px 20px;
+	max-width: 724px;
+}
+
+.always-touch__item{
+	width: calc(50% - 10px);
+}
+
+.always-touch__title{
+	font-size: 12px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.always-touch__link{
+	font-weight: 500;
+	font-size: 24px;
+}
+
+.always-touch__link a{
+	color: var(--chernyy);
+	text-decoration: underline;
+	text-decoration-thickness: 1.5px;
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover){
+	.always-touch__link a:hover{
+		color: #2262B7;
+	}
+}
+
+.always-touch__link a:active{
+	color: #2262B7;
+}
+
+.always-touch__desc{
+	margin-top: 5px;
+}
+
+.socials{
+	gap: 8px;
+}
+
+.socials__item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 35px;
+	height: 36px;
+	border-radius: 50%;
+	overflow: hidden;
+	transition: transform .2s linear;
+}
+
+.socials__item img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+@media (any-hover: hover){
+	.socials__item:hover{
+		transform: scale(1.1);
+	}
+}
+
+.socials__item:active{
+	transform: scale(1.1);
+}
+
+.contacts__line{
+	align-items: stretch;
+	align-content: stretch;
+	justify-content: space-between;
+}
+
+.contacts__line + .contacts__line{
+	margin-top: 20px;
+}
+
+
+.contacts .map{
+	width: calc(45% - 10px);
+	aspect-ratio: 1/.7425;
+	height: auto;
+	border-radius: 60px;
+}
+
+.contacts__box{
+	width: calc(55% - 10px);
+	border-radius: 60px;
+	background: #fff;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.contacts__title{
+	font-weight: 500;
+	font-size: 32px;
+	text-transform: uppercase;
+	color: var(--chernyy);
+	width: 100%;
+}
+
+.contacts__items{
+	margin-top: 30px;
+	padding-top: 29px;
+	border-top: 1px solid #d4e2f4;
+	width: 100%;
+	margin-bottom: auto;
+}
+
+.contacts__item + .contacts__item{
+	margin-top: 20px;
+}
+
+.contacts__name{
+	font-size: 12px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.contacts__val{
+	color: var(--chernyy);
+}
+
+.contacts__val a{
+	color: var(--chernyy);
+	text-decoration: none;
+}
+
+.contacts__btns{
+	margin-top: 30px;
+	gap: 11px;
+	width: 100%;
+}
 /*------------
     Commit
 ------------*/
@@ -3960,6 +4117,10 @@ input[type=checkbox]:checked + .checkbox__text::after
 	background: #fff;
 	padding: 50px;
 	border-radius: 60px;
+}
+.section-bg_pad{
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 /*------------

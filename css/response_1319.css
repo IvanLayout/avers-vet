@@ -50,6 +50,20 @@
 	.specialists__top{
 		padding: 20px;
 	}
+
+
+	.contacts__items{
+		margin-top: 20px;
+		padding-top: 19px;
+	}
+
+	.contacts__btns{
+		margin-top: 24px;
+	}
+
+	.always-touch__items{
+		gap: 24px 20px;
+	}
 	/*------------
 		Commit
 	------------*/

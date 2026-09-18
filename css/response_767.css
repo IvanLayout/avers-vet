@@ -315,6 +315,25 @@
 	.search-empty{
 		margin-top: 20px;
 	}
+
+	.always-touch__link {
+		font-size: 18px;
+	}
+
+
+	.contacts .map {
+    	width: 100%;
+		aspect-ratio: 1/.5;
+	}
+
+	.contacts__box {
+    	width: 100%;
+		margin-top: 10px;
+	}
+
+	.contacts__btns{
+		margin-top: 20px;
+	}
 	/*------------
 		Commit
 	------------*/

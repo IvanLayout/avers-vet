@@ -421,6 +421,45 @@
 	.treatment__wrap_marg{
 		margin-top: 20px;
 	}
+
+	.contacts__items {
+		margin-top: 16px;
+		padding-top: 15px;
+	}
+
+	.contacts__btn.btn-border {
+		padding-left: 19px;
+		padding-right: 19px;
+	}
+
+	.contacts__title {
+		font-size: 20px;
+	}
+
+	.always-touch__coll{
+		width: 100%;
+	}
+
+	.always-touch__colr{
+		width: 100%;
+		margin-top: 16px;
+	}
+
+	.always-touch__items {
+		gap: 16px 20px;
+	}
+
+	.contacts__line + .contacts__line{
+		margin-top: 10px;
+	}
+
+	.contacts .map {
+    	width: calc(45% - 5px);
+	}
+
+	.contacts__box {
+    	width: calc(55% - 5px);
+	}
 	/*------------
 		Commit
 	------------*/
