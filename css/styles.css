@@ -7873,20 +7873,23 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .our-principles__grid
 {
-	display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+	align-items: stretch;
+	align-content: stretch;
 
-	margin-top: 30px;
+	margin: 10px 0 0 -20px;
 }
 
 .our-principles__item
 {
+
+	width: calc(100%/4 - 20px);
+	margin: 20px 0 0 20px;
 	background: #fff;
 	border-radius: 40px;
 	padding: 30px;
 
 	aspect-ratio: 1 / .784;
+	height: auto;
 
 	display: flex;
 	flex-direction: column;
@@ -7920,7 +7923,135 @@ input[type=checkbox]:checked + .checkbox__text::after
     about-adv
 ------------*/
 
+.about-adv__cols
+{
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+	gap: 20px;
+	flex-wrap: nowrap;
+}
 
+.about-adv__col
+{
+	width: 50%;
+}
+
+.about-adv__item
+{
+	position: relative;
+	border-radius: 60px;
+
+	width: 100%;
+	aspect-ratio: 1 / .8412;
+	height: 100%;
+	padding: 50px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	text-decoration: none;
+}
+
+._dark-img::after
+{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 100%;
+	
+	background: linear-gradient(180deg, #000 0%, #181D25 100%);
+	opacity: .2;
+	border-radius: 60px;
+}
+
+.about-adv__img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+	border-radius: 60px;
+}
+
+.about-adv__box
+{
+	justify-content: space-between;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: nowrap;
+	gap: 30px;
+
+	position: relative;
+	z-index: 1;
+}
+
+.about-adv__slider .about-adv__box
+{
+	padding-right: 138px;
+}
+
+.about-adv__info
+{
+	color: #fff;
+}
+
+.about-adv__title
+{
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+}
+
+.about-adv__name
+{
+	margin-top: 15px;
+	font-size: 32px;
+	line-height: 1.2;
+}
+
+.about-adv__box-btn
+{
+	flex-shrink: 0;
+}
+
+.about-adv__slider .slider-button-prev
+{
+	top: auto;
+	bottom: 50px;
+	left: auto;
+	right: 117px;
+	color: #fff;
+}
+
+.about-adv__slider .slider-button-next
+{
+	top: auto;
+	bottom: 50px;
+	right: 50px;
+	color: #fff;
+}
+
+@media (any-hover: hover) 
+{
+    .about-adv__slider .slider-button-prev:hover, 
+	.about-adv__slider .slider-button-next:hover 
+	{
+        color: #2262B7;
+    }
+}
 
 /*------------*/
 

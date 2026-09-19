@@ -279,6 +279,29 @@ $(() => {
 		})
 	}
 
+	if ($('.about-adv__slider').length) {
+		new Swiper(".about-adv__slider", {
+			loop: true,
+			spaceBetween: 10,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			}
+		})
+	}
+
 
 	if ($('.certs__slider').length) {
 		new Swiper(".certs__slider", {
