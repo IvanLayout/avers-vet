@@ -8111,6 +8111,72 @@ input[type=checkbox]:checked + .checkbox__text::after
 	height: auto;
 }
 
+/*------------
+    clinic-visits
+------------*/
+
+.clinic-visits__grid
+{
+	align-items: stretch;
+	align-content: stretch;
+
+	margin: 10px 0 0 -20px;
+}
+
+.clinic-visits__item 
+{
+    width: calc(100% / 5 - 20px);
+    margin: 20px 0 0 20px;
+    background: #fff;
+    border-radius: 40px;
+    padding: 30px;
+    aspect-ratio: 1 / 1.044;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.clinic-visits__number
+{
+	font-size: 40px;
+	font-weight: 300;
+	color: #E94E1B;
+
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 60px;
+
+	background: rgba(233, 78, 27, .1);
+	border: 1px solid rgba(233, 78, 27, .26);
+}
+
+.clinic-visits__box 
+{
+    margin-top: 30px;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.clinic-visits__info
+{
+	margin-top: auto;
+}
+
+.clinic-visits__name
+{
+	color: var(--chernyy);
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.clinic-visits__desc
+{
+	margin-top: 10px;
+}
+
 /*------------*/
 
 @media (any-hover: hover)
