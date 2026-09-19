@@ -8053,6 +8053,64 @@ input[type=checkbox]:checked + .checkbox__text::after
     }
 }
 
+/*------------
+    learn-more
+------------*/
+
+.learn-more__bg 
+{
+    background: #fff url(../images/info-pattern4.png) 50% bottom / 100% auto no-repeat;
+    border-radius: 60px;
+    padding: 0 50px;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.learn-more__coll 
+{
+    width: 100%;
+    padding: 126px 0 135px;
+}
+
+.learn-more__desc
+{
+	margin-top: 20px;
+}
+
+.learn-more__bot
+{
+	margin-top: 24px;
+}
+
+.learn-more__img
+{
+	flex-shrink: 0;
+	width: 54%;
+	margin-top: -5%;
+	align-self: flex-end;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+	padding-bottom: 40px;
+}
+
+.learn-more__img img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	height: 100%;
+
+	margin-left: 49px;
+}
+
+.learn-more__img img.loaded
+{
+	height: auto;
+}
+
 /*------------*/
 
 @media (any-hover: hover)
