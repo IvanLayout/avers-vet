@@ -8245,9 +8245,9 @@ input[type=checkbox]:checked + .checkbox__text::after
     our-patients
 ------------*/
 
-.our-patients
+.our-patients__grid
 {
-
+	margin-top: 30px;
 }
 
 /*------------*/
