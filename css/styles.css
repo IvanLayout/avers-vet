@@ -5299,6 +5299,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	padding-top: 10px;
 }
 
+.specialist__bot-btn
+{
+	min-width: 180px;
+}
+
 .specialist__box
 {
 	justify-content: space-between;
@@ -7142,6 +7147,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	text-align: center;
 }
 
+.treatment__bot-btn
+{
+	min-width: 180px;
+}
+
 /*------------
     call-away
 ------------*/
@@ -7603,10 +7613,17 @@ input[type=checkbox]:checked + .checkbox__text::after
 	top: -65px;
 }
 
+.certs__grid
+{
+	align-items: stretch;
+	align-content: stretch;
+
+	margin: 10px 0 0 -20px;
+}
+
 .certs__item
 {
 	height: auto;
-
 	background: #E6F1FF;
 	border-radius: 40px;
 	padding: 30px 20px;
@@ -7621,7 +7638,15 @@ input[type=checkbox]:checked + .checkbox__text::after
 	position: relative;
 }
 
-.certs__item::before
+.certs__grid .certs__item
+{
+	width: calc(100%/6 - 20px);
+	margin: 20px 0 0 20px;
+	background: #fff;
+	aspect-ratio: 1 / 1.246;
+}
+
+.certs__slider .certs__item::before
 {
 	position: absolute;
 	content: '';
@@ -7640,9 +7665,14 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 @media (any-hover: hover)
 {
-	.certs__item:hover::before
+	.certs__slider .certs__item:hover::before
 	{
 		opacity: 0;
+	}
+
+	.certs__grid .certs__item:hover
+	{
+		background: rgba(34, 98, 183, .3);
 	}
 }
 
@@ -7678,6 +7708,16 @@ input[type=checkbox]:checked + .checkbox__text::after
 	font-weight: 500;
 }
 
+.certs__grid .certs__name
+{
+	max-height: 42px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
 .certs__date
 {
 	margin-top: 16px;
@@ -7710,15 +7750,48 @@ input[type=checkbox]:checked + .checkbox__text::after
 	width: 34px;
 	height: 34px;
 
-	background: #fff url(../images/ic_arrow_down.svg) 50% 50% no-repeat;
+	background: #fff;
 	position: relative;
 	border-radius: 10px;
+}
+
+.certs__arrow::after
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+
+	display: block;
+
+	width: 18px;
+	height: 19px;
+
+	transform: translate(-50%, -50%);
+
+	background: url(../images/ic_arrow_down.svg) 50% 50% no-repeat;
+}
+
+.certs__grid .certs__arrow
+{
+	background: linear-gradient(180deg, #f5f9ff 0%, #f0f7ff 100%);
 }
 
 .certs__size
 {
 	color: var(--chernyy);
 	opacity: .5;
+}
+
+.certs__bot-box
+{
+	margin-top: 30px;
+	text-align: center;
+}
+
+.certs__bot-btn
+{
+	min-width: 180px;
 }
 
 /*------------
@@ -8175,6 +8248,16 @@ input[type=checkbox]:checked + .checkbox__text::after
 .clinic-visits__desc
 {
 	margin-top: 10px;
+}
+
+
+/*------------
+    our-patients
+------------*/
+
+.our-patients
+{
+
 }
 
 /*------------*/
