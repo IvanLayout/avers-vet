@@ -5299,11 +5299,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 	padding-top: 10px;
 }
 
-.specialist__bot-btn
-{
-	min-width: 180px;
-}
-
 .specialist__box
 {
 	justify-content: space-between;
@@ -7147,7 +7142,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	text-align: center;
 }
 
-.treatment__bot-btn
+.btn-border_width
 {
 	min-width: 180px;
 }
@@ -7787,11 +7782,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	margin-top: 30px;
 	text-align: center;
-}
-
-.certs__bot-btn
-{
-	min-width: 180px;
 }
 
 /*------------
