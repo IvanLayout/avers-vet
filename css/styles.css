@@ -6273,6 +6273,10 @@ input[type=checkbox]:checked + .checkbox__text::after
 	flex-wrap: wrap;
 }
 
+.main-form__bg_bot{
+	bottom: 0;
+}
+
 .main-form__bg img
 {
 	display: block;
