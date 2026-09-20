@@ -1205,6 +1205,12 @@
 		padding: 20px;
 	}
 
+	.our-patients__box,
+	.our-patients__item::after
+	{
+		opacity: 1;
+	}
+
 
 	.about-adv__cols
 	{
