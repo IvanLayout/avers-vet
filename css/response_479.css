@@ -4,6 +4,11 @@
 		padding-top: 70px;
 	}
 
+	._nopad{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	.header{
 		padding-top: 14px;
 		padding-bottom: 19px;
@@ -54,7 +59,6 @@
 		align-items: flex-end;
 		align-content: flex-end;
 		flex-wrap: wrap;
-		padding: 0;
 	}
 
 	.advantages__bg-img{
@@ -133,18 +137,9 @@
 		margin-top: 20px;
 	}
 
-	.articles .cont{
-		padding: 0;
-	}
-
 
 	.page-head__btn{
 		width: 100%;
-	}
-
-	.page-head .cont
-	{
-		padding: 0;
 	}
 
 
@@ -157,18 +152,9 @@
 		height: 40px;
 	}
 
-	.section-img .cont{
-		padding: 0;
-	}
-
 	.section-img__img{
 		min-height: 200px;
 		object-fit: cover;
-	}
-	
-	.article-text .cont{
-		padding-left: 0;
-		padding-right: 0;
 	}
 
 	.article-text__tag{
@@ -191,16 +177,6 @@
 
 	.article-grade__view{
 		width: 100%;
-	}
-
-	.section-error .cont{
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	.page-search .cont{
-		padding-left: 0;
-		padding-right: 0;
 	}
 
 
@@ -234,16 +210,6 @@
 
 	.info-items__number {
 		font-size: 30px;
-	}
-
-	.vacancies .cont{
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	.career-growth .cont{
-		padding-left: 0;
-		padding-right: 0;
 	}
 	/*------------
 		Commit
@@ -287,11 +253,6 @@
 		margin-top: 20px;
 	}
 
-	.main-services .cont
-	{
-		padding: 0;
-	}
-
 	.main-services__item
 	{
 		aspect-ratio: 1 / 1.4905;
@@ -306,12 +267,6 @@
 	.main-services__name
 	{
 		font-size: 16px;
-	}
-
-
-	.stocks .cont
-	{
-		padding: 0;
 	}
 
 	.stocks__item
@@ -330,11 +285,6 @@
 		max-height: 47px;
 	}
 
-
-	.help-banner .cont
-	{
-		padding: 0;
-	}
 
 	.help-banner__box-btns{
 		gap: 0;
@@ -382,11 +332,6 @@
 		margin-right: 5px;
 	}
 
-	.surgery-serv .cont
-	{
-		padding: 0;
-	}
-
 	.surgery-serv__item
 	{
 		padding: 10px;
@@ -416,11 +361,6 @@
 		margin-top: 5px;
 	}
 
-
-	.products .cont
-	{
-		padding: 0;
-	}
 
 	.products__grid
 	{
@@ -484,11 +424,6 @@
 	.specialist__all-name
 	{
 		font-size: 16px;
-	}
-
-	.specialists .cont
-	{
-		padding: 0;
 	}
 
 	.specialist 
@@ -583,11 +518,6 @@
 	}
 
 
-	.service-head .cont
-	{
-		padding: 0;
-	}
-
 	.service-head__info
 	{
 		padding-top: 30px;
@@ -613,12 +543,6 @@
 	.service-head__item-desc
 	{
 		font-size: 16px;
-	}
-
-
-	.service-info .cont
-	{
-		padding: 0;
 	}
 
 	.service-info .section-bg
@@ -667,11 +591,6 @@
 		font-size: 14px;
 	}
 
-
-	.service-branch .cont
-	{
-		padding: 0;
-	}
 
 	.service-branch__nav-title
 	{
@@ -722,11 +641,6 @@
 		padding: 9px;
 	}
 
-
-	.treatment .cont
-	{
-		padding: 0;
-	}
 	
 	.treatment__tabs .global-icon__name
 	{
@@ -749,11 +663,6 @@
 		width: 100%;
 	}
 
-
-	.product-info .cont
-	{
-		padding: 0;
-	}
 
 	.product-info .breadcrumbs
 	{
@@ -886,11 +795,6 @@
 	}
 
 
-	.section-price .cont
-	{
-		padding: 0;
-	}
-
 	.section-price__flex
 	{
 		gap: 15px;
@@ -933,11 +837,6 @@
 		font-size: 16px;
 	}
 
-
-	.reviews .cont
-	{
-		padding: 0;
-	}
 
 	.stats-reviews__btn
 	{
@@ -995,21 +894,11 @@
 	}
 
 
-	.about-img .cont
-	{
-		padding: 0;
-	}
-
 	.about-img__img 
 	{
 		aspect-ratio: 1 / .672;
 	}
 
-
-	.about-info .cont
-	{
-		padding: 0;
-	}
 
 	.about-info__item._big
 	{
@@ -1034,11 +923,6 @@
 		aspect-ratio: 1 / .61;
 	}
 
-
-	.about-adv .cont
-	{
-		padding: 0;
-	}
 
 	.about-adv__item
 	{
@@ -1114,11 +998,6 @@
 	.footer
 	{
 		padding-bottom: 0;
-	}
-
-	.footer .cont
-	{
-		padding: 0;
 	}
 
 	.footer__logo a, 
