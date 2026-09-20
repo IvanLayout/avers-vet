@@ -4835,6 +4835,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	gap: 20px;
 }
 
+.specialists__top._marg-none
+{
+	margin-top: 0;
+}
+
 .specialists__search{
 	width: 50px;
 	flex-shrink: 0;
@@ -5177,6 +5182,14 @@ input[type=checkbox]:checked + .checkbox__text::after
 	top: -68px;
 }
 
+.reviews__grid
+{
+	margin-top: 10px;
+	margin-left: -20px;
+	align-items: stretch;
+	align-content: stretch;
+}
+
 .review
 {
 	background: linear-gradient(180deg, #f5f9ff 0%, #f0f7ff 100%);
@@ -5186,6 +5199,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	display: flex;
 	flex-direction: column;
+}
+
+.reviews__grid .review
+{
+	width: calc(100%/3 - 20px);
+	margin: 20px 0 0 20px;
 }
 
 .modal-review .review
