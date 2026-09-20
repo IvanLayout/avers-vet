@@ -1202,6 +1202,16 @@
 	{
 		margin-top: 20px;
 	}
+
+	.modal-form__submit
+	{
+		margin-top: 20px;
+	}
+
+	.modal-form__submit-btn
+	{
+		width: 100%;
+	}
 	
 
 	.modal-doctor__name 

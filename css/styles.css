@@ -1310,7 +1310,7 @@ button
     height: 50px;
     padding: 0 16px;
 
-	border: 1px solid #A1C2E2;
+	border: 1px solid #D4E2F4;
     background: #fff;
 	border-radius: 15px;
 	transition: border .2s linear;
@@ -8700,6 +8700,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 .modal-form__agree
 {
 	margin-top: 15px;
+}
+
+.modal-form__submit
+{
+	margin-top: 24px;
 }
 
 
