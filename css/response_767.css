@@ -1445,6 +1445,27 @@
 	}
 
 
+	.modal-patient__info
+	{
+		padding: 20px;
+	}
+
+	.modal-patient__name
+	{
+		font-size: 24px;
+	}
+
+	.modal-patient__btn
+	{
+		width: 100%;
+	}
+
+	.modal-patient__item-name
+	{
+		width: 150px;
+	}
+
+
 	.modal-review .review__flex
 	{
 		margin-top: 15px;

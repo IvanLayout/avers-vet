@@ -1210,6 +1210,38 @@
 	}
 
 
+	.modal-patient__name 
+	{
+		font-size: 20px;
+	}
+
+	.modal-patient__status
+	{
+		font-size: 12px;
+		line-height: 30px;
+	}
+
+	.modal-patient__items 
+	{
+		margin-top: 20px;
+	}
+
+	.modal-patient__item:first-child 
+	{
+		padding-top: 20px;
+	}
+
+	.modal-patient__item:last-child
+	{
+		padding-bottom: 20px;
+	}
+
+	.modal-patient__item-name 
+	{
+		width: 135px;
+	}
+
+
 	.modal-review .review-rating__star 
 	{
 		width: 15px;

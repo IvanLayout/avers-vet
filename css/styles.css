@@ -9095,7 +9095,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 
-.modal-patient
+.modal.modal-patient
 {
 	width: 634px;
 	padding: 0;
