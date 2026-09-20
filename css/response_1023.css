@@ -544,6 +544,48 @@
 	.career-growth__thumbs{
 		margin-top: 20px;
 	}
+
+
+	.modal.modal-filial{
+		border-radius: 20px;
+	}
+
+	.filial__title{
+		font-size: 20px;
+	}
+
+	.filial__btns{
+		margin-top: 20px;
+	}
+
+	.choose-filial__title{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	.choose-filial__btn{
+		margin-top: 20px;
+	}
+
+	.radio + .radio{
+		margin-top: 15px;
+	}
+
+	.radio__name{
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 500;
+	}
+
+	.radio__adres{
+		margin-top: 5px;
+		font-size: 12px;
+	}
+
+	.radio__time{
+		margin-top: 5px;
+		font-size: 12px;
+	}
 	/*------------
 		Commit
 	------------*/
@@ -702,6 +744,10 @@
 		gap: 15px;
 	}
 
+	.product:hover{
+		transform: none;
+	}
+
 	.product.product_big
 	{
 		grid-column: span 1;
@@ -751,6 +797,10 @@
 		width: calc(100% / var(--products_count) - 15px);
 		margin-top: 15px;
 		margin-left: 15px;
+	}
+
+	.specialist:hover{
+		transform: none;
 	}
 
 

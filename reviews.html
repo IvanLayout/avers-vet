@@ -96,10 +96,10 @@
 									<div class="header__tel-desc">Экстренная помощь 24/7</div>
 								</div>
 
-								<div class="header__adres">
+								<button type="button" data-content="#choose-filial" class="header__adres modal-btn">
 									<div class="header__adres-city">г. Химки</div>
 									<div class="header__adres-desc">пр. Мельникова 27</div>
-								</div>
+								</button>
 							</div>
 							
 							<button type="button" class="header__burger"></button>
@@ -1055,6 +1055,55 @@
 
 		<div class="supports-error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+		<div id="modal-filial" class="modal modal-small modal-filial">
+			<div class="modal__box filial">
+				<div class="filial__title">Филиал выбран верно?</div>
+				<div class="filial__adres">г. Химки пр. Мельникова 27</div>
+
+				<div class="filial__btns _flex">
+					<button type="button" class="btn-blue filial__btn modal-close">Да, верно</button>
+					<button type="button" data-modal="#choose-filial" class="btn-border filial__btn modal-btn">Изменить</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="choose-filial" class="modal modal-small">
+			<div class="modal__box choose-filial">
+				<div class="choose-filial__title">Выберите филиал</div>
+
+				<form action="" class="form">
+					<div class="radios">
+						<div class="radio">
+							<label class="radio__label">
+								<input type="radio" name="filial" checked>
+
+								<span class="radio__box">
+									<span class="radio__name">Химки</span>
+									<span class="radio__adres">пр. Мельникова 27</span>
+									<span class="radio__time">24/7, бесплатная парковка</span>
+								</span>
+							</label>
+						</div>
+						<div class="radio">
+							<label class="radio__label">
+								<input type="radio" name="filial" checked>
+
+								<span class="radio__box">
+									<span class="radio__name">Путилково</span>
+									<span class="radio__adres">г. Путилково пр. Мельникова 27</span>
+									<span class="radio__time">24/7, бесплатная парковка</span>
+								</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="choose-filial__btn">
+						<button type="submit" class="btn-blue">Подтвердить</button>
+					</div>
+				</form>
+			</div>
 		</div>
 
 		<div id="modal-stock" class="modal modal-form">

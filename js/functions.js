@@ -195,7 +195,7 @@ $(() => {
 	// Fancybox
 	const myCloseBtn = '<button data-fancybox-close class="f-button is-close-button" title="Close"><svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L16 16" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/><path d="M16 1L1 16" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/></svg></button>';
 
-	const commonOptions = {
+	commonOptions = {
 		autoFocus: false,
 		dragToClose: false,
 		placeFocusBack: false,
@@ -378,6 +378,17 @@ $(() => {
 
 
 $(window).on('load', () => {
+	setTimeout(() => {
+		Fancybox.show([{
+			src: '#modal-filial',
+			type: 'inline',
+			showClass: 'f-fadeIn',
+			hideClass: 'f-fadeOut',
+		}], {
+			...commonOptions,
+		});
+	}, 10)
+
 	// commit
     if ( $('.header__info').length ) {
 		if( $(window).scrollTop() > $('.header__info').offset().top > 0 ) {
