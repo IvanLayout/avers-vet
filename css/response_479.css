@@ -909,6 +909,11 @@
 		padding: 0;
 	}
 
+	.stats-reviews__btn
+	{
+		width: 100%;
+	}
+
 	
 	.main-about
 	{

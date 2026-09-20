@@ -345,6 +345,11 @@
 		width: 280px;
 	}
 
+	.reviews__grid .review 
+	{
+		width: calc(100% / 2 - 20px);
+	}
+
 
 	.service-branch__tabs
 	{

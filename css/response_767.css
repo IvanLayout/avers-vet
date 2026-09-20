@@ -1478,6 +1478,46 @@
 		padding-top: 20px;
 	}
 
+	.reviews__grid
+	{
+		margin-top: 10px;
+	}
+
+	.reviews__grid .review 
+	{
+		width: calc(100% / 1 - 15px);
+		margin-top: 10px;
+	}
+
+
+	.stats-reviews
+	{
+		margin-top: 25px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.stats-reviews__flex
+	{
+		justify-content: center;
+	}
+
+	.stats-reviews__box
+	{
+		margin-right: 0;
+	}
+
+	.stats-reviews__number span
+	{
+		font-size: 28px;
+	}
+
+	.stats-reviews__box-btn
+	{
+		width: 100%;
+		margin-top: 20px;
+	}
+
 	.modal-review .review__bot
 	{
 		margin-top: 20px;
