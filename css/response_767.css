@@ -385,6 +385,24 @@
 		left: 9px
 	}
 
+	.text-block.modal__text-block p,
+	.text-block ul.text-block__ul-blue
+	{
+		margin-bottom: 20px;
+	}
+
+	.text-block ul.text-block__ul-blue li 
+	{
+		padding-left: 24px;
+	}
+
+	.text-block ul.text-block__ul-blue li::before
+	{
+		top: 4px;
+		width: 5px;
+		height: 5px;
+	}
+
 	._marg
 	{
 		margin-top: 35px;
@@ -1524,6 +1542,12 @@
 	}
 
 	.modal-review .review__bot
+	{
+		margin-top: 20px;
+	}
+
+	.modal__text-block,
+	.modal-vacancy__btns
 	{
 		margin-top: 20px;
 	}

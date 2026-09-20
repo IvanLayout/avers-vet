@@ -1158,9 +1158,32 @@ button
 }
 
 
+.text-block h6
+{
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.3;
+	color: var(--chernyy);
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+
+    margin-bottom: 8px;
+}
+
+.text-block * + h6
+{
+	margin-top: 16px;
+}
+
+
 .text-block p
 {
     margin-bottom: 22px;
+}
+
+.text-block.modal__text-block p
+{
+	margin-bottom: 30px;
 }
 
 .text-block blockquote
@@ -1216,6 +1239,16 @@ button
 	list-style: none;
 }
 
+.text-block.modal__text-block ul
+{
+	margin-bottom: 16px;
+}
+
+.text-block ul.text-block__ul-blue
+{
+	margin-bottom: 30px;
+}
+
 .text-block h4 + ul
 {
 	margin-top: -4px;
@@ -1231,7 +1264,7 @@ button
 {
 	position: absolute;
 	content: '';
-	top: 9px;
+	top: 8px;
     left: 10px;
 
 	display: block;
@@ -1241,6 +1274,32 @@ button
 
 	border-radius: 50%;
 	background-color: #737373;
+}
+
+.text-block ul.text-block__ul-blue li
+{
+	padding-left: 32px;
+}
+
+.text-block ul.text-block__ul-blue li::before
+{
+	position: absolute;
+	content: '';
+	top: 6px;
+    left: 7px;
+
+	display: block;
+
+	width: 6px;
+	height: 6px;
+
+	border-radius: 50%;
+	background-color: #2262B7;
+}
+
+.text-block ul.text-block__ul-blue li + li
+{
+	margin-top: 6px;
 }
 
 .text-block ol
@@ -9017,6 +9076,53 @@ input[type=checkbox]:checked + .checkbox__text::after
 	{
 		border-bottom-color: transparent;
 	}
+}
+
+
+.modal__text-block
+{
+	color: #737373;
+	margin-top: 24px;
+}
+
+.modal-vacancy__btns
+{
+	margin-top: 30px;
+}
+
+.modal-vacancy__btn + .modal-vacancy__btn
+{
+	margin-top: 12px;
+}
+
+.modal-vacancy__btn
+{
+	width: 100%;
+}
+
+
+.modal-vacancy__tags
+{
+	margin: 12px 0 0 -8px;
+}
+
+.modal-vacancy__tag
+{
+	white-space: nowrap;
+	margin: 8px 0 0 8px;
+	color: #2262B7;
+	font-weight: 500;
+	line-height: 29px;
+	padding-left: 12px;
+	padding-right: 12px;
+	background: #E0F0FF;
+	border-radius: 8px;
+}
+
+.modal-vacancy__tag._blue-tag
+{
+	color: #fff;
+	background: #2262B7;
 }
 
 
