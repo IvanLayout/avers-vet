@@ -211,6 +211,14 @@
 	.info-items__number {
 		font-size: 30px;
 	}
+
+	.file-selection__path._active .file-selection__name {
+		font-size: 12px;
+	}
+
+	.file-selection__size{
+		font-size: 10px;
+	}
 	/*------------
 		Commit
 	------------*/
@@ -1085,6 +1093,10 @@
 		height: 20px;
 	}
 
+
+	.modal{
+		border-radius: 35px;
+	}
 
 	.modal__title
 	{

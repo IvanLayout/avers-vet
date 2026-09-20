@@ -41,20 +41,36 @@ $(() => {
 	$(':root').css('--scroll_width', widthScroll() + 'px')
 
 	// Выбор файла
-	$('.file-selection input[type=file]').change(function(){
-		var val = $(this).val()
-
-		var parent = $(this).parents('.file-selection')
-
-		parent.find('.file-selection__path span').text(val)
-		parent.find('.file-selection__path').addClass('_active')
-
-		if(parent.find('.file-selection__path span').text() == '') {
-			let namePath = parent.find('.file-selection__path').data('name')
-			parent.find('.file-selection__path span').text(namePath)
-			parent.find('.file-selection__path').removeClass('_active')
+	$('.file-selection input[type=file]').change(function () {
+		const file = this.files[0]
+		const parent = $(this).parents('.file-selection')
+		if (file) {
+			parent.find('.file-selection__name').text(file.name)
+			parent.find('.file-selection__path').addClass('_active')
+			parent.find('.file-selection__size').text(formatFileSize(file.size))
+		} else {
+			resetFile(parent)
 		}
 	})
+
+	$('.file-selection__clear').click(function () {
+		const parent = $(this).parents('.file-selection')
+		resetFile(parent)
+	})
+
+	function resetFile(parent) {
+		parent.find('input[type=file]').val('')
+		const namePath = parent.find('.file-selection__path').data('name')
+		parent.find('.file-selection__name').text(namePath)
+		parent.find('.file-selection__path').removeClass('_active')
+		parent.find('.file-selection__size').text('')
+	}
+
+	function formatFileSize(bytes) {
+		if (bytes < 1024) return bytes + ' B'
+		if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB'
+		return (bytes / (1024 * 1024)).toFixed(1) + ' MB'
+	}
 
 
 	// Мини всплывающие окна

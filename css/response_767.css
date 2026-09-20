@@ -384,6 +384,37 @@
 		width: 100%;
 		max-width: none;
 	}
+
+	.modal .select-wrap .nice-select .list .scrollbar {
+		max-height: 160px;
+	}
+
+	.file-selection__path {
+		min-height: 40px;
+		padding: 4px 15px;
+		border-radius: 5px;
+	}
+
+	.file-selection__clear{
+		width: 40px;
+	}
+
+	.file-selection__clear svg{
+		width: 20px;
+		height: 20px;
+	}
+
+	.file-selection__path._active .file-selection__name {
+		font-size: 14px;
+	}
+
+	.file-selection__path._active {
+		padding-right: 46px;
+	}
+
+	.file-selection__path._active .file-selection__box{
+		padding-left: 26px;
+	}
 	/*------------
 		Commit
 	------------*/
