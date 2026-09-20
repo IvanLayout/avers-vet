@@ -5868,6 +5868,18 @@ input[type=checkbox]:checked + .checkbox__text::after
 	border-color: #fff;
 }
 
+.main-form__form .form__textarea
+{
+	border-color: #fff;
+	height: 106px;
+}
+
+.main-form__desc
+{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
 
 .form-success
 {
