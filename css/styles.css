@@ -1831,17 +1831,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 	border-color: #fff;
 }
 
-@media (any-hover: hover)
-{
-    .select-wrap .nice-select .current:hover
-    {
-		/* border-color: #B8956A;
-        color: #3D322C; */
-    }
-}
-
 .select-wrap .nice-select .current.selected{
-	border-color: #A1C2E2;
+	border-color: #2262B7;
 	color: var(--chernyy);
 }
 
