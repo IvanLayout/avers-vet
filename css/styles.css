@@ -3165,6 +3165,21 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 20px;
 }
 
+.info-section__desc a{
+	color: #fff;
+	text-underline-offset: 2px;
+}
+
+@media (any-hover: hover){
+	.info-section__desc a:hover{
+		text-decoration: none;
+	}
+}
+
+.info-section__desc a:active{
+	text-decoration: none;
+}
+
 .info-section__btns{
 	gap: 14px;
 	margin-top: 32px;
