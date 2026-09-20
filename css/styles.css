@@ -2374,7 +2374,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 .fancybox__slide.has-close-btn{
-	padding: 0;
+	padding: 20px;
 }
 
 .f-html{

@@ -215,6 +215,10 @@
 	.contacts__title {
 		font-size: 18px;
 	}
+
+	.fancybox__slide.has-close-btn{
+		padding: 10px;
+	}
 	/*------------
 		Commit
 	------------*/
