@@ -460,6 +460,10 @@ $(() => {
 
 
 $(window).on('load', () => {
+	if ($('.our-patients__wrap').length){
+		ourpatientsSlider()
+	}
+	
 	if ($('.stocks__wrap').length){
 		stocksSlider()
 	}
@@ -505,6 +509,10 @@ $(window).on('resize', () => {
 		}
 	}
 
+	if ($('.our-patients__wrap').length){
+		ourpatientsSlider()
+	}
+
 	if ($('.stocks__wrap').length){
 		stocksSlider()
 	}
@@ -523,6 +531,65 @@ $(window).on('resize', () => {
 		setRequestSentHeight()
 	}
 });
+
+
+function ourpatientsSlider(){
+	if ( $(window).width() < 1024 && !$('.our-patients__wrap').hasClass('swiper-initialized') ) {
+		$('.our-patients__wrap').addClass('swiper')
+		$('.our-patients__grid').addClass('swiper-wrapper').removeClass('_grid-box')
+		$('.our-patients__item').addClass('swiper-slide')
+
+		ourpatientsSwiperSlider = new Swiper('.our-patients__wrap', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 10,
+			slidesPerView: 1,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 10,
+					slidesPerView: 1
+				},
+				'480': {
+					spaceBetween: 10,
+					slidesPerView: 1
+				},
+				'768': {
+					spaceBetween: 10,
+					slidesPerView: 2
+				}
+			},
+		})
+	} else if ($(window).width() > 1023 && $('.our-patients__wrap').hasClass('swiper-initialized')) {
+		if ($('.our-patients__wrap').length === 1 && $('.our-patients__wrap').hasClass('swiper-initialized')) {
+			ourpatientsSwiperSlider.destroy(true, true)
+		} else if ($('.our-patients__wrap').length >= 2 && $('.our-patients__wrap').hasClass('swiper-initialized')) {
+			ourpatientsSwiperSlider.forEach(function (element) {
+				element.destroy(true, true)
+			})
+		}
+
+		$('.our-patients__wrap').removeClass('swiper')
+		$('.our-patients__grid').removeClass('swiper-wrapper').addClass('_grid-box')
+		$('.our-patients__item').removeClass('swiper-slide')
+	}
+}
 
 
 function stocksSlider(){

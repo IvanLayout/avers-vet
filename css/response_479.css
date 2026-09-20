@@ -431,8 +431,8 @@
 	.advantages__title 
 	{
 		font-size: 26px;
-		padding-left: 19px;
-		padding-right: 19px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 
@@ -484,7 +484,8 @@
 		border-radius: 20px;
 	}
 
-	.specialist__arrow 
+	.specialist__arrow,
+	.our-patients__arrow
 	{
 		width: 30px;
 		height: 30px;
@@ -826,6 +827,34 @@
 		display: none;
 	}
 
+	.certs__grid .certs__item
+	{
+		aspect-ratio: 1 / 1.5;
+	}
+
+	.certs__grid .certs__name
+	{
+		font-size: 12px;
+		max-height: 47px;
+		-webkit-line-clamp: 3;
+	}
+
+	.certs__grid .certs__bot-flex
+	{
+		align-items: flex-end;
+		align-content: flex-end;
+	}
+
+	.certs__bot-box
+	{
+		margin-top: 20px;
+	}
+
+	.btn-border_width
+	{
+		width: 100%;
+	}
+
 
 	.section-price .cont
 	{
@@ -928,6 +957,127 @@
 	{
 		margin-left: 0;
 		border-radius: 0 0 35px 35px;
+	}
+
+
+	.about-img .cont
+	{
+		padding: 0;
+	}
+
+	.about-img__img 
+	{
+		aspect-ratio: 1 / .672;
+	}
+
+
+	.about-info .cont
+	{
+		padding: 0;
+	}
+
+	.about-info__item._big
+	{
+		padding-bottom: 30px;
+	}
+
+	.about-info__val
+	{
+		font-size: 40px;
+		line-height: 1;
+	}
+
+
+	.our-principles_marg
+	{
+		margin-top: 40px;
+	}
+
+	.our-principles__item
+	{
+		width: calc(100% / 1 - 10px);
+		aspect-ratio: 1 / .61;
+	}
+
+
+	.about-adv .cont
+	{
+		padding: 0;
+	}
+
+	.about-adv__item
+	{
+		aspect-ratio: 1 / 1.294;
+	}
+
+	.about-adv__title
+	{
+		font-size: 12px;
+	}
+
+	.about-adv__name
+	{
+		font-size: 20px;
+	}
+
+	.about-adv__slider .about-adv__box
+	{
+		padding-bottom: 53px;
+	}
+
+	.about-adv__slider .slider-button-prev
+	{
+		width: 30px;
+		height: 30px;
+		border-radius: 5px;
+	}
+
+	.about-adv__slider .slider-button-next
+	{
+		width: 30px;
+		height: 30px;
+		border-radius: 5px;
+		left: 60px;
+	}
+
+
+	.learn-more__coll
+	{
+		padding-bottom: 10px;
+	}
+
+	.learn-more__bg
+	{
+		background: #fff url(../images/info-pattern4_mob.png) 50% bottom / 100% auto no-repeat;
+	}
+
+	.learn-more__btn
+	{
+		width: 100%;
+	}
+
+	.learn-more__img
+	{
+		padding-bottom: 30px;
+	}
+
+
+	.clinic-visits__number
+	{
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 20px;
+	}
+
+	.clinic-visits__box
+	{
+		margin-top: 20px;
+	}
+
+	.clinic-visits__name
+	{
+		font-size: 16px;
 	}
 
 

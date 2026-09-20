@@ -1247,9 +1247,103 @@
 		min-height: 134px;
 	}
 
+	.about-info__item._big
+	{
+		margin-bottom: 10px;
+	}
+
 	.about-info__val 
 	{
 		font-size: 44px;
+	}
+
+	.about-info__grid
+	{
+		gap: 10px;
+	}
+
+
+	.our-principles__grid
+	{
+		margin-left: -10px;
+		margin-top: 10px;
+	}
+
+	.our-principles__item 
+	{
+		width: calc(100% / 2 - 10px);
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+
+	.about-adv__cols
+	{
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.about-adv__col
+	{
+		width: 100%;
+	}
+
+
+	.learn-more__bg
+	{
+		flex-wrap: wrap;
+	}
+
+	.learn-more__desc
+	{
+		margin-top: 16px;
+	}
+
+	.learn-more__img
+	{
+		width: 100%;
+	}
+
+
+	.clinic-visits__grid 
+	{
+		margin-left: -10px;
+		margin-top: 10px;
+	}
+
+	.clinic-visits__item 
+	{
+		width: calc(100% / 2 - 10px);
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	.clinic-visits__number
+	{
+		font-size: 28px;
+	}
+
+	.clinic-visits__info
+	{
+		margin-top: 0;
+	}
+
+
+
+	.our-patients__wrap
+	{
+		margin-top: 20px;
+	}
+
+
+	.certs__grid
+	{
+		margin-top: 5px;
+	}
+
+	.certs__grid .certs__item
+	{
+		width: calc(100% / 2 - 15px);
 	}
 
 

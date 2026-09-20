@@ -1286,23 +1286,6 @@
 	}
 
 
-	.our-patients__grid
-	{
-		gap: 15px;
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.our-patients__item
-	{
-		grid-column: span 1;
-	}
-
-	.our-patients__item._big 
-	{
-		grid-column: span 1;
-	}
-
-
 	.certs__grid
 	{
 		margin-left: -15px;
