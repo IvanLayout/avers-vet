@@ -461,8 +461,8 @@ $(window).on('resize', () => {
 function ourpatientsSlider(){
 	if ( $(window).width() < 1024 && !$('.our-patients__wrap').hasClass('swiper-initialized') ) {
 		$('.our-patients__wrap').addClass('swiper')
-		$('.our-patients__grid').addClass('swiper-wrapper').removeClass('_grid-box')
-		$('.our-patients__item').addClass('swiper-slide')
+		$('.our-patients__wrap .our-patients__grid').addClass('swiper-wrapper').removeClass('_grid-box')
+		$('.our-patients__wrap .our-patients__item').addClass('swiper-slide')
 
 		ourpatientsSwiperSlider = new Swiper('.our-patients__wrap', {
 			loop: false,
@@ -511,8 +511,8 @@ function ourpatientsSlider(){
 		}
 
 		$('.our-patients__wrap').removeClass('swiper')
-		$('.our-patients__grid').removeClass('swiper-wrapper').addClass('_grid-box')
-		$('.our-patients__item').removeClass('swiper-slide')
+		$('.our-patients__wrap .our-patients__grid').removeClass('swiper-wrapper').addClass('_grid-box')
+		$('.our-patients__wrap .our-patients__item').removeClass('swiper-slide')
 	}
 }
 
@@ -520,8 +520,8 @@ function ourpatientsSlider(){
 function stocksSlider(){
 	if ( $(window).width() < 1024 && !$('.stocks__wrap').hasClass('swiper-initialized') ) {
 		$('.stocks__wrap').addClass('swiper')
-		$('.stocks__grid').addClass('swiper-wrapper').removeClass('_flex')
-		$('.stocks__item').addClass('swiper-slide')
+		$('stocks__wrap .stocks__grid').addClass('swiper-wrapper').removeClass('_flex')
+		$('stocks__wrap .stocks__item').addClass('swiper-slide')
 
 		stocksSwiperSlider = new Swiper('.stocks__wrap', {
 			loop: false,
@@ -570,16 +570,16 @@ function stocksSlider(){
 		}
 
 		$('.stocks__wrap').removeClass('swiper')
-		$('.stocks__grid').removeClass('swiper-wrapper').addClass('_flex')
-		$('.stocks__item').removeClass('swiper-slide')
+		$('stocks__wrap .stocks__grid').removeClass('swiper-wrapper').addClass('_flex')
+		$('stocks__wrap .stocks__item').removeClass('swiper-slide')
 	}
 }
 
 function serviceSlider(){
 	if ( $(window).width() < 1024 && !$('.service-info__wrap').hasClass('swiper-initialized') ) {
 		$('.service-info__wrap').addClass('swiper')
-		$('.service-info__grid').addClass('swiper-wrapper').removeClass('_flex')
-		$('.service-info__item').addClass('swiper-slide')
+		$('.service-info__wrap .service-info__grid').addClass('swiper-wrapper').removeClass('_flex')
+		$('.service-info__wrap .service-info__item').addClass('swiper-slide')
 
 		serviceSwiperSlider = new Swiper('.service-info__wrap', {
 			loop: false,
@@ -628,8 +628,8 @@ function serviceSlider(){
 		}
 
 		$('.service-info__wrap').removeClass('swiper')
-		$('.service-info__grid').removeClass('swiper-wrapper').addClass('_flex')
-		$('.service-info__item').removeClass('swiper-slide')
+		$('.service-info__wrap .service-info__grid').removeClass('swiper-wrapper').addClass('_flex')
+		$('.service-info__wrap .service-info__item').removeClass('swiper-slide')
 	}
 }
 
