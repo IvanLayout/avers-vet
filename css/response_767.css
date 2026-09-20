@@ -1291,6 +1291,7 @@
 
 	.learn-more__bg
 	{
+		background-image: url(../images/info-pattern4_mob.png);
 		flex-wrap: wrap;
 	}
 
