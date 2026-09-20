@@ -1183,35 +1183,31 @@ button
     display: block;
 
     max-width: 100%;
-    /* margin-bottom: 30px; */
+    margin-bottom: 20px;
 }
 
 .text-block * + img
 {
-	/* margin-top: 30px; */
+	margin-top: 30px;
 }
 
-.text-block p a,
-.text-block ul a,
-.text-block ol a
+.text-block p a
 {
-    /* color: #B8956A;
+    color: #2262B7;
 
     text-decoration: none;
 
     border-bottom: 1px solid;
 
-    transition: border .2s linear; */
+    transition: border .2s linear;
 }
 
 @media (any-hover: hover)
 {
-    /* .text-block p a:hover,
-	.text-block ul a:hover,
-	.text-block ol a:hover
+    .text-block p a:hover
     {
         border-color: transparent;
-    } */
+    }
 }
 
 .text-block ul
@@ -1223,11 +1219,6 @@ button
 .text-block h4 + ul
 {
 	margin-top: -4px;
-}
-
-.text-block ul li + li
-{
-	
 }
 
 .text-block ul li
@@ -1254,28 +1245,7 @@ button
 
 .text-block ol
 {
-    /* margin-left: 22px;
-	margin-bottom: 20px; */
-}
-
-.text-block ol li + li
-{
-	/* margin-top: 15px; */
-}
-
-.text-block__cols
-{
-	justify-content: space-between;
-}
-
-.text-block__coll
-{
-
-}
-
-.text-block__colr
-{
-
+    margin-bottom: 20px;
 }
 /*------------------
     Form elements
