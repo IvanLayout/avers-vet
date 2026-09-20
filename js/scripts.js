@@ -520,8 +520,8 @@ function ourpatientsSlider(){
 function stocksSlider(){
 	if ( $(window).width() < 1024 && !$('.stocks__wrap').hasClass('swiper-initialized') ) {
 		$('.stocks__wrap').addClass('swiper')
-		$('stocks__wrap .stocks__grid').addClass('swiper-wrapper').removeClass('_flex')
-		$('stocks__wrap .stocks__item').addClass('swiper-slide')
+		$('.stocks__wrap .stocks__grid').addClass('swiper-wrapper').removeClass('_flex')
+		$('.stocks__wrap .stocks__item').addClass('swiper-slide')
 
 		stocksSwiperSlider = new Swiper('.stocks__wrap', {
 			loop: false,
@@ -570,8 +570,8 @@ function stocksSlider(){
 		}
 
 		$('.stocks__wrap').removeClass('swiper')
-		$('stocks__wrap .stocks__grid').removeClass('swiper-wrapper').addClass('_flex')
-		$('stocks__wrap .stocks__item').removeClass('swiper-slide')
+		$('.stocks__wrap .stocks__grid').removeClass('swiper-wrapper').addClass('_flex')
+		$('.stocks__wrap .stocks__item').removeClass('swiper-slide')
 	}
 }
 

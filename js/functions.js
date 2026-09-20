@@ -91,11 +91,10 @@ $(() => {
 			if (is_touch_device()) $('body').css('cursor', 'default')
 		}
 
-		if ( !e.target.closest('.header-catalog') && !$(e.target).hasClass('open-catalog') && !$(e.target).closest('open-catalog') ) {
-			$('.open-catalog').removeClass('_active')
-			$('.header-catalog').removeClass('_show')
-			$('.overlay-catalog').removeClass('_show')
-			$('body').removeClass('_look-cat')
+		if ( !e.target.closest('.header__block-bg') && !$(e.target).hasClass('header__burger') && !e.target.closest('.header__burger') ) {
+			$('.header__burger').removeClass('_active')
+			$('.header__block').removeClass('_show')
+			$('body').removeClass('_look-heade')
 		}
 
 		if ( !e.target.closest('.header-search') ) {

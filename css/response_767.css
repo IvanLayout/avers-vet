@@ -334,6 +334,33 @@
 	.contacts__btns{
 		margin-top: 20px;
 	}
+
+
+	.info-items_marg{
+		margin-top: 10px;
+	}
+
+	.info-items__grid{
+		gap: 10px;
+	}
+
+	.info-items__item {
+		padding: 16px;
+		border-radius: 15px;
+	}
+
+	.info-items__number {
+		font-size: 36px;
+	}
+
+	.info-items__desc{
+		margin-top: 5px;
+	}
+
+
+	.select-wrap .nice-select .list{
+		border-radius: 5px;
+	}
 	/*------------
 		Commit
 	------------*/
@@ -430,6 +457,16 @@
 		font-size: 18px;
 	}
 
+
+	.call-away__bg{
+		background-image: url(../images/info-pattern3_mob.png);
+		background-size: 400px auto;
+		background-position: 50% bottom;
+	}
+
+	.call-away__img img{
+		margin-left: 0;
+	}
 
 	.stocks__item
 	{
@@ -821,6 +858,10 @@
 		height: 8px;
 
 		margin-top: -5px;
+	}
+
+	.select-wrap .nice-select .list .list_item{
+		font-size: 14px;
 	}
 
 	.checkbox__text

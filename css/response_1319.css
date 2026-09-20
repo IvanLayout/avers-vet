@@ -203,9 +203,13 @@
 		margin-top: 40px;
 	}
 
-	.service-info__grid._flex .service-info__item
+	/* .service-info__grid._flex .service-info__item
 	{
 		width: calc(100% / 3 - 20px);
+	} */
+
+	.service-info__item{
+		padding: 16px;
 	}
 
 

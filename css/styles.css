@@ -968,6 +968,15 @@ button
 	max-height: 100%;
 }
 
+.btn-more{
+	font-weight: 600;
+	font-size: 12px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	color: #737373;
+	transition: color .2s linear;
+}
+
 @media (any-hover: hover)
 {
 	.btn-blue:hover
@@ -990,7 +999,9 @@ button
 		background: #F0F5FD;
 	}
 
-	
+	.btn-more:hover{
+		color: #1B4DB1;
+	}
 }
 
 .btn-border:active
@@ -1026,6 +1037,10 @@ button
 {
 	background: rgba(244, 167, 141, .6);
 	cursor: default;
+}
+
+.btn-more:active{
+	color: #1B4DB1;
 }
 /*------------
     breadcrumbs
@@ -3693,6 +3708,88 @@ input[type=checkbox]:checked + .checkbox__text::after
 .info-items__desc{
 	margin-top: 10px;
 	text-align: center;
+}
+
+.service-info__wrap._vacancy{
+	margin-top: 30px;
+}
+
+._vacancy .service-info__icon{
+	width: 70px;
+	height: 70px;
+	padding: 15px;
+	border-radius: 15px;
+}
+
+._vacancy .service-info__name{
+	margin-top: 46px;
+}
+
+._vacancy .service-info__desc{
+	margin-top: 10px;
+}
+
+.vacancies__grid{
+	margin-top: 30px;
+	gap: 20px 0;
+	margin-left: -20px;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.vacancy{
+	border-radius: 40px;
+	background: linear-gradient(180deg, #f5f9ff 0%, #f0f7ff 100%);
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.vacancies__grid .vacancy{
+	width: calc(100%/3 - 20px);
+	margin-left: 20px;
+}
+
+.vacancy__tags{
+	gap: 10px;
+	margin-bottom: 24px;
+	width: 100%;
+}
+
+.vacancy__tag{
+	border-radius: 8px;
+	background: #e0f0ff;
+	padding: 4px 11px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 20px;
+	color: #2262B7;
+}
+
+.vacancy__name{
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 1.2;
+	color: var(--chernyy);
+	width: 100%;
+}
+
+.vacancy__info{
+	margin-top: 16px;
+	color: #E94E1B;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #d4e2f4;
+	margin-bottom: 19px;
+	width: 100%;
+}
+
+.vacancy__bot{
+	width: 100%;
+	gap: 30px;
+	padding-top: 30px;
+	margin-top: auto;
+	align-items: center;
+	align-content: center;
 }
 /*------------
     Commit
