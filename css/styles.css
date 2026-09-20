@@ -8115,6 +8115,90 @@ input[type=checkbox]:checked + .checkbox__text::after
 	}
 }
 
+
+/*------------
+    stats-reviews
+------------*/
+
+.stats-reviews
+{
+	width: 100%;
+	max-width: 592px;
+	margin: 32px auto 0;
+
+	background: linear-gradient(180deg, #f5f9ff 0%, #f0f7ff 100%);
+	border-radius: 15px;
+	padding: 25px 50px;
+}
+
+.stats-reviews__flex
+{
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.stats-reviews__number
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+
+	flex-shrink: 0;
+	margin-right: 30px;
+}
+
+.stats-reviews__number span
+{
+	font-size: 32px;
+	line-height: 1.2;
+	font-weight: 500;
+	color: #2262B7;
+	margin-right: 10px;
+}
+
+.stats-reviews__box
+{
+	margin-right: auto;
+}
+
+.reviews__rating-star 
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 18px;
+}
+
+.reviews__rating-star + .reviews__rating-star 
+{
+    margin-left: 9px;
+}
+
+.reviews__rating-star img 
+{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.reviews__rating-stats
+{
+	margin-top: 8px;
+	font-size: 14px;
+}
+
+.stats-reviews__btn
+{
+	padding-left: 26px;
+	padding-right: 26px;
+}
+
 /*------------*/
 
 @media (any-hover: hover)
