@@ -4985,7 +4985,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	.product:hover .product__name
 	{
-		color: #E94E1B;
+		color: #2262B7;
 	}
 
 	.product:hover .product__arrow
