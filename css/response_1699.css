@@ -155,4 +155,30 @@
 	{
 		font-size: 22px;
 	}
+
+
+	.about-info__val
+	{
+		font-size: 60px;
+	}
+
+	
+	.our-principles__name,
+	.about-adv__name
+	{
+		font-size: 28px;
+	}
+
+
+	.learn-more__coll
+	{
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+
+	.clinic-visits__name
+	{
+		font-size: 22px;
+	}
 }

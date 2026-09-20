@@ -255,6 +255,30 @@
 	}
 
 
+	.about-info__val 
+	{
+		font-size: 50px;
+	}
+
+	.our-principles__name, 
+	.about-adv__name
+	{
+		font-size: 22px;
+	}
+
+
+	.clinic-visits__name 
+	{
+		font-size: 18px;
+	}
+
+
+	.certs__grid .certs__item 
+	{
+		width: calc(100% / 4 - 20px);
+	}
+
+
 	.footer__coll 
 	{
 		width: 360px;

@@ -1237,6 +1237,22 @@
 	}
 
 
+	.about-img__img
+	{
+		aspect-ratio: 1 / .72;
+	}
+
+	.about-info__item
+	{
+		min-height: 134px;
+	}
+
+	.about-info__val 
+	{
+		font-size: 44px;
+	}
+
+
 	.modal
 	{
 		padding-left: 20px;

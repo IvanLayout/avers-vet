@@ -107,6 +107,11 @@
 		font-size: 28px;
 	}
 
+	.text-block * + h3
+	{
+		margin-top: 30px;
+	}
+
 	.text-block h4
 	{
 		font-size: 20px;
@@ -604,9 +609,15 @@
 	}
 
 
-	.certs__item
+	.certs__item,
+	.certs__slider .certs__item::before
 	{
 		border-radius: 35px;
+	}
+
+	.certs__grid .certs__item
+	{
+		width: calc(100% / 5 - 20px);
 	}
 
 
@@ -654,5 +665,135 @@
 		width: 23px;
 		height: 24px;
 		margin-top: -12px;
+	}
+
+
+	.about-img__img
+	{
+		border-radius: 35px;
+	}
+
+	.about-info__item
+	{
+		border-radius: 35px;
+	}
+
+	.about-info__item._big
+	{
+		padding: 30px 30px 50px;
+	}
+
+	.about-info__val 
+	{
+		font-size: 54px;
+	}
+
+	.our-principles__item
+	{
+		border-radius: 35px;
+	}
+
+	.our-principles__name, 
+	.about-adv__name
+	{
+		font-size: 24px;
+	}
+
+
+	.about-adv__item
+	{
+		padding: 30px;
+		border-radius: 35px;
+	}
+
+	.about-adv__img,
+	._dark-img::after
+	{
+		border-radius: 35px;
+	}
+
+
+	.about-adv__slider .slider-button-next
+	{
+		right: 30px;
+		bottom: 30px;
+	}
+
+	.about-adv__slider .slider-button-prev
+	{
+		right: 97px;
+		bottom: 30px;
+	}
+
+
+	.learn-more__coll 
+	{
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.learn-more__bg
+	{
+		border-radius: 35px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.learn-more__img
+	{
+		width: 50%;
+	}
+
+	.learn-more__img img
+	{
+		margin-left: 0;
+	}
+
+
+	.clinic-visits__item
+	{
+		border-radius: 35px;
+		padding: 20px;
+	}
+
+	.clinic-visits__number
+	{
+		font-size: 30px;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+	}
+
+	.clinic-visits__name 
+	{
+		font-size: 20px;
+	}
+
+
+	.our-patients__item,
+	.our-patients__item img
+	{
+		border-radius: 35px;
+	}
+
+	.our-patients__box
+	{
+		flex-wrap: wrap;
+	}
+
+	.our-patients__info
+	{
+		width: 100%;
+	}
+
+	.our-patients__name
+	{
+		font-size: 18px;
+	}
+
+	.our-patients__arrow
+	{
+		margin-left: 0;
+		margin-top: 20px;
 	}
 }

@@ -1163,6 +1163,159 @@
 	}
 
 
+	.about-info__grid
+	{
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+	}
+
+	.about-info__item
+	{
+		min-height: 200px;
+
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.about-info__item._big
+	{
+		grid-column: span 2;
+		padding: 50px 20px 40px;
+		display: block;
+	}
+
+	.about-info__desc
+	{
+		margin-top: auto;
+	}
+
+
+	.our-principles__grid
+	{
+		margin-left: -15px;
+	}
+
+	.our-principles__item 
+	{
+		width: calc(100% / 2 - 15px);
+		margin-top: 15px;
+		margin-left: 15px;
+
+		padding: 20px;
+	}
+
+
+	.about-adv__cols
+	{
+		gap: 15px;
+	}
+
+	.about-adv__item
+	{
+		padding: 20px;
+	}
+
+	.about-adv__title
+	{
+		font-size: 14px;
+	}
+
+	.about-adv__box
+	{
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+
+	.about-adv__slider .about-adv__box
+	{
+		padding-right: 0;
+		padding-bottom: 60px;
+	}
+
+	.about-adv__info
+	{
+		width: 100%;
+	}
+
+	.about-adv__name
+	{
+		font-size: 18px;
+		margin-top: 10px;
+	}
+
+	.about-adv__slider .slider-button-prev
+	{
+		display: flex;
+		right: auto;
+		left: 20px;
+		bottom: 20px;
+	}
+
+	.about-adv__slider .slider-button-next
+	{
+		display: flex;
+		bottom: 20px;
+		left: 70px;
+	}
+
+
+	.learn-more__bg
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.learn-more__coll
+	{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+
+	.clinic-visits__grid
+	{
+		margin-left: -15px;
+	}
+
+	.clinic-visits__item 
+	{
+		width: calc(100% / 2 - 15px);
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+
+
+	.our-patients__grid
+	{
+		gap: 15px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.our-patients__item
+	{
+		grid-column: span 1;
+	}
+
+	.our-patients__item._big 
+	{
+		grid-column: span 1;
+	}
+
+
+	.certs__grid
+	{
+		margin-left: -15px;
+	}
+
+	.certs__grid .certs__item 
+	{
+		width: calc(100% / 3 - 15px);
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+
+
 	.wrap-btn
 	{
 		margin-top: 20px;

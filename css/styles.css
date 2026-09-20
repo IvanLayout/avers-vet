@@ -7654,7 +7654,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
 
 	text-decoration: none;
 
@@ -7685,6 +7684,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 	background: linear-gradient(180deg, #f5f9ff 0%, #f0f7ff 100%);
 	opacity: 1;
 	transition: opacity .2s linear;
+
+	border-radius: 40px;
 }
 
 @media (any-hover: hover)
@@ -8313,7 +8314,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	background: linear-gradient(180deg, rgba(0, 0, 0, .2) 0%, rgba(24, 29, 37, .2) 100%);
 	transition: opacity .2s linear;
-	opacity: 0;
+	/* opacity: 0; */
+	opacity: 1;
 	border-radius: 40px;
 }
 
@@ -8358,7 +8360,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 	z-index: 1;
 
 	transition: opacity .2s linear;
-	opacity: 0;
+	/* opacity: 0; */
+	opacity: 1;
 	border-radius: 40px;
 }
 

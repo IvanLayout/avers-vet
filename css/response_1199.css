@@ -319,14 +319,16 @@
 		font-size: 46px;
 	}
 
-	.specialist__arrow
+	.specialist__arrow,
+	.our-patients__arrow
 	{
 		width: 37px;
 		height: 37px;
 		border-radius: 10px;
 	}
 
-	.specialist__arrow svg
+	.specialist__arrow svg,
+	.our-patients__arrow svg
 	{
 		width: 20px;
 		height: 10px;
@@ -455,6 +457,54 @@
 	.call-away__colr
 	{
 		width: 28%;
+	}
+
+
+	.about-info__val 
+	{
+		font-size: 48px;
+	}
+
+	.about-adv__slider .slider-button-prev
+	{
+		right: 87px;
+	}
+
+	
+	.our-principles__item
+	{
+		width: calc(100% / 3 - 20px);
+	}
+
+
+	.learn-more__img 
+	{
+		width: 45%;
+	}
+
+
+	.clinic-visits__item
+	{
+		width: calc(100% / 3 - 20px);
+		aspect-ratio: 1 / .8;
+	}
+
+
+	.our-principles__name, 
+	.about-adv__name 
+	{
+		font-size: 20px;
+	}
+
+
+	.our-patients__wrap
+	{
+		padding: 20px;
+	}
+
+	.our-patients__name 
+	{
+		font-size: 16px;
 	}
 
 
