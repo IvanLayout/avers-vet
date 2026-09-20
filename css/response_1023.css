@@ -460,6 +460,25 @@
 	.contacts__box {
     	width: calc(55% - 5px);
 	}
+
+
+	.service-info__wrap._vacancy{
+		margin-top: 20px;
+	}
+
+	._vacancy .service-info__name {
+		margin-top: 30px;
+	}
+
+
+	.info-items__item {
+		padding: 20px;
+		border-radius: 30px;
+	}
+
+	.info-items__number{
+		font-size: 50px;
+	}
 	/*------------
 		Commit
 	------------*/
@@ -975,6 +994,7 @@
 	.service-info__item
 	{
 		height: auto;
+		padding: 25px;
 	}
 
 
