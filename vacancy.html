@@ -170,7 +170,7 @@
 														Срочная помощь
 													</span>
 												</a>
-												<button type="button" class="btn-blue header__info-btn">
+												<button type="button" data-content="#modal-callback" class="btn-blue header__info-btn modal-btn">
 													<span class="btn-blue__wrap">
 														<span class="btn-blue__icon">
 															<img data-src="images/ic_zap.svg" src="images/img_plug.png" alt="" class="lazyload">
@@ -1118,6 +1118,59 @@
 					<a href="/" class="btn-border modal-vacancy__btn">Перейти на страницу вакансии</a>
 				</div>
 			</div>
+		</div>
+
+		<div id="modal-callback" class="modal modal-form">
+			<form action="" class="modal__box form">
+				<div class="modal__title">Перезвоните мне</div>
+
+				<div class="modal-form__desc">Оставьте номер — мы перезвоним в течение 5 минут</div>
+
+				<div class="modal-form__form">
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" placeholder="Ваше имя" class="form__input">
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="tel" value="" name="" placeholder="+7 (999) 000-00-00" data-mask="+7 (999) 999-99-99" class="form__input">
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="select-wrap">
+							<select>
+								<option value="0" data-display="Удобное время для звонка"></option>
+								<option value="1">Терапия</option>
+								<option value="2">Хирургия</option>
+								<option value="3">Кардиология</option>
+								<option value="4">Дерматология</option>
+								<option value="5">Офтальмология</option>
+								<option value="6">Стоматология</option>
+								<option value="7">Неврология</option>
+								<option value="8">Лаборатория</option>
+								<option value="9">УЗИ-диагностика</option>
+								<option value="10">Вакцинация</option>
+								<option value="11">Экстренная помощь</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="checkbox form__agree modal-form__agree">
+					<label class="checkbox__label">
+						<input type="checkbox" name="">
+
+						<span class="checkbox__text">
+							Нажимая на кнопку вы принимаете условия <br><a href="/" target="_blank">политики конфиденциальности</a>.
+						</span>
+					</label>
+				</div>
+
+				<div class="modal-form__submit">
+					<button type="submit" class="btn-blue modal-form__submit-btn">Перезвонить мне</button>
+				</div>
+			</form>
 		</div>
 
 		<!-- Подключение javascript файлов -->

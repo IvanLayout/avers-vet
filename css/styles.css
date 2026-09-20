@@ -8978,6 +8978,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	font-weight: 500;
 	color: var(--chernyy);
 	line-height: 1.2;
+	padding-right: 30px;
 }
 
 .modal__box

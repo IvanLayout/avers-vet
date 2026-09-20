@@ -415,6 +415,10 @@
 	.file-selection__path._active .file-selection__box{
 		padding-left: 26px;
 	}
+
+	.f-button.is-close-button{
+		right: 20px;
+	}
 	/*------------
 		Commit
 	------------*/
