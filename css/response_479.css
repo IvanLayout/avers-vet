@@ -235,6 +235,16 @@
 	.info-items__number {
 		font-size: 30px;
 	}
+
+	.vacancies .cont{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.career-growth .cont{
+		padding-left: 0;
+		padding-right: 0;
+	}
 	/*------------
 		Commit
 	------------*/

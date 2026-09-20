@@ -361,6 +361,29 @@
 	.select-wrap .nice-select .list{
 		border-radius: 5px;
 	}
+
+
+	.vacancies__grid{
+		gap: 10px 0;
+	}
+
+	.vacancies__grid .vacancy {
+		width: calc(100% / 1 - 15px);
+	}
+
+
+	.career-growth__cols{
+		gap: 20px;
+	}
+
+	.career-growth__coll{
+		width: 100%;
+	}
+
+	.career-growth__colr{
+		width: 100%;
+		max-width: none;
+	}
 	/*------------
 		Commit
 	------------*/

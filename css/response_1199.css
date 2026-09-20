@@ -161,6 +161,10 @@
 	.contacts__item + .contacts__item {
 		margin-top: 16px;
 	}
+
+	.vacancies__grid .vacancy{
+		width: calc(100% / 2 - 20px);
+	}
 	/*------------
 		Commit
 	------------*/

@@ -365,16 +365,91 @@ $(() => {
 	}
 
 
-	$('body').on('submit', '.form-ajax', function (e) {
-		e.preventDefault()
+	if ($('.career-growth').length) {
+		careerGrowthInfo = new Swiper('.career-growth__info', {
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			loop: false,
+			spaceBetween: 0,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+		})
 
-		Fancybox.close()
+		careerGrowthThumbs = new Swiper('.career-growth__thumbs', {
+			loop: false,
+			spaceBetween: 15,
+			slidesPerView: 5,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			speed: 500,
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+					slidesPerView: 5,
+				},
+				'480': {
+					spaceBetween: 15,
+					slidesPerView: 5,
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 5
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 6
+				},
+				'1200': {
+					spaceBetween: 20,
+					slidesPerView: 7
+				},
+				'1320': {
+					spaceBetween: 20,
+					slidesPerView: 8
+				}
+			},
+		})
 
-		Fancybox.show([{
-			src: $(this).data('content'),
-			type: 'inline'
-		}])
-	})
+		careerGrowthPhoto = new Swiper('.career-growth__photo', {
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			loop: false,
+			spaceBetween: 0,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			thumbs: {
+				swiper: careerGrowthThumbs
+			},
+		})
+
+		careerGrowthPhoto.controller.control = careerGrowthInfo;
+		careerGrowthInfo.controller.control = careerGrowthPhoto;
+	}
 
 	$('body').on('submit', '.main-form__form', function (e) {
 		e.preventDefault()

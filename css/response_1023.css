@@ -479,6 +479,71 @@
 	.info-items__number{
 		font-size: 50px;
 	}
+
+	.vacancies__grid{
+		margin-top: 20px;
+		margin-left: -15px;
+		gap: 15px 0;
+	}
+
+	.vacancies__grid .vacancy {
+		width: calc(100% / 2 - 15px);
+		margin-left: 15px;
+	}
+
+	.vacancy__tags{
+		margin-bottom: 16px;
+	}
+
+	.vacancy__tag{
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+
+	.vacancy__info{
+		padding-bottom: 16px;
+		margin-bottom: 15px;
+	}
+
+	.vacancy__bot {
+		gap: 16px;
+		padding-top: 20px;
+	}
+
+
+	.career-growth__cols{
+		gap: 16px;
+		margin-top: 20px;
+	}
+
+	.career-growth__coll{
+		width: calc(50% - 8px);
+	}
+
+	.career-growth__colr{
+		max-width: calc(50% - 8px);
+	}
+
+	.career-growth__thumbs{
+		max-width: 360px;
+	}
+
+	.career-growth__name {
+		font-size: 24px;
+	}
+
+	.career-growth__pos{
+		font-size: 18px;
+		margin-top: 12px;
+	}
+
+	.career-growth__text-block{
+		margin-top: 20px;
+	}
+
+	.career-growth__thumbs{
+		margin-top: 20px;
+	}
 	/*------------
 		Commit
 	------------*/

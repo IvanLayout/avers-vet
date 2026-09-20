@@ -64,6 +64,36 @@
 	.always-touch__items{
 		gap: 24px 20px;
 	}
+
+
+	.vacancy__info{
+		padding-bottom: 19px;
+	}
+
+	.vacancy__bot{
+		gap: 20px;
+	}
+
+	.vacancy__name {
+		font-size: 20px;
+	}
+
+
+	.career-growth__cols{
+		gap: 30px;
+	}
+
+	.career-growth__coll{
+		width: calc(50% - 15px);
+	}
+
+	.career-growth__colr{
+		max-width: calc(50% - 15px);
+	}
+
+	.career-growth__thumbs{
+		margin-top: 24px;
+	}
 	/*------------
 		Commit
 	------------*/
