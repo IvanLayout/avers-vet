@@ -3903,6 +3903,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	transition: color .2s linear;
 }
 
+.main-services__name._red-color
+{
+	color: #E94E1B;
+}
+
 .main-services__desc
 {
 	display: block;
@@ -3976,7 +3981,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	.main-services__item:hover .main-services__name
 	{
-		color: #E94E1B;
+		color: #2262B7;
 	}
 
 	.main-services__item:hover .main-services__arrow
@@ -4063,7 +4068,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	.stocks__name a:hover
 	{
-		color: #E94E1B;
+		color: #2262B7;
 	}
 }
 
@@ -4598,7 +4603,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	.surgery-serv__item:hover .surgery-serv__name
 	{
-		color: #E94E1B;
+		color: #2262B7;
 	}
 }
 
@@ -5190,7 +5195,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	.specialist__name a:hover
 	{
-		color: #E94E1B;
+		color: #2262B7;
 	}
 }
 
