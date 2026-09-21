@@ -4765,6 +4765,10 @@ input[type=checkbox]:checked + .checkbox__text::after
 	max-width: 336px;
 }
 
+.help-banner__box-btn{
+	width: 100%;
+}
+
 .help-banner__btn-bord
 {
 	text-decoration: none;
