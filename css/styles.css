@@ -9476,6 +9476,58 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 
+.section-cookie
+{
+	background: #fff;
+	padding: 30px 0;
+
+	position: fixed;
+	left: 0;
+	bottom: 0;
+
+	width: 100%;
+	z-index: 100;
+
+	border-top: 1px solid rgba(25, 26, 41, .1);
+}
+
+.section-cookie__flex
+{
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	gap: 30px;
+}
+
+.section-cookie__info
+{
+	color: var(--chernyy);
+	font-size: 15px;
+}
+
+.section-cookie__info a
+{
+	text-decoration: none;
+	color: #E94E1B;
+	border-bottom: 1px solid currentColor;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.section-cookie__info a:hover
+	{
+		border-bottom-color: transparent;
+	}
+}
+
+.section-cookie__btn
+{
+	flex-shrink: 0;
+}
+
+
 .modal__text-block
 {
 	color: #737373;

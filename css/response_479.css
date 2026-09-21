@@ -1212,4 +1212,16 @@
 	{
 		top: 0px;
 	}
+
+
+	.section-cookie__flex
+	{
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	.section-cookie__info
+	{
+		font-size: 12px;
+	}
 }

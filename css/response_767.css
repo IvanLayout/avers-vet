@@ -1650,4 +1650,16 @@
 	{
 		margin-top: 20px;
 	}
+
+
+	.section-cookie
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.section-cookie__info
+	{
+		font-size: 14px;
+	}
 }
