@@ -127,6 +127,12 @@ $(() => {
 		if (is_touch_device()) $('body').css('cursor', 'default')
 	})
 
+
+	$('.section-cookie__btn').on('click', function() {
+		$(this).closest('.section-cookie').remove();
+	});
+	
+
 	// Плавная прокрутка к якорю
 	$('.scroll-btn').click(function(e) {
 		e.preventDefault()
