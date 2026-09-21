@@ -242,6 +242,11 @@
 		padding: 16px;
 	}
 
+	.service-info__name
+	{
+		font-size: 18px;
+	}
+
 
 	.tabs-bg
 	{

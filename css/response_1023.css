@@ -962,13 +962,13 @@
 	.main-about__text-block
 	{
 		margin-top: 0;
+		max-width: 100%;
 	}
 
-	/* .help-banner__coll,
-	.help-banner__colr
+	.main-about__text-block blockquote
 	{
-		width: 100%;
-	} */
+		max-width: 100%;
+	}
 
 	.help-banner__coll{
 		padding-left: 20px;
@@ -1110,6 +1110,11 @@
 	{
 		height: auto;
 		padding: 25px;
+	}
+
+	.service-info__name
+	{
+		font-size: 20px;
 	}
 
 

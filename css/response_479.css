@@ -663,9 +663,15 @@
 		font-size: 14px;
 	}
 
+	.global-icon__box
+	{
+		padding-left: 30px;
+		padding-right: 10px;
+	}
+
 	.global-icon__box:before 
 	{
-		left: 11px;
+		left: 8px;
 	}
 
 
