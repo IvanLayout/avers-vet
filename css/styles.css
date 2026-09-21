@@ -471,13 +471,12 @@ button
 	flex-shrink: 0;
 	flex-wrap: nowrap;
 	gap: 50px;
-	align-items: center;
-	align-content: center;
 	margin-left: auto;
 }
 
 .header__tel{
 	flex-shrink: 0;
+	padding-top: 10px;
 }
 
 .header__tel a{
@@ -553,6 +552,7 @@ button
 }
 
 .header__adres-city{
+	color: var(--chernyy);
 	font-weight: 600;
 	text-transform: uppercase;
 }

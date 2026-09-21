@@ -653,6 +653,10 @@
 	{
 		padding-bottom: 30px;
 	}
+
+	.header__tel{
+		padding-top: 0;
+	}
 	
 	.header-search,
 	.header__adres,
