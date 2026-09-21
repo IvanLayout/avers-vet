@@ -1262,6 +1262,7 @@
 	{
 		width: calc(50% - 10px);
 		margin-top: 10px;
+		max-width: 100%;
 	}
 
 

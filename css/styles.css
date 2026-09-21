@@ -9120,7 +9120,9 @@ input[type=checkbox]:checked + .checkbox__text::after
 .modal-form__bot-flex
 {
 	justify-content: space-between;
-	flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;
+	gap: 15px;
 }
 
 .modal-form__prices-title
