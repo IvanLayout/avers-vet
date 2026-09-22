@@ -924,6 +924,7 @@
 	.about-img__img 
 	{
 		aspect-ratio: 1 / .672;
+		object-position: center bottom;
 	}
 
 
