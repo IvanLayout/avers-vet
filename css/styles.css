@@ -2117,6 +2117,10 @@ input[type=checkbox]:checked + .checkbox__text::after
 .page-head__desc
 {
 	margin: 20px auto 0;
+}
+
+.page-head__desc_maxwidth
+{
 	max-width: 850px;
 }
 
@@ -3017,6 +3021,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .article-text__cols{
 	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
 }
 
 .article-text__coll{
@@ -3060,6 +3066,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 .article-text__colr{
 	width: 42%;
 	max-width: 660px;
+}
+
+.article-text__box
+{
+	position: sticky;
+	top: 30px;
 }
 
 .article-text__info{
