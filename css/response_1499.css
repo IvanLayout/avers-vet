@@ -121,6 +121,12 @@
 	.career-growth__pos{
 		font-size: 20px;
 	}
+
+	.first-section__thumbs {
+		margin-right: -30px;
+		width: calc(100% + 30px);
+		padding-left: 30px;
+	}
 	/*------------
 		Commit
 	------------*/

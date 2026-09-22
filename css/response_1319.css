@@ -94,6 +94,11 @@
 	.career-growth__thumbs{
 		margin-top: 24px;
 	}
+
+
+	.first-section__thumbs{
+		display: none;
+	}
 	/*------------
 		Commit
 	------------*/
