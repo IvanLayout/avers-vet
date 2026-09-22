@@ -70,6 +70,10 @@
 
 	.specialists__top{
 		margin-top: 15px;
+	}
+
+	.specialists__top-wrap
+	{
 		gap: 10px;
 	}
 

@@ -5280,8 +5280,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 	border-radius: 15px;
 	background: #F4F9FF;
 	padding: 23px 30px;
-	flex-wrap: nowrap;
-	gap: 20px;
 }
 
 .specialists__top._marg-none
@@ -5289,9 +5287,17 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 0;
 }
 
+.specialists__top-wrap
+{
+	position: relative;
+	flex-wrap: nowrap;
+	gap: 20px;
+}
+
 .specialists__search{
 	width: 50px;
 	flex-shrink: 0;
+	position: static;
 }
 
 .specialists__search-open{
@@ -5318,7 +5324,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	right: 0;
 	left: auto;
 	top: 0;
-	width: 360px;
+	width: 100%;
 }
 
 .form-search .form-search__input{

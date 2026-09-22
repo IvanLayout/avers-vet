@@ -1481,11 +1481,15 @@
 	}
 
 	.specialists__top{
-		flex-wrap: wrap;
 		padding: 0;
 		background: none;
 		border-radius: 0;
 		margin-top: 20px;
+	}
+
+	.specialists__top-wrap
+	{
+		flex-wrap: wrap;
 		gap: 15px;
 	}
 
