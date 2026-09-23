@@ -25,7 +25,7 @@ $(() => {
 			loop: true,
 			autoplay: {
 				delay: 10000,
-				disableOnInteraction: true,
+				disableOnInteraction: false,
 			},
 			// allowSlideNext: false,
 			// allowSlidePrev: false,
@@ -62,7 +62,7 @@ $(() => {
 				autoplayTimeLeft(s, time, progress) {
 					progressCircle.style.setProperty('--progress', 1 - progress);
 					progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-				},
+				}
 			}
 		})
 

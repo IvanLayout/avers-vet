@@ -20,11 +20,8 @@ $(() => {
 				entry.target.classList.contains('map-js') &&
 				!entry.target.classList.contains('map-loaded')
 			) {
-
 				if (yandexMapsReady) {
 					initMap(entry.target);
-				} else {
-					mapsQueue.push(entry.target);
 				}
 			}
 		}
@@ -455,17 +452,18 @@ function setHeight(className){
 
 const is_touch_device = () => !!('ontouchstart' in window)
 
-
 let yandexMapsReady = false;
+const mapsQueue = [];
 
 if (document.querySelector('.map-js')) {
-	const mapsQueue = [];
 
 	ymaps.ready(() => {
 		yandexMapsReady = true;
 
 		mapsQueue.forEach(map => {
-			initMap(map);
+			if (map.isConnected && map.offsetParent !== null) {
+				initMap(map);
+			}
 		});
 
 		mapsQueue.length = 0;
@@ -485,11 +483,13 @@ if (document.querySelector('.map-js')) {
 
 		let center;
 		let placemark;
+		let balloonContent;
 
 		switch (element.id) {
 			case 'map':
 				center = [55.714115, 37.435331];
 				placemark = [55.714115, 37.435331];
+
 				balloonContent = `
 					<div class="map-balloon">
 						<div class="map-balloon__title">Аверс</div>
@@ -503,6 +503,7 @@ if (document.querySelector('.map-js')) {
 			case 'map2':
 				center = [55.655402, 37.880554];
 				placemark = [55.655402, 37.880554];
+
 				balloonContent = `
 					<div class="map-balloon">
 						<div class="map-balloon__title">Аверс</div>

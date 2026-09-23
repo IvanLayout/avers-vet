@@ -2754,6 +2754,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	backdrop-filter: blur(3.7495968341827393px);
 	overflow: hidden;
 	border-radius: 50%;
+	cursor: pointer;
 
 
 	/* opacity: 1 !important;
