@@ -130,6 +130,7 @@
 		border-radius: 0 0 35px 35px;
 		height: auto;
 		aspect-ratio: 1/1.25;
+		max-height: 500px;
 		-webkit-mask-image: linear-gradient(
 			to bottom,
 			transparent 0%,

@@ -14,6 +14,8 @@ $(() => {
 		var syncSliders = false
 
 		thumbs = $('.first-section__thumbs .wheelSlider-container')
+		const progressCircle = document.querySelector('.autoplay-progress svg');
+      	const progressContent = document.querySelector('.autoplay-progress span');
 
 		mainInfo = new Swiper('.first-section__slider', {
 			effect: 'fade',
@@ -22,7 +24,7 @@ $(() => {
 			},
 			loop: true,
 			autoplay: {
-				delay: 4000,
+				delay: 10000,
 				disableOnInteraction: true,
 			},
 			// allowSlideNext: false,
@@ -56,7 +58,11 @@ $(() => {
 						return
 					}
 					thumbs.data('wheelSlider').prev(true)
-				}
+				},
+				autoplayTimeLeft(s, time, progress) {
+					progressCircle.style.setProperty('--progress', 1 - progress);
+					progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+				},
 			}
 		})
 
