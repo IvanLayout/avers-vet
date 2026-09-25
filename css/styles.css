@@ -2830,6 +2830,10 @@ input[type=checkbox]:checked + .checkbox__text::after
 	transform: rotate(-90deg);
 }
 
+.autoplay-progress span{
+	opacity: 0;
+}
+
 /* .first-section__thumbs .swiper-slide-thumb-active + .swiper-slide{
 	transform: scale(.7) translateX(-15%);
 }
