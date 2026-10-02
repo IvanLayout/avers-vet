@@ -3100,6 +3100,20 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 32px;
 }
 
+.info-section__btns .info-section__btn-big
+{
+	padding-left: 20px;
+	padding-right: 20px;
+	min-width: 223px;
+}
+
+.info-section__btns .info-section__btn-small
+{
+	padding-left: 20px;
+	padding-right: 20px;
+	min-width: 158px;
+}
+
 .info-section__img{
 	flex-shrink: 0;
 	width: 41.77%;
@@ -3166,6 +3180,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 	min-width: 223px;
 }
 
+.page-head__btns .page-head__btn
+{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 .share-items_marg{
 	margin-top: 50px;
 	justify-content: center;
@@ -3179,6 +3199,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	flex-shrink: 0;
 	font-weight: 600;
 	font-size: 12px;
+	text-transform: uppercase;
 }
 
 .share-items__flex{
@@ -3203,8 +3224,17 @@ input[type=checkbox]:checked + .checkbox__text::after
 	display: block;
 	width: 20px;
 	height: 20px;
-	fill: none;
+	fill: transparent;
 	stroke: currentColor;
+	transition: fill .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.share-items__item:hover svg
+	{
+		fill: #B1D2FF;
+	}
 }
 
 .section-img__img{
