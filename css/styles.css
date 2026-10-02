@@ -1516,7 +1516,6 @@ button
 }
 
 
-
 .radio + .radio
 {
 	margin-top: 32px;
@@ -5510,6 +5509,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	color: var(--chernyy);
 	font-size: 24px;
 	font-weight: 500;
+	overflow-wrap: break-word;
 }
 
 .advantages__desc
@@ -7691,6 +7691,10 @@ input[type=checkbox]:checked + .checkbox__text::after
     color: #fff;
     width: 40%;
     position: relative;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .call-away__desc 
@@ -8727,11 +8731,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 	align-content: stretch;
 
 	margin: 10px 0 0 -20px;
+
+	--clinic_count: 5;
 }
 
 .clinic-visits__item 
 {
-    width: calc(100% / 5 - 20px);
+	width: calc(100%/var(--clinic_count) - 20px);
     margin: 20px 0 0 20px;
     background: #fff;
     border-radius: 40px;

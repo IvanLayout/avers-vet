@@ -583,6 +583,12 @@ $(window).on('load', () => {
 	if ($('.main-form').length) {
 		setRequestSentHeight()
 	}
+
+	if( $('.clinic-visits__grid').length ){
+		$('.clinic-visits__grid').each(function() {
+			clinicHeight($(this), parseInt($(this).css('--clinic_count')))
+		})
+	}
 });
 
 
@@ -631,6 +637,12 @@ $(window).on('resize', () => {
 
 	if ($('.main-form').length) {
 		setRequestSentHeight()
+	}
+
+	if( $('.clinic-visits__grid').length ){
+		$('.clinic-visits__grid').each(function() {
+			clinicHeight($(this), parseInt($(this).css('--clinic_count')))
+		})
 	}
 });
 
@@ -810,7 +822,24 @@ function serviceSlider(){
 	}
 }
 
+function clinicHeight(context, step) {
+	let start    = 0
+	let finish   = step
+	let clinic = context.find('.clinic-visits__item')
 
+	clinic.height('auto')
+	clinic.find('.clinic-visits__name').height('auto')
+	clinic.find('.clinic-visits__desc').height('auto')
+
+	for (let i = 0; i < clinic.length; i++) {
+		setHeight(clinic.slice(start, finish))
+		setHeight(clinic.slice(start, finish).find('.clinic-visits__name'))
+		setHeight(clinic.slice(start, finish).find('.clinic-visits__desc'))
+
+		start  = start + step
+		finish = finish + step
+	}
+}
 
 function specialistsHeight(context, step) {
 	let start    = 0

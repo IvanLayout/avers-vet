@@ -1445,11 +1445,12 @@
 	.clinic-visits__grid
 	{
 		margin-left: -15px;
+		--clinic_count: 2;
 	}
 
 	.clinic-visits__item 
 	{
-		width: calc(100% / 2 - 15px);
+		width: calc(100%/var(--clinic_count) - 15px);
 		margin-top: 15px;
 		margin-left: 15px;
 	}

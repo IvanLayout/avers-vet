@@ -496,10 +496,13 @@
 		width: 45%;
 	}
 
+	.clinic-visits__grid
+	{
+		--clinic_count: 3;
+	}
 
 	.clinic-visits__item
 	{
-		width: calc(100% / 3 - 20px);
 		aspect-ratio: 1 / .8;
 	}
 

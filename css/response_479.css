@@ -1166,6 +1166,16 @@
 	}
 
 
+	.modal-patient .f-button.is-close-button
+	{
+		top: 20px;
+	}
+
+	.modal-patient__img img
+	{
+		border-radius: 33px 33px 0 0;
+	}
+
 	.modal-patient__name 
 	{
 		font-size: 20px;
