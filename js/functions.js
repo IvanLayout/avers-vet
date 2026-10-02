@@ -377,6 +377,10 @@ $(() => {
 			$(this).removeClass('_full');
 		}
 	});
+
+	$('body').on('click', '.form-search__clear', function(e) {
+		$('.form-search__input').removeClass('_full');
+	})
 })
 
 

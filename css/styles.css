@@ -1921,6 +1921,13 @@ input[type=checkbox]:checked + .checkbox__text::after
     border-radius: 4px;
 }
 
+/* Firefox */
+.select-wrap .nice-select .list .scrollbar 
+{
+    scrollbar-width: thin;
+    scrollbar-color: #2262B7 transparent;
+}
+
 .select-wrap .nice-select .list .list_item
 {
     position: relative;
@@ -5324,6 +5331,22 @@ input[type=checkbox]:checked + .checkbox__text::after
 	background: #2262B7;
 }
 
+.product.product_all:active .product__name
+{
+	color: #fff;
+}
+
+.product.product_all:active .product__arrow
+{
+	background: transparent;
+	border-color: #fff;
+}
+
+.product.product_all:active .product__arrow svg
+{
+	fill: #fff;
+}
+
 /*------------
     advantages
 ------------*/
@@ -5528,6 +5551,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	width: 100%;
 }
 
+.form-search
+{
+	flex-wrap: nowrap;
+}
+
 .form-search .form-search__input{
 	width: 100%;
     height: 50px;
@@ -5536,9 +5564,26 @@ input[type=checkbox]:checked + .checkbox__text::after
     font: 16px var(--font-family);
     color: var(--chernyy);
     border: 1px solid transparent;
-    padding: 0 15px 0 51px;
+    padding: 0 50px 0 51px;
     transition: border .2s linear;
 	box-shadow: 1px 1px 8px 0 #e9e9e9;
+}
+
+.form-search__clear 
+{
+    width: 50px;
+    margin-left: -50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    color: rgba(115, 115, 115, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: color .2s linear, opacity .2s linear, visibility .2s linear;
 }
 
 .form-search .form-search__input._full{
@@ -5547,6 +5592,34 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .form-search .form-search__input:focus{
 	border-color: #2262B7;
+}
+
+.form-search__input._full + .form-search__clear{
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.form-search__clear svg
+{
+	display: block;
+	width: 24px;
+	height: 24px;
+	fill: none;
+	stroke: currentColor;
+}
+
+@media (any-hover: hover)
+{
+	.form-search__clear:hover
+	{
+		color: var(--chernyy);
+	}
+}
+
+.form-search__clear:active
+{
+	color: var(--chernyy);
 }
 
 .specialists__grid
@@ -5795,6 +5868,18 @@ input[type=checkbox]:checked + .checkbox__text::after
 .specialist.specialist_all:active
 {
 	background: #2262B7;
+	color: #fff;
+}
+
+.specialist.specialist_all:active .specialist__arrow
+{
+	background: transparent;
+	border-color: #fff;
+}
+
+.specialist.specialist_all:active .specialist__arrow svg
+{
+	fill: #fff;
 }
 
 
