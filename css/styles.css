@@ -1841,7 +1841,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 .select-wrap .nice-select .current.selected{
-	border-color: #2262B7;
+	border-color: #D4E2F4;
 	color: var(--chernyy);
 }
 
@@ -1977,7 +1977,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	position: absolute;
 	content: '';
-	top: 18px;
+	top: 17px;
 	right: 15px;
 
 	display: block;
