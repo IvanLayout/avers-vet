@@ -779,11 +779,6 @@
 		margin-top: 12px;
 	}
 
-	.review__all-btn
-	{
-		border-bottom: none;
-	}
-
 	.review__bot
 	{
 		margin-top: 16px;
@@ -1139,11 +1134,14 @@
 	{
 		margin-left: 0;
 		margin-top: 0;
+		white-space: nowrap;
 	}
 
 	.product-info__rev
 	{
 		margin-top: 0;
+		flex-shrink: 0;
+		white-space: nowrap;
 	}
 
 
@@ -1164,6 +1162,11 @@
 		border-radius: 20px;
 		padding-top: 20px;
 		padding-bottom: 20px;
+	}
+
+	.certs__slider .certs__item::before
+	{
+		border-radius: 20px;
 	}
 
 	.certs__bot
@@ -1269,6 +1272,13 @@
 	.accordion__open
 	{
 		font-size: 14px;
+	}
+
+	.treatment__wrap .accordion__open
+	{
+		font-size: 18px;
+		padding-top: 15px;
+		padding-bottom: 14px;
 	}
 
 

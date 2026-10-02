@@ -149,7 +149,8 @@
 	.adresess__title,
 	.adresess__tel,
 	.first-info__title,
-	.header__info-title
+	.header__info-title,
+	.treatment__wrap .accordion__open
 	{
 		font-size: 22px;
 	}

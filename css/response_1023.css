@@ -1029,6 +1029,11 @@
 		font-size: 18px;
 	}
 
+	.treatment__wrap .accordion__open
+	{
+		font-size: 20px;
+	}
+
 	.accordion__open-icon 
 	{
 		width: 30px;

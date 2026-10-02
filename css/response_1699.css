@@ -79,7 +79,8 @@
 	.adresess__tel,
 	.first-info__title,
 	.header__info-title,
-	.call-away__phone-number
+	.call-away__phone-number,
+	.treatment__wrap .accordion__open
 	{
 		font-size: 28px;
 	}

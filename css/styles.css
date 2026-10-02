@@ -1409,12 +1409,36 @@ button
     height: 86px;
     padding: 12px 16px;
 
-	border: 1px solid #A1C2E2;
+	border: 1px solid #D4E2F4;
     background: #fff;
 	resize: none;
 	transition: border .2s linear;
 	border-radius: 15px;
+
+	scrollbar-width: thin;
+    scrollbar-color: #2262B7 transparent;
 }
+
+.form .form__textarea::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.form .form__textarea::-webkit-scrollbar-thumb
+{
+    background-color: #2262B7;
+    border-radius: 4px;
+}
+
+/* Firefox */
+/* .form .form__textarea
+{
+    scrollbar-width: thin;
+    scrollbar-color: #2262B7 transparent;
+} */
 
 .form .form__textarea.error,
 .form .form__input.error{
@@ -6723,6 +6747,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 	transition: color .2s linear;
 }
 
+.treatment__wrap .accordion__open
+{
+	font-size: 32px;
+	padding-top: 19px;
+	padding-bottom: 19px;
+}
+
 .accordion__open-border::after
 {
 	position: absolute;
@@ -7727,6 +7758,9 @@ input[type=checkbox]:checked + .checkbox__text::after
 .call-away__phone-number span
 {
 	border-bottom: 1px solid #fff;
+	display: inline-block;
+	line-height: 30px;
+	transition: border .2s linear;
 }
 
 .call-away__phone-number a::before
@@ -7762,6 +7796,14 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	width: 100%;
 	max-width: 336px;
+}
+
+@media (any-hover: hover)
+{
+	.call-away__phone-number a:hover span
+	{
+		border-bottom-color: transparent;
+	}
 }
 
 
