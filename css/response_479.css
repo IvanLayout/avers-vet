@@ -232,6 +232,10 @@
 	.choose-filial__title{
 		font-size: 16px;
 	}
+
+	.rating__label{
+		font-size: 12px;
+	}
 	/*------------
 		Commit
 	------------*/

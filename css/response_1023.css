@@ -131,6 +131,25 @@
 	}
 
 
+	.product-info-fix{
+		display: block;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: auto;
+	}
+
+	.product-info-fix._fix{
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	.wrap._info-fix{
+		padding-bottom: 80px;
+	}
+
+
+
 	.footer__colr{
 		width: 100%;
 	}

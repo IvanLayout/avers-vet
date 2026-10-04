@@ -17,11 +17,14 @@ $(() => {
 			}
 
 			if (
+				entry.intersectionRatio > 0 &&
 				entry.target.classList.contains('map-js') &&
 				!entry.target.classList.contains('map-loaded')
 			) {
 				if (yandexMapsReady) {
 					initMap(entry.target);
+				} else if (!mapsQueue.includes(entry.target)) {
+					mapsQueue.push(entry.target);
 				}
 			}
 		}
@@ -367,7 +370,9 @@ $(() => {
 	})
 
 	$('body').on('click', '.search-clear', function(e) {
+		e.preventDefault()
 		$('.search-input').removeClass('_full');
+		$('.search-input').val('')
 	})
 
 	$('.form-search__input').on('input change', function () {
@@ -381,6 +386,10 @@ $(() => {
 	$('body').on('click', '.form-search__clear', function(e) {
 		$('.form-search__input').removeClass('_full');
 	})
+
+	if ($('.rating-js').length){
+		$('input.wow').rating()
+	}
 })
 
 
@@ -405,12 +414,32 @@ $(window).on('load', () => {
 		}
 	}
 
+	if ( $('.product-info-fix').length ) {
+		if( $(window).scrollTop() > $('.product-info__adreses').offset().top > 0 ) {
+			$('.product-info-fix').addClass('_fix')
+			$('.wrap').addClass('_info-fix')
+		} else {
+			$('.product-info-fix').removeClass('_fix')
+			$('.wrap').removeClass('_info-fix')
+		}
+	}
+
 	$(window).on('scroll', () => {
 		if ( $('.header__info').length ) {
 			if( $(window).scrollTop() > $('.header__info').offset().top > 0 ) {
 				$('.header__info-wrap').addClass('_fix')
 			} else {
 				$('.header__info-wrap').removeClass('_fix')
+			}
+		}
+
+		if ( $('.product-info-fix').length ) {
+			if( $(window).scrollTop() > $('.product-info__adreses').offset().top > 0 ) {
+				$('.product-info-fix').addClass('_fix')
+				$('.wrap').addClass('_info-fix')
+			} else {
+				$('.product-info-fix').removeClass('_fix')
+				$('.wrap').removeClass('_info-fix')
 			}
 		}
 	})
@@ -524,8 +553,14 @@ if (document.querySelector('.map-js')) {
 
 		const myMap = new ymaps.Map(element.id, {
 			center: center,
-			zoom: 16
+			zoom: 16,
+			controls: [
+				'zoomControl',
+				'fullscreenControl'
+			]
 		});
+
+		myMap.controls.add('zoomControl');
 
 		const myPlacemark = new ymaps.Placemark(
 			placemark,

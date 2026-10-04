@@ -37,10 +37,12 @@
 
 	.first-section__flex{
 		padding-top: 80px;
+		pointer-events: none;
 	}
 
 	.first-section__coll{
 		padding-bottom: 40px;
+		pointer-events: auto;
 	}
 
 	.header-search__box{
@@ -127,6 +129,7 @@
 	.first-info
 	{
 		width: 410px;
+		pointer-events: auto;
 	}
 
 	.first-section__mouse
@@ -321,6 +324,23 @@
 	.certs__grid .certs__item 
 	{
 		width: calc(100% / 4 - 20px);
+	}
+
+
+	.first-section__video .slider-pagination{
+		display: flex;
+		position: absolute;
+		margin: 0;
+		bottom: 20px;
+		z-index: 20;
+	}
+
+	.first-section__video .slider-dot{
+		background: #fff;
+	}
+
+	.first-section__video .slider-dot.slider-dot_active {
+		background: #E94E1B;
 	}
 
 

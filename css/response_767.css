@@ -83,6 +83,7 @@
 
 	.sorting__item{
 		width: calc(50% - 10px/2);
+		flex-grow: 1;
 	}
 
 	.form-search .form-search__input{
@@ -942,6 +943,15 @@
 		line-height: 38px;
 	}
 
+	.rating{
+		min-height: 40px;
+		border-radius: 5px;
+	}
+
+	.rating__label{
+		font-size: 14px;
+	}
+
 	.select-wrap .nice-select .current:after
 	{
 		width: 8px;
@@ -1196,6 +1206,11 @@
 	.education__year
 	{
 		font-size: 12px;
+	}
+
+
+	.first-section__video .slider-pagination{
+		bottom: 10px;
 	}
 
 

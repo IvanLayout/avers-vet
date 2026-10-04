@@ -105,6 +105,13 @@ $(() => {
 				checkInView: true,
 				loadOnTransitionStart: true
 			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
 			allowTouchMove: false,
 			// thumbs: {
 			// 	swiper: mainThumbs,
@@ -479,6 +486,11 @@ $(() => {
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			preloadImages: false,
+			autoplay: {
+				delay: 5000,
+				pauseOnMouseEnter: true,
+				disableOnInteraction: false,
+			},
 			lazy: {
 				loadPrevNext: true,
 				elementClass: 'lazyload',

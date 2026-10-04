@@ -33,6 +33,12 @@
 	.help-banner__circle1{
 		bottom: 2%;
 	}
+	
+
+	.header__info-btn{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 
 
 	.info-section__bg{
@@ -74,6 +80,10 @@
 	.articles-cats__item {
 		padding-left: 20px;
 		padding-right: 20px;
+		border-radius: 25px;
+	}
+
+	.articles-cats__item::before{
 		border-radius: 25px;
 	}
 
