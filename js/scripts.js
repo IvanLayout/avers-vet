@@ -29,7 +29,7 @@ $(() => {
 			},
 			// allowSlideNext: false,
 			// allowSlidePrev: false,
-			allowTouchMove: false,
+			simulateTouch: false,
 			spaceBetween: 0,
 			speed: 1000,
 			slidesPerView: 1,
@@ -112,7 +112,7 @@ $(() => {
 				el: '.slider-pagination',
 				clickable: true
 			},
-			allowTouchMove: false,
+			simulateTouch: false,
 			// thumbs: {
 			// 	swiper: mainThumbs,
 			// 	// autoScrollOffset: 2,
