@@ -5332,6 +5332,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	height: 100%;
 }
 
+.product__img picture > *{
+	width: 100%;
+	height: 100%;
+}
+
 .product__img img
 {
 	display: block;
@@ -5340,7 +5345,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 	height: 100%;
 }
 
-.product__img img.loaded{
+.product__img picture > .loaded{
+	width: auto;
 	height: auto;
 }
 
@@ -9158,7 +9164,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	background: #fff;
 	z-index: 80;
 	display: none;
-	
+
 }
 
 .product-info-fix .btn-blue{
