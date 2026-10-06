@@ -9158,6 +9158,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	background: #fff;
 	z-index: 80;
 	display: none;
+	
 }
 
 .product-info-fix .btn-blue{
